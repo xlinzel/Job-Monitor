@@ -4,12 +4,12 @@
 # Supported ATS types: greenhouse, lever, ashby, workday, smartrecruiters, html
 #
 # To find a company's ATS, check their careers page URL:
-#   - Greenhouse      → boards.greenhouse.io/SLUG
-#   - Lever           → jobs.lever.co/SLUG
-#   - Ashby           → jobs.ashbyhq.com/SLUG
-#   - Workday         → TENANT.wd1.myworkdayjobs.com (slug = "tenant/site")
-#   - SmartRecruiters → careers.smartrecruiters.com/SLUG
-#   - Otherwise       → use 'html' with the full careers page URL
+#   - Greenhouse: boards.greenhouse.io/SLUG
+#   - Lever: jobs.lever.co/SLUG
+#   - Ashby: jobs.ashbyhq.com/SLUG
+#   - Workday: TENANT.wd1.myworkdayjobs.com (slug = "tenant/site")
+#   - SmartRecruiters: careers.smartrecruiters.com/SLUG
+#   - Otherwise: use html with the full careers page URL
 # =============================================================================
 
 companies:
@@ -43,7 +43,7 @@ companies:
     ats: greenhouse
     slug: lightmatter
 
-  # --- Workday companies (fully paginated) ---
+  # --- Workday companies ---
 
   - name: Marvell
     ats: workday
@@ -68,7 +68,20 @@ filters:
     # - "director"
 
 # =============================================================================
-# Notifications — set via GitHub Actions secrets (recommended)
+# Reminder sections included with new-job alerts
+# =============================================================================
+reminders:
+  internship_keywords:
+    - intern
+    - internship
+    - co-op
+    - co op
+    - coop
+    - co-operative
+    - cooperative
+
+# =============================================================================
+# Notifications - set via GitHub Actions secrets
 # =============================================================================
 notifications:
   webhook_url: ""

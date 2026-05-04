@@ -65,6 +65,15 @@ class Job:
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": "JobMonitorBot/1.0"})
 REQUEST_TIMEOUT = 30
+DEFAULT_INTERNSHIP_KEYWORDS = [
+    "intern",
+    "internship",
+    "co-op",
+    "co op",
+    "coop",
+    "co-operative",
+    "cooperative",
+]
 
 
 def fetch_greenhouse(company_slug: str, company_name: str) -> list[Job]:
@@ -306,7 +315,84 @@ def save_state(path: str, state: dict):
 # Notification
 # ---------------------------------------------------------------------------
 
-def send_webhook(webhook_url: str, new_jobs: list[Job]):
+
+def is_internship_job(job: Job, keywords: list[str]) -> bool:
+    """Return true for internship/co-op style postings."""
+    text = f"{job.title} {job.location} {job.team}".lower()
+    for keyword in keywords:
+        keyword = keyword.strip().lower()
+        if not keyword:
+            continue
+        if keyword in {"co-op", "co op", "coop"}:
+            if re.search(r"\bco[-\s]?op\b", text):
+                return True
+            continue
+        if re.search(rf"\b{re.escape(keyword)}s?\b", text):
+            return True
+    return False
+
+
+def clean_markdown_text(value: str) -> str:
+    """Keep alert lines readable if an ATS returns newlines or empty fields."""
+    return re.sub(r"\s+", " ", value or "").strip()
+
+
+def format_job_line(job: Job, link_style: str = "markdown") -> str:
+    title = clean_markdown_text(job.title) or "Untitled role"
+    company = clean_markdown_text(job.company) or "Unknown company"
+    location = clean_markdown_text(job.location)
+    team = clean_markdown_text(job.team)
+
+    if link_style == "slack":
+        title_part = f"<{job.url}|{title}>" if job.url else title
+    else:
+        title_part = f"[{title}]({job.url})" if job.url else title
+
+    details = [company]
+    if location:
+        details.append(location)
+    if team:
+        details.append(team)
+    return f"- {title_part} - {' | '.join(details)}"
+
+
+def chunk_sectioned_alerts(
+    sections: list[tuple[str, list[Job]]],
+    link_style: str = "markdown",
+    max_length: int = 1900,
+    header_format: str = "**{title}**",
+) -> list[str]:
+    """Build one or more sectioned alert messages within platform limits."""
+    messages: list[str] = []
+    current = ""
+
+    for section_title, jobs in sections:
+        header = header_format.format(title=section_title) + "\n"
+        lines = [format_job_line(job, link_style) for job in sorted(jobs, key=lambda j: (j.company, j.title))]
+        if not lines:
+            lines = ["- None right now"]
+
+        section_started = False
+        for line in lines:
+            if not section_started:
+                addition = ("\n" if current else "") + header + line + "\n"
+                section_started = True
+            else:
+                addition = line + "\n"
+
+            if current and len(current) + len(addition) > max_length:
+                messages.append(current.rstrip())
+                continued = header_format.format(title=f"{section_title} (continued)")
+                current = f"{continued}\n{line}\n"
+            else:
+                current += addition
+
+    if current:
+        messages.append(current.rstrip())
+    return messages
+
+
+def send_webhook(webhook_url: str, new_jobs: list[Job], internship_jobs: list[Job]):
     """Send a notification via Slack or Discord webhook."""
     if not new_jobs:
         return
@@ -316,43 +402,19 @@ def send_webhook(webhook_url: str, new_jobs: list[Job]):
         webhook_url = webhook_url.rstrip("/")[:-len("/slack")]
 
     is_discord = "discord.com" in webhook_url or "discordapp.com" in webhook_url
+    link_style = "markdown" if is_discord else "slack"
+    messages = chunk_sectioned_alerts(
+        [
+            ("New job postings", new_jobs),
+            ("Internship / co-op reminders", internship_jobs),
+        ],
+        link_style=link_style,
+        max_length=1900 if is_discord else 2800,
+        header_format="**{title}**" if is_discord else "*{title}*",
+    )
 
-    for job in new_jobs:
-        if is_discord:
-            payload = {
-                "embeds": [
-                    {
-                        "title": f"New job: {job.title}",
-                        "url": job.url,
-                        "color": 3066993,
-                        "fields": [
-                            {"name": "Company", "value": job.company, "inline": True},
-                            {"name": "Location", "value": job.location or "N/A", "inline": True},
-                            {"name": "Team", "value": job.team or "N/A", "inline": True},
-                        ],
-                        "footer": {"text": f"Discovered {job.discovered_at}"},
-                    }
-                ]
-            }
-        else:
-            # Slack format
-            payload = {
-                "blocks": [
-                    {
-                        "type": "section",
-                        "text": {
-                            "type": "mrkdwn",
-                            "text": (
-                                f"*New job: <{job.url}|{job.title}>*\n"
-                                f"*Company:* {job.company}  |  "
-                                f"*Location:* {job.location or 'N/A'}  |  "
-                                f"*Team:* {job.team or 'N/A'}\n"
-                                f"_Discovered {job.discovered_at}_"
-                            ),
-                        },
-                    }
-                ]
-            }
+    for message in messages:
+        payload = {"content": message} if is_discord else {"text": message}
 
         try:
             r = SESSION.post(webhook_url, json=payload, timeout=10)
@@ -362,16 +424,19 @@ def send_webhook(webhook_url: str, new_jobs: list[Job]):
             log.error("Webhook delivery failed: %s", e)
 
 
-def send_telegram(bot_token: str, chat_id: str, new_jobs: list[Job]):
+def send_telegram(bot_token: str, chat_id: str, new_jobs: list[Job], internship_jobs: list[Job]):
     """Send notifications via Telegram bot."""
-    for job in new_jobs:
-        text = (
-            f"New job: *{job.title}*\n"
-            f"Company: {job.company}\n"
-            f"Location: {job.location or 'N/A'}  |  Team: {job.team or 'N/A'}\n"
-            f"[Apply]({job.url})\n"
-            f"Discovered: {job.discovered_at}"
-        )
+    messages = chunk_sectioned_alerts(
+        [
+            ("New job postings", new_jobs),
+            ("Internship / co-op reminders", internship_jobs),
+        ],
+        link_style="markdown",
+        max_length=3800,
+        header_format="*{title}*",
+    )
+
+    for text in messages:
         url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
         try:
             SESSION.post(url, json={
@@ -400,6 +465,8 @@ def run():
     companies = config.get("companies", [])
     global_include = config.get("filters", {}).get("include_keywords", [])
     global_exclude = config.get("filters", {}).get("exclude_keywords", [])
+    reminder_config = config.get("reminders", {})
+    internship_keywords = reminder_config.get("internship_keywords", DEFAULT_INTERNSHIP_KEYWORDS)
     notifications = config.get("notifications", {})
 
     webhook_url = os.environ.get("WEBHOOK_URL", notifications.get("webhook_url", ""))
@@ -414,6 +481,7 @@ def run():
         if company_name in configured_company_names
     }
     all_new_jobs: list[Job] = []
+    all_current_jobs: list[Job] = []
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     for company in companies:
@@ -439,6 +507,7 @@ def run():
         except Exception as e:
             log.error("Failed to fetch %s: %s", name, e)
             continue
+        all_current_jobs.extend(current_jobs)
 
         # Diff against known IDs
         known_ids = set(state.get(name, []))
@@ -464,15 +533,24 @@ def run():
 
     # Send notifications
     if all_new_jobs:
+        internship_jobs = [
+            job
+            for job in all_current_jobs
+            if is_internship_job(job, internship_keywords)
+        ]
         log.info("Sending alerts for %d new posting(s)...", len(all_new_jobs))
+        log.info("Including %d internship/co-op reminder posting(s).", len(internship_jobs))
         if webhook_url:
-            send_webhook(webhook_url, all_new_jobs)
+            send_webhook(webhook_url, all_new_jobs, internship_jobs)
         if telegram_token and telegram_chat:
-            send_telegram(telegram_token, telegram_chat, all_new_jobs)
+            send_telegram(telegram_token, telegram_chat, all_new_jobs, internship_jobs)
         if not webhook_url and not telegram_token:
             log.warning("No notification channel configured - printing to stdout")
-            for j in all_new_jobs:
-                print(f"  NEW [{j.company}] {j.title} - {j.location} - {j.url}")
+            for message in chunk_sectioned_alerts([
+                ("New job postings", all_new_jobs),
+                ("Internship / co-op reminders", internship_jobs),
+            ]):
+                print(message)
     else:
         log.info("No new postings found this run.")
 
@@ -484,6 +562,14 @@ def run():
             if all_new_jobs:
                 f.write(f"**{len(all_new_jobs)} new posting(s) found:**\n\n")
                 for j in all_new_jobs:
+                    f.write(f"- [{j.title}]({j.url}) @ {j.company} ({j.location})\n")
+                internship_jobs = [
+                    job
+                    for job in all_current_jobs
+                    if is_internship_job(job, internship_keywords)
+                ]
+                f.write(f"\n**{len(internship_jobs)} internship/co-op reminder posting(s):**\n\n")
+                for j in internship_jobs:
                     f.write(f"- [{j.title}]({j.url}) @ {j.company} ({j.location})\n")
             else:
                 f.write("No new postings.\n")

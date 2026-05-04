@@ -32,6 +32,11 @@ The first successful run seeds `state.json`, so future runs alert only for genui
 
 Do not paste the webhook URL into `config.yaml`; keep it as a GitHub secret.
 
+Alerts are grouped into two sections:
+
+- `New job postings` - roles that were not seen in the previous run.
+- `Internship / co-op reminders` - all currently open roles matching the reminder keywords in `config.yaml`.
+
 ## GitHub Setup
 
 From this folder:
