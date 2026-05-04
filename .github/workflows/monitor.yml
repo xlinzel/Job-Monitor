@@ -4,6 +4,15 @@ on:
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
+    inputs:
+      test_alert:
+        description: "Send a Discord/Telegram test alert instead of checking jobs"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
 
 permissions:
   contents: write
@@ -30,9 +39,11 @@ jobs:
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TEST_ALERT: ${{ github.event.inputs.test_alert || 'false' }}
         run: python monitor.py
 
       - name: Commit updated state
+        if: ${{ github.event.inputs.test_alert != 'true' }}
         run: |
           git config user.name "job-monitor[bot]"
           git config user.email "bot@users.noreply.github.com"

@@ -53,6 +53,18 @@ Paste your Discord webhook URL when `gh secret set WEBHOOK_URL` prompts for it.
 
 Then open the repo on GitHub, go to `Actions`, enable workflows if prompted, and run `Job Monitor` manually once. After that, `.github/workflows/monitor.yml` runs it every 15 minutes.
 
+## Testing Discord
+
+Normal runs only send Discord messages when a new job is found. To test the webhook without waiting for a real posting:
+
+1. Open the repo on GitHub.
+2. Go to `Actions` -> `Job Monitor`.
+3. Click `Run workflow`.
+4. Set `test_alert` to `true`.
+5. Click `Run workflow`.
+
+If the `WEBHOOK_URL` secret is set correctly, Discord should receive a test message with the same two alert sections. If the secret is missing or invalid, the workflow fails and the logs show the webhook error.
+
 ## Adding Companies
 
 Edit `config.yaml`. Supported ATS values are:

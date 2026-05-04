@@ -392,10 +392,10 @@ def chunk_sectioned_alerts(
     return messages
 
 
-def send_webhook(webhook_url: str, new_jobs: list[Job], internship_jobs: list[Job]):
+def send_webhook(webhook_url: str, new_jobs: list[Job], internship_jobs: list[Job]) -> bool:
     """Send a notification via Slack or Discord webhook."""
     if not new_jobs:
-        return
+        return True
 
     webhook_url = webhook_url.strip()
     if webhook_url.rstrip("/").endswith("/slack") and "discord" in webhook_url:
@@ -413,6 +413,7 @@ def send_webhook(webhook_url: str, new_jobs: list[Job], internship_jobs: list[Jo
         header_format="**{title}**" if is_discord else "*{title}*",
     )
 
+    delivered_all = True
     for message in messages:
         payload = {"content": message} if is_discord else {"text": message}
 
@@ -421,10 +422,12 @@ def send_webhook(webhook_url: str, new_jobs: list[Job], internship_jobs: list[Jo
             r.raise_for_status()
             time.sleep(0.5)  # respect rate limits
         except Exception as e:
+            delivered_all = False
             log.error("Webhook delivery failed: %s", e)
+    return delivered_all
 
 
-def send_telegram(bot_token: str, chat_id: str, new_jobs: list[Job], internship_jobs: list[Job]):
+def send_telegram(bot_token: str, chat_id: str, new_jobs: list[Job], internship_jobs: list[Job]) -> bool:
     """Send notifications via Telegram bot."""
     messages = chunk_sectioned_alerts(
         [
@@ -436,18 +439,68 @@ def send_telegram(bot_token: str, chat_id: str, new_jobs: list[Job], internship_
         header_format="*{title}*",
     )
 
+    delivered_all = True
     for text in messages:
         url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
         try:
-            SESSION.post(url, json={
+            r = SESSION.post(url, json={
                 "chat_id": chat_id,
                 "text": text,
                 "parse_mode": "Markdown",
                 "disable_web_page_preview": True,
             }, timeout=10)
+            r.raise_for_status()
             time.sleep(0.3)
         except Exception as e:
+            delivered_all = False
             log.error("Telegram delivery failed: %s", e)
+    return delivered_all
+
+
+def is_truthy_env(value: str) -> bool:
+    """Parse GitHub Actions input/environment booleans."""
+    return value.strip().lower() in {"1", "true", "yes", "y", "on"}
+
+
+def send_test_alert(webhook_url: str, telegram_token: str, telegram_chat: str, now: str) -> bool:
+    """Send a harmless alert to verify notification wiring."""
+    test_new_jobs = [
+        Job(
+            id="test-new-job",
+            title="Test alert from Job Monitor",
+            url="https://github.com/xlinzel/Job-Monitor/actions",
+            location="Notification test",
+            team="Monitor",
+            company="Job Monitor",
+            discovered_at=now,
+        )
+    ]
+    test_internship_jobs = [
+        Job(
+            id="test-internship-reminder",
+            title="Example Internship / Co-op Reminder",
+            url="https://github.com/xlinzel/Job-Monitor",
+            location="Notification test",
+            team="Reminder",
+            company="Job Monitor",
+            discovered_at=now,
+        )
+    ]
+
+    delivered = True
+    if webhook_url:
+        delivered = send_webhook(webhook_url, test_new_jobs, test_internship_jobs) and delivered
+    if telegram_token and telegram_chat:
+        delivered = send_telegram(telegram_token, telegram_chat, test_new_jobs, test_internship_jobs) and delivered
+    if not webhook_url and not telegram_token:
+        delivered = False
+        log.warning("No notification channel configured - printing test alert to stdout")
+        for message in chunk_sectioned_alerts([
+            ("New job postings", test_new_jobs),
+            ("Internship / co-op reminders", test_internship_jobs),
+        ]):
+            print(message)
+    return delivered
 
 
 # ---------------------------------------------------------------------------
@@ -472,6 +525,20 @@ def run():
     webhook_url = os.environ.get("WEBHOOK_URL", notifications.get("webhook_url", ""))
     telegram_token = os.environ.get("TELEGRAM_BOT_TOKEN", notifications.get("telegram_bot_token", ""))
     telegram_chat = os.environ.get("TELEGRAM_CHAT_ID", notifications.get("telegram_chat_id", ""))
+    test_alert = is_truthy_env(os.environ.get("TEST_ALERT", "false"))
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+    if test_alert:
+        log.info("TEST_ALERT=true - sending test alert and skipping job fetch/state update.")
+        delivered = send_test_alert(webhook_url, telegram_token, telegram_chat, now)
+        summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+        if summary_path:
+            with open(summary_path, "a") as f:
+                f.write(f"## Job Monitor Test Alert - {now}\n\n")
+                f.write("Test alert delivered.\n" if delivered else "Test alert failed. Check workflow logs and secrets.\n")
+        if not delivered:
+            sys.exit(1)
+        return
 
     # Load previous state
     configured_company_names = {company["name"] for company in companies}
@@ -482,7 +549,6 @@ def run():
     }
     all_new_jobs: list[Job] = []
     all_current_jobs: list[Job] = []
-    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     for company in companies:
         name = company["name"]
