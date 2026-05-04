@@ -328,6 +328,28 @@ def save_state(path: str, state: dict):
     Path(path).write_text(json.dumps(state, indent=2))
 
 
+def get_state_meta(state: dict) -> dict:
+    """Return persistent metadata stored alongside company job IDs."""
+    meta = state.get("_meta")
+    if not isinstance(meta, dict):
+        meta = {}
+        state["_meta"] = meta
+    return meta
+
+
+def prune_state_for_configured_companies(state: dict, companies: list[dict]) -> dict:
+    """Keep configured companies plus internal metadata."""
+    configured_company_names = {company["name"] for company in companies}
+    pruned = {
+        company_name: job_ids
+        for company_name, job_ids in state.items()
+        if company_name in configured_company_names
+    }
+    if isinstance(state.get("_meta"), dict):
+        pruned["_meta"] = state["_meta"]
+    return pruned
+
+
 # ---------------------------------------------------------------------------
 # Notification
 # ---------------------------------------------------------------------------
@@ -354,7 +376,7 @@ def clean_markdown_text(value: str) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
 
 
-def format_job_line(job: Job, link_style: str = "markdown") -> str:
+def format_job_line(job: Job, link_style: str = "markdown", number: Optional[int] = None) -> str:
     title = clean_markdown_text(job.title) or "Untitled role"
     company = clean_markdown_text(job.company) or "Unknown company"
     location = clean_markdown_text(job.location)
@@ -370,7 +392,8 @@ def format_job_line(job: Job, link_style: str = "markdown") -> str:
         details.append(location)
     if team:
         details.append(team)
-    return f"- {title_part} - {' | '.join(details)}"
+    prefix = f"{number}. " if number is not None else "- "
+    return f"{prefix}{title_part} - {' | '.join(details)}"
 
 
 def chunk_sectioned_alerts(
@@ -378,14 +401,23 @@ def chunk_sectioned_alerts(
     link_style: str = "markdown",
     max_length: int = 1900,
     header_format: str = "**{title}**",
+    numbered_sections: Optional[set[str]] = None,
 ) -> list[str]:
     """Build one or more sectioned alert messages within platform limits."""
     messages: list[str] = []
     current = ""
+    numbered_sections = numbered_sections or set()
 
     for section_title, jobs in sections:
         header = header_format.format(title=section_title) + "\n"
-        lines = [format_job_line(job, link_style) for job in sorted(jobs, key=lambda j: (j.company, j.title))]
+        sorted_jobs = sorted(jobs, key=lambda j: (j.company, j.title))
+        if section_title in numbered_sections:
+            lines = [
+                format_job_line(job, link_style, number=index)
+                for index, job in enumerate(sorted_jobs, start=1)
+            ]
+        else:
+            lines = [format_job_line(job, link_style) for job in sorted_jobs]
         if not lines:
             lines = ["- None right now"]
 
@@ -409,6 +441,178 @@ def chunk_sectioned_alerts(
     return messages
 
 
+def build_reminder_map(internship_jobs: list[Job]) -> dict:
+    """Map visible reminder numbers to persistent job metadata."""
+    reminder_map = {}
+    sorted_jobs = sorted(internship_jobs, key=lambda j: (j.company, j.title))
+    for index, job in enumerate(sorted_jobs, start=1):
+        reminder_map[str(index)] = {
+            "id": job.id,
+            "title": job.title,
+            "company": job.company,
+            "location": job.location,
+            "url": job.url,
+        }
+    return reminder_map
+
+
+def send_plain_webhook(webhook_url: str, content: str) -> bool:
+    """Send a simple Discord/Slack-compatible text message."""
+    webhook_url = webhook_url.strip()
+    if not webhook_url:
+        return False
+    if webhook_url.rstrip("/").endswith("/slack") and "discord" in webhook_url:
+        webhook_url = webhook_url.rstrip("/")[:-len("/slack")]
+
+    is_discord = "discord.com" in webhook_url or "discordapp.com" in webhook_url
+    payload = {"content": content, "allowed_mentions": {"parse": []}} if is_discord else {"text": content}
+    try:
+        resp = SESSION.post(webhook_url, json=payload, timeout=10)
+        resp.raise_for_status()
+        return True
+    except Exception as e:
+        log.error("Webhook delivery failed: %s", e)
+        return False
+
+
+def fetch_discord_messages(bot_token: str, channel_id: str, after_id: str = "") -> list[dict]:
+    """Fetch recent Discord channel messages using a bot token."""
+    url = f"https://discord.com/api/v10/channels/{channel_id}/messages"
+    params = {"limit": 100}
+    if after_id:
+        params["after"] = after_id
+    resp = SESSION.get(
+        url,
+        headers={"Authorization": f"Bot {bot_token}"},
+        params=params,
+        timeout=10,
+    )
+    resp.raise_for_status()
+    messages = resp.json()
+    return sorted(messages, key=lambda msg: int(msg["id"]))
+
+
+def parse_discord_command(content: str) -> Optional[tuple[str, list[int], bool]]:
+    """
+    Parse commands:
+      ignore 3 7 12
+      unignore 3
+      ignore all
+      ignored
+      job help
+    """
+    match = re.match(r"^\s*(?:!job\s+|job\s+|!)?(ignore|unignore|ignored|help)\b(.*)$", content, re.I)
+    if not match:
+        return None
+
+    command = match.group(1).lower()
+    rest = match.group(2).strip().lower()
+    all_requested = bool(re.search(r"\ball\b", rest))
+    numbers = [int(n) for n in re.findall(r"\d+", rest)]
+    return command, numbers, all_requested
+
+
+def describe_mapped_job(mapped_job: dict) -> str:
+    title = clean_markdown_text(mapped_job.get("title", "")) or "Untitled role"
+    company = clean_markdown_text(mapped_job.get("company", "")) or "Unknown company"
+    location = clean_markdown_text(mapped_job.get("location", ""))
+    suffix = f" - {location}" if location else ""
+    return f"{title} @ {company}{suffix}"
+
+
+def process_discord_commands(state: dict, bot_token: str, channel_id: str, webhook_url: str) -> bool:
+    """Process ignore/unignore commands from Discord and persist them in state metadata."""
+    if not bot_token or not channel_id:
+        return False
+
+    meta = get_state_meta(state)
+    last_message_id = str(meta.get("last_discord_command_message_id", ""))
+    try:
+        messages = fetch_discord_messages(bot_token, channel_id, last_message_id)
+    except Exception as e:
+        log.error("Failed to fetch Discord messages for commands: %s", e)
+        return False
+
+    if not messages:
+        return False
+
+    reminder_map = meta.get("last_reminder_map", {})
+    ignored_ids = set(meta.get("ignored_internship_job_ids", []))
+    changed = False
+
+    for message in messages:
+        meta["last_discord_command_message_id"] = message["id"]
+        author = message.get("author", {})
+        if author.get("bot") or message.get("webhook_id"):
+            continue
+
+        parsed = parse_discord_command(message.get("content", ""))
+        if not parsed:
+            continue
+
+        command, numbers, all_requested = parsed
+        if command == "help":
+            send_plain_webhook(
+                webhook_url,
+                "Job Monitor commands:\n"
+                "- `ignore 3 7 12` hides numbered internship/co-op reminders.\n"
+                "- `unignore 3 7` shows numbered reminders again.\n"
+                "- `ignore all` hides all currently numbered reminders.\n"
+                "- `ignored` lists how many reminder jobs are hidden.",
+            )
+            continue
+
+        if command == "ignored":
+            send_plain_webhook(
+                webhook_url,
+                f"Currently ignoring {len(ignored_ids)} internship/co-op reminder posting(s).",
+            )
+            continue
+
+        if not reminder_map:
+            send_plain_webhook(
+                webhook_url,
+                "I do not have a numbered reminder list yet. Wait for the next alert, then reply with `ignore 3 7`.",
+            )
+            continue
+
+        selected_numbers = sorted(int(n) for n in reminder_map.keys()) if all_requested else numbers
+        if not selected_numbers:
+            send_plain_webhook(webhook_url, f"Usage: `{command} 3 7 12`")
+            continue
+
+        selected_jobs = []
+        missing_numbers = []
+        for number in selected_numbers:
+            mapped_job = reminder_map.get(str(number))
+            if not mapped_job:
+                missing_numbers.append(number)
+                continue
+            selected_jobs.append((number, mapped_job))
+
+        if command == "ignore":
+            for _, mapped_job in selected_jobs:
+                ignored_ids.add(mapped_job["id"])
+            action_label = "Ignored"
+        else:
+            for _, mapped_job in selected_jobs:
+                ignored_ids.discard(mapped_job["id"])
+            action_label = "Unignored"
+
+        changed = True
+        lines = [f"{action_label} {len(selected_jobs)} reminder posting(s)."]
+        for number, mapped_job in selected_jobs[:10]:
+            lines.append(f"- {number}. {describe_mapped_job(mapped_job)}")
+        if len(selected_jobs) > 10:
+            lines.append(f"- ...and {len(selected_jobs) - 10} more")
+        if missing_numbers:
+            lines.append(f"Unknown reminder number(s): {', '.join(str(n) for n in missing_numbers)}")
+        send_plain_webhook(webhook_url, "\n".join(lines))
+
+    meta["ignored_internship_job_ids"] = sorted(ignored_ids)
+    return changed
+
+
 def send_webhook(webhook_url: str, new_jobs: list[Job], internship_jobs: list[Job]) -> bool:
     """Send a notification via Slack or Discord webhook."""
     if not new_jobs:
@@ -428,11 +632,12 @@ def send_webhook(webhook_url: str, new_jobs: list[Job], internship_jobs: list[Jo
         link_style=link_style,
         max_length=1900 if is_discord else 2800,
         header_format="**{title}**" if is_discord else "*{title}*",
+        numbered_sections={"Internship / co-op reminders"},
     )
 
     delivered_all = True
     for message in messages:
-        payload = {"content": message} if is_discord else {"text": message}
+        payload = {"content": message, "allowed_mentions": {"parse": []}} if is_discord else {"text": message}
 
         try:
             r = SESSION.post(webhook_url, json=payload, timeout=10)
@@ -454,6 +659,7 @@ def send_telegram(bot_token: str, chat_id: str, new_jobs: list[Job], internship_
         link_style="markdown",
         max_length=3800,
         header_format="*{title}*",
+        numbered_sections={"Internship / co-op reminders"},
     )
 
     delivered_all = True
@@ -542,6 +748,8 @@ def run():
     webhook_url = os.environ.get("WEBHOOK_URL", notifications.get("webhook_url", ""))
     telegram_token = os.environ.get("TELEGRAM_BOT_TOKEN", notifications.get("telegram_bot_token", ""))
     telegram_chat = os.environ.get("TELEGRAM_CHAT_ID", notifications.get("telegram_chat_id", ""))
+    discord_bot_token = os.environ.get("DISCORD_BOT_TOKEN", "")
+    discord_channel_id = os.environ.get("DISCORD_CHANNEL_ID", "")
     test_alert = is_truthy_env(os.environ.get("TEST_ALERT", "false"))
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
@@ -558,12 +766,10 @@ def run():
         return
 
     # Load previous state
-    configured_company_names = {company["name"] for company in companies}
-    state = {
-        company_name: job_ids
-        for company_name, job_ids in load_state(STATE_PATH).items()
-        if company_name in configured_company_names
-    }
+    state = prune_state_for_configured_companies(load_state(STATE_PATH), companies)
+    process_discord_commands(state, discord_bot_token, discord_channel_id, webhook_url)
+    meta = get_state_meta(state)
+    ignored_internship_ids = set(meta.get("ignored_internship_job_ids", []))
     all_new_jobs: list[Job] = []
     all_current_jobs: list[Job] = []
 
@@ -619,8 +825,9 @@ def run():
         internship_jobs = [
             job
             for job in all_current_jobs
-            if is_internship_job(job, internship_keywords)
+            if is_internship_job(job, internship_keywords) and job.id not in ignored_internship_ids
         ]
+        meta["last_reminder_map"] = build_reminder_map(internship_jobs)
         log.info("Sending alerts for %d new posting(s)...", len(all_new_jobs))
         log.info("Including %d internship/co-op reminder posting(s).", len(internship_jobs))
         if webhook_url:
@@ -632,8 +839,9 @@ def run():
             for message in chunk_sectioned_alerts([
                 ("New job postings", all_new_jobs),
                 ("Internship / co-op reminders", internship_jobs),
-            ]):
+            ], numbered_sections={"Internship / co-op reminders"}):
                 print(message)
+        save_state(STATE_PATH, state)
     else:
         log.info("No new postings found this run.")
 
@@ -649,7 +857,7 @@ def run():
                 internship_jobs = [
                     job
                     for job in all_current_jobs
-                    if is_internship_job(job, internship_keywords)
+                    if is_internship_job(job, internship_keywords) and job.id not in ignored_internship_ids
                 ]
                 f.write(f"\n**{len(internship_jobs)} internship/co-op reminder posting(s):**\n\n")
                 for j in internship_jobs:
