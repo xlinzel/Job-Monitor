@@ -1,0 +1,76 @@
+# =============================================================================
+# Job Monitor Configuration
+# =============================================================================
+# Supported ATS types: greenhouse, lever, ashby, workday, smartrecruiters, html
+#
+# To find a company's ATS, check their careers page URL:
+#   - Greenhouse      → boards.greenhouse.io/SLUG
+#   - Lever           → jobs.lever.co/SLUG
+#   - Ashby           → jobs.ashbyhq.com/SLUG
+#   - Workday         → TENANT.wd1.myworkdayjobs.com (slug = "tenant/site")
+#   - SmartRecruiters → careers.smartrecruiters.com/SLUG
+#   - Otherwise       → use 'html' with the full careers page URL
+# =============================================================================
+
+companies:
+  # --- Ashby companies ---
+
+  - name: Fuse
+    ats: ashby
+    slug: Fuse
+
+  - name: Inertia
+    ats: ashby
+    slug: inertia
+
+  - name: Atomic Semi
+    ats: ashby
+    slug: AtomicSemi
+
+  - name: Etched
+    ats: ashby
+    slug: etched
+
+  # --- Lever companies ---
+
+  - name: Diamond Foundry
+    ats: lever
+    slug: diamondfoundry
+
+  # --- Greenhouse companies ---
+
+  - name: Lightmatter
+    ats: greenhouse
+    slug: lightmatter
+
+  # --- Workday companies (fully paginated) ---
+
+  - name: Marvell
+    ats: workday
+    slug: marvell/MarvellCareers
+
+  # --- SmartRecruiters companies ---
+
+  - name: Neurable
+    ats: smartrecruiters
+    slug: NeurableINC
+
+# =============================================================================
+# Global keyword filters
+# =============================================================================
+filters:
+  include_keywords:
+    # - "software engineer"
+    # - "backend"
+    # - "senior engineer"
+  exclude_keywords:
+    # - "intern"
+    # - "director"
+
+# =============================================================================
+# Notifications — set via GitHub Actions secrets (recommended)
+# =============================================================================
+notifications:
+  webhook_url: ""
+  telegram_bot_token: ""
+  telegram_chat_id: ""
