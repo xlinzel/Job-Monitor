@@ -12,6 +12,7 @@ import os
 import re
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field, asdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -62,9 +63,11 @@ class Job:
 # ATS Fetchers
 # ---------------------------------------------------------------------------
 
+REQUEST_HEADERS = {"User-Agent": "JobMonitorBot/1.0"}
 SESSION = requests.Session()
-SESSION.headers.update({"User-Agent": "JobMonitorBot/1.0"})
+SESSION.headers.update(REQUEST_HEADERS)
 REQUEST_TIMEOUT = 30
+WORKDAY_PAGE_WORKERS = max(1, int(os.environ.get("WORKDAY_PAGE_WORKERS", "6")))
 DEFAULT_INTERNSHIP_KEYWORDS = [
     "intern",
     "internship",
@@ -160,25 +163,16 @@ def fetch_workday(company_slug: str, company_name: str) -> list[Job]:
 
     jobs = []
     seen_ids = set()
-    offset = 0
     page_size = 20
     max_pages = 50  # safety cap: 50 * 20 = 1000 jobs max
-    expected_total: Optional[int] = None
 
-    for _ in range(max_pages):
-        payload = {"appliedFacets": {}, "limit": page_size, "offset": offset, "searchText": ""}
-        resp = SESSION.post(url, json=payload, timeout=REQUEST_TIMEOUT)
+    def fetch_page(page_offset: int) -> tuple[int, dict]:
+        payload = {"appliedFacets": {}, "limit": page_size, "offset": page_offset, "searchText": ""}
+        resp = requests.post(url, json=payload, headers=REQUEST_HEADERS, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
-        data = resp.json()
+        return page_offset, resp.json()
 
-        postings = data.get("jobPostings", [])
-        if not postings:
-            break
-
-        page_total = data.get("total")
-        if isinstance(page_total, int) and page_total > 0:
-            expected_total = page_total
-
+    def add_postings(postings: list[dict]):
         for item in postings:
             ext_path = item.get("externalPath", "")
             job_id = ext_path or item.get("bulletFields", [""])[0]
@@ -194,9 +188,32 @@ def fetch_workday(company_slug: str, company_name: str) -> list[Job]:
             )
             jobs.append(job)
 
-        offset += page_size
-        if expected_total and len(jobs) >= expected_total:
+    _, first_page = fetch_page(0)
+    first_postings = first_page.get("jobPostings", [])
+    if not first_postings:
+        return jobs
+
+    add_postings(first_postings)
+    expected_total = first_page.get("total")
+
+    if isinstance(expected_total, int) and expected_total > page_size:
+        max_offset = min(expected_total, max_pages * page_size)
+        remaining_offsets = list(range(page_size, max_offset, page_size))
+        with ThreadPoolExecutor(max_workers=min(WORKDAY_PAGE_WORKERS, len(remaining_offsets))) as executor:
+            futures = [executor.submit(fetch_page, page_offset) for page_offset in remaining_offsets]
+            for future in as_completed(futures):
+                _, data = future.result()
+                add_postings(data.get("jobPostings", []))
+        return jobs
+
+    offset = page_size
+    for _ in range(1, max_pages):
+        _, data = fetch_page(offset)
+        postings = data.get("jobPostings", [])
+        if not postings:
             break
+        add_postings(postings)
+        offset += page_size
         if len(postings) < page_size:
             break
         time.sleep(0.3)  # be polite
