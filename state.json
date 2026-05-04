@@ -92,6 +92,7 @@
     "2c65eabf-46e3-4a5c-9fee-96233226cf1e",
     "41123ae5-2489-4ac7-a4ed-c0c75faf5927",
     "4497473d-0ce0-4e83-88c3-2afedceac622",
+    "48923113-b51e-4c3a-ade9-47ac08313447",
     "5027e7cf-6c96-48f5-9cf3-2104e3f4d87a",
     "5d687a8f-ed34-47de-9af7-6a66a69a2695",
     "615feebf-d9e3-4583-9c85-ba16af44e65c",
@@ -104,6 +105,7 @@
     "8ca90a3c-de5b-4b18-9ea1-25fa6dcf8a88",
     "947338ca-e135-4398-9aa3-79e131bc03d5",
     "95e8d73e-3b0a-4ff7-89dc-1a2ce3bc549e",
+    "a4edea14-08e9-46cf-9449-4bedb8b29dd9",
     "b6fa159b-9dd7-45ef-9756-93ff5f06dbd9",
     "b8125f35-d000-414e-8cba-c45f4273e5df",
     "bf649c72-4932-47ac-b076-6f753797a061",
@@ -828,6 +830,400 @@
   ],
   "_meta": {
     "last_discord_command_message_id": "1501000494917619783",
-    "ignored_internship_job_ids": []
+    "ignored_internship_job_ids": [],
+    "last_reminder_map": {
+      "1": {
+        "id": "615feebf-d9e3-4583-9c85-ba16af44e65c",
+        "title": "Automation Software Engineering Intern - Fall",
+        "company": "Atomic Semi",
+        "location": "Austin Office",
+        "url": "https://jobs.ashbyhq.com/AtomicSemi/615feebf-d9e3-4583-9c85-ba16af44e65c"
+      },
+      "2": {
+        "id": "82c5b442-17de-4249-8b67-db11c2f83051",
+        "title": "Circuit Design Intern - Fall",
+        "company": "Atomic Semi",
+        "location": "Austin Office",
+        "url": "https://jobs.ashbyhq.com/AtomicSemi/82c5b442-17de-4249-8b67-db11c2f83051"
+      },
+      "3": {
+        "id": "ea384667-0913-49cc-8982-ebf0fe2620c6",
+        "title": "Electrical Engineering Intern - Fall",
+        "company": "Atomic Semi",
+        "location": "Austin Office",
+        "url": "https://jobs.ashbyhq.com/AtomicSemi/ea384667-0913-49cc-8982-ebf0fe2620c6"
+      },
+      "4": {
+        "id": "41123ae5-2489-4ac7-a4ed-c0c75faf5927",
+        "title": "Electrical Engineering Intern, High Frequency Power Electronics - Fall",
+        "company": "Atomic Semi",
+        "location": "Austin Office",
+        "url": "https://jobs.ashbyhq.com/AtomicSemi/41123ae5-2489-4ac7-a4ed-c0c75faf5927"
+      },
+      "5": {
+        "id": "de448098-ffc6-4b99-b341-d6a5874f390f",
+        "title": "Embedded Software Engineering Intern - Fall",
+        "company": "Atomic Semi",
+        "location": "Austin Office",
+        "url": "https://jobs.ashbyhq.com/AtomicSemi/de448098-ffc6-4b99-b341-d6a5874f390f"
+      },
+      "6": {
+        "id": "947338ca-e135-4398-9aa3-79e131bc03d5",
+        "title": "Fab Software Engineering Intern - Fall",
+        "company": "Atomic Semi",
+        "location": "Austin Office",
+        "url": "https://jobs.ashbyhq.com/AtomicSemi/947338ca-e135-4398-9aa3-79e131bc03d5"
+      },
+      "7": {
+        "id": "867c67f7-20b5-4726-b9da-85a760d3851e",
+        "title": "Infrastructure Software Engineering Intern - Fall",
+        "company": "Atomic Semi",
+        "location": "San Francisco Office",
+        "url": "https://jobs.ashbyhq.com/AtomicSemi/867c67f7-20b5-4726-b9da-85a760d3851e"
+      },
+      "8": {
+        "id": "48923113-b51e-4c3a-ade9-47ac08313447",
+        "title": "Mechanical Engineering Intern - Fall",
+        "company": "Atomic Semi",
+        "location": "Austin Office",
+        "url": "https://jobs.ashbyhq.com/AtomicSemi/48923113-b51e-4c3a-ade9-47ac08313447"
+      },
+      "9": {
+        "id": "4497473d-0ce0-4e83-88c3-2afedceac622",
+        "title": "Packaging Engineering Intern - Fall",
+        "company": "Atomic Semi",
+        "location": "Austin Office",
+        "url": "https://jobs.ashbyhq.com/AtomicSemi/4497473d-0ce0-4e83-88c3-2afedceac622"
+      },
+      "10": {
+        "id": "a4edea14-08e9-46cf-9449-4bedb8b29dd9",
+        "title": "Process Engineering Intern - Fall",
+        "company": "Atomic Semi",
+        "location": "Austin Office",
+        "url": "https://jobs.ashbyhq.com/AtomicSemi/a4edea14-08e9-46cf-9449-4bedb8b29dd9"
+      },
+      "11": {
+        "id": "009d0819-c688-4ab9-8816-a3c7ab002470",
+        "title": "Rust Software Engineering Intern - Fall",
+        "company": "Atomic Semi",
+        "location": "Austin Office",
+        "url": "https://jobs.ashbyhq.com/AtomicSemi/009d0819-c688-4ab9-8816-a3c7ab002470"
+      },
+      "12": {
+        "id": "16be0306-eab7-459d-af45-94ca7fffc54d",
+        "title": "Device Engineering Intern",
+        "company": "Diamond Foundry",
+        "location": "Bay Area, California",
+        "url": "https://jobs.lever.co/diamondfoundry/16be0306-eab7-459d-af45-94ca7fffc54d"
+      },
+      "13": {
+        "id": "6f23713f-5409-45b7-aae8-adb8710cdbc3",
+        "title": "Architecture Intern - Inference",
+        "company": "Etched",
+        "location": "San Jose",
+        "url": "https://jobs.ashbyhq.com/etched/6f23713f-5409-45b7-aae8-adb8710cdbc3"
+      },
+      "14": {
+        "id": "5f1f5739-3b58-467c-b351-ff183c94d96d",
+        "title": "DFT Intern",
+        "company": "Etched",
+        "location": "San Jose",
+        "url": "https://jobs.ashbyhq.com/etched/5f1f5739-3b58-467c-b351-ff183c94d96d"
+      },
+      "15": {
+        "id": "dacedaca-c4ca-4964-85a7-8df1738005bb",
+        "title": "DV Intern",
+        "company": "Etched",
+        "location": "San Jose",
+        "url": "https://jobs.ashbyhq.com/etched/dacedaca-c4ca-4964-85a7-8df1738005bb"
+      },
+      "16": {
+        "id": "904ddf46-55fc-4a8f-8b49-f32cfe88116a",
+        "title": "Electrical Platform Intern",
+        "company": "Etched",
+        "location": "San Jose",
+        "url": "https://jobs.ashbyhq.com/etched/904ddf46-55fc-4a8f-8b49-f32cfe88116a"
+      },
+      "17": {
+        "id": "699f3ab2-07e4-466c-9d76-3d4a3abb4ebc",
+        "title": "Firmware Intern",
+        "company": "Etched",
+        "location": "San Jose",
+        "url": "https://jobs.ashbyhq.com/etched/699f3ab2-07e4-466c-9d76-3d4a3abb4ebc"
+      },
+      "18": {
+        "id": "1b073af4-6764-45ca-a22d-40a4823f0877",
+        "title": "Infrastructure Intern",
+        "company": "Etched",
+        "location": "San Jose",
+        "url": "https://jobs.ashbyhq.com/etched/1b073af4-6764-45ca-a22d-40a4823f0877"
+      },
+      "19": {
+        "id": "bd8c5768-7efa-4a18-9e56-485ccaf4ec77",
+        "title": "PD Intern",
+        "company": "Etched",
+        "location": "San Jose",
+        "url": "https://jobs.ashbyhq.com/etched/bd8c5768-7efa-4a18-9e56-485ccaf4ec77"
+      },
+      "20": {
+        "id": "f05e3218-5ec7-41d1-bc99-bb7014422229",
+        "title": "Platform Intern - ME",
+        "company": "Etched",
+        "location": "San Jose",
+        "url": "https://jobs.ashbyhq.com/etched/f05e3218-5ec7-41d1-bc99-bb7014422229"
+      },
+      "21": {
+        "id": "157ed4f4-6e3b-4ec9-b93f-3e363e92041e",
+        "title": "RTL Intern",
+        "company": "Etched",
+        "location": "San Jose",
+        "url": "https://jobs.ashbyhq.com/etched/157ed4f4-6e3b-4ec9-b93f-3e363e92041e"
+      },
+      "22": {
+        "id": "982a8ee4-5e1e-43c7-a918-6dac285cdddd",
+        "title": "Supercomputing Intern",
+        "company": "Etched",
+        "location": "San Jose",
+        "url": "https://jobs.ashbyhq.com/etched/982a8ee4-5e1e-43c7-a918-6dac285cdddd"
+      },
+      "23": {
+        "id": "639fe410-56a4-44aa-ac93-8ee7c10c7d75",
+        "title": "Talent Intern",
+        "company": "Etched",
+        "location": "San Jose",
+        "url": "https://jobs.ashbyhq.com/etched/639fe410-56a4-44aa-ac93-8ee7c10c7d75"
+      },
+      "24": {
+        "id": "11aedfd6-8321-45af-b71e-492ea7ed3fff",
+        "title": "Thermo-Mechanical, CFD Simulation Engineering Intern",
+        "company": "Etched",
+        "location": "San Jose",
+        "url": "https://jobs.ashbyhq.com/etched/11aedfd6-8321-45af-b71e-492ea7ed3fff"
+      },
+      "25": {
+        "id": "65773f79-7be1-4594-816d-65b4576237e9",
+        "title": "Internship - Montreal",
+        "company": "Fuse",
+        "location": "Montreal, Quebec, Canada",
+        "url": "https://jobs.ashbyhq.com/Fuse/65773f79-7be1-4594-816d-65b4576237e9"
+      },
+      "26": {
+        "id": "ce9c7d6d-da98-421e-bceb-d8db2c798d61",
+        "title": "Internship - San Leandro",
+        "company": "Fuse",
+        "location": "San Leandro, California",
+        "url": "https://jobs.ashbyhq.com/Fuse/ce9c7d6d-da98-421e-bceb-d8db2c798d61"
+      },
+      "27": {
+        "id": "5117557008",
+        "title": "EDA Infrastructure, Intern",
+        "company": "Lightmatter",
+        "location": "Mountain View, CA",
+        "url": "https://boards.greenhouse.io/lightmatter/jobs/5117557008?gh_jid=5117557008"
+      },
+      "28": {
+        "id": "4980400008",
+        "title": "Reliability Test, Intern",
+        "company": "Lightmatter",
+        "location": "Mountain View, CA",
+        "url": "https://boards.greenhouse.io/lightmatter/jobs/4980400008?gh_jid=4980400008"
+      },
+      "29": {
+        "id": "/job/Ho-Chi-Minh/AI-Development-Intern_2502548",
+        "title": "AI Development Intern",
+        "company": "Marvell",
+        "location": "Ho Chi Minh",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Ho-Chi-Minh/AI-Development-Intern_2502548"
+      },
+      "30": {
+        "id": "/job/Cordoba-Argentina/Analog-Design-Engineer-Intern_2502679",
+        "title": "Analog Design Engineer Intern",
+        "company": "Marvell",
+        "location": "Cordoba, Argentina",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Cordoba-Argentina/Analog-Design-Engineer-Intern_2502679"
+      },
+      "31": {
+        "id": "/job/Vancouver-Canada/Analog-Engineer-Intern---PhD_2502424-1",
+        "title": "Analog Engineer Intern - PhD",
+        "company": "Marvell",
+        "location": "Vancouver, Canada",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Vancouver-Canada/Analog-Engineer-Intern---PhD_2502424-1"
+      },
+      "32": {
+        "id": "/job/Toronto-Canada/Analog-Engineer-Intern---PhD_2502426-1",
+        "title": "Analog Engineer Intern - PhD",
+        "company": "Marvell",
+        "location": "Toronto, Canada",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Toronto-Canada/Analog-Engineer-Intern---PhD_2502426-1"
+      },
+      "33": {
+        "id": "/job/Ottawa-Canada/Analog-Engineer-Intern---PhD_2502430-1",
+        "title": "Analog Engineer Intern - PhD",
+        "company": "Marvell",
+        "location": "Ottawa, Canada",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Ottawa-Canada/Analog-Engineer-Intern---PhD_2502430-1"
+      },
+      "34": {
+        "id": "/job/Hsinchu-City/Analog-IC-Design-Intern---Master-s-Degree_2502406",
+        "title": "Analog IC Design Intern - Master's Degree",
+        "company": "Marvell",
+        "location": "Hsinchu City",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Hsinchu-City/Analog-IC-Design-Intern---Master-s-Degree_2502406"
+      },
+      "35": {
+        "id": "/job/Ottawa-Canada/Analog-RF-Design-Engineer-Intern---Master-s-Degree_2502473-1",
+        "title": "Analog/RF Design Engineer Intern - Master's Degree",
+        "company": "Marvell",
+        "location": "Ottawa, Canada",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Ottawa-Canada/Analog-RF-Design-Engineer-Intern---Master-s-Degree_2502473-1"
+      },
+      "36": {
+        "id": "/job/Santa-Clara-CA/Applied-Machine-Learning-Scientist-Intern---PhD_2502662-1",
+        "title": "Applied Machine Learning Scientist Intern - PhD",
+        "company": "Marvell",
+        "location": "Santa Clara, CA",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Santa-Clara-CA/Applied-Machine-Learning-Scientist-Intern---PhD_2502662-1"
+      },
+      "37": {
+        "id": "/job/Pavia-Italy/DSP-System-Engineering-Intern---PhD_2600300",
+        "title": "DSP System Engineering Intern",
+        "company": "Marvell",
+        "location": "Pavia, Italy",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Pavia-Italy/DSP-System-Engineering-Intern---PhD_2600300"
+      },
+      "38": {
+        "id": "/job/Ottawa-Canada/Design-Verification-Design-Intern---Bachelors-Degree_2502780-1",
+        "title": "Design Verification/Design Intern - Bachelor's Degree (Fall 2026)",
+        "company": "Marvell",
+        "location": "Ottawa, Canada",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Ottawa-Canada/Design-Verification-Design-Intern---Bachelors-Degree_2502780-1"
+      },
+      "39": {
+        "id": "/job/Santa-Clara-CA/Design-DSP-Verification-Intern---PhD-Degree_2502786-1",
+        "title": "Design/DSP/Verification Intern - PhD Degree",
+        "company": "Marvell",
+        "location": "Santa Clara, CA",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Santa-Clara-CA/Design-DSP-Verification-Intern---PhD-Degree_2502786-1"
+      },
+      "40": {
+        "id": "/job/Cordoba-Argentina/Electrical-Design-Validation-Testing-Intern_2502676",
+        "title": "Electrical Design Validation Testing Intern",
+        "company": "Marvell",
+        "location": "Cordoba, Argentina",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Cordoba-Argentina/Electrical-Design-Validation-Testing-Intern_2502676"
+      },
+      "41": {
+        "id": "/job/Shanghai/Field-Application-Engineer-Intern--Hardware-_2601507",
+        "title": "Field Application Engineer Intern (Hardware)",
+        "company": "Marvell",
+        "location": "Shanghai",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Shanghai/Field-Application-Engineer-Intern--Hardware-_2601507"
+      },
+      "42": {
+        "id": "/job/Shanghai/Field-Application-Engineer-Intern--Software-_2601506",
+        "title": "Field Application Engineer Intern (Software)",
+        "company": "Marvell",
+        "location": "Shanghai",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Shanghai/Field-Application-Engineer-Intern--Software-_2601506"
+      },
+      "43": {
+        "id": "/job/Pavia-Italy/Firmware-Engineering-Intern_2601124",
+        "title": "Firmware Engineering Intern",
+        "company": "Marvell",
+        "location": "Pavia, Italy",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Pavia-Italy/Firmware-Engineering-Intern_2601124"
+      },
+      "44": {
+        "id": "/job/Cordoba-Argentina/Firmware-Intern_2600638",
+        "title": "Firmware Intern",
+        "company": "Marvell",
+        "location": "Cordoba, Argentina",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Cordoba-Argentina/Firmware-Intern_2600638"
+      },
+      "45": {
+        "id": "/job/Cordoba-Argentina/Firmware-Intern_2502689",
+        "title": "Firmware Intern",
+        "company": "Marvell",
+        "location": "Cordoba, Argentina",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Cordoba-Argentina/Firmware-Intern_2502689"
+      },
+      "46": {
+        "id": "/job/Ottawa-Canada/RF-Measurements-Intern---Masters-Degree_2502712-1",
+        "title": "Graduate Research Intern \u2013 Signal Integrity & Packaging Design - Masters Degree",
+        "company": "Marvell",
+        "location": "Ottawa, Canada",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Ottawa-Canada/RF-Measurements-Intern---Masters-Degree_2502712-1"
+      },
+      "47": {
+        "id": "/job/CN---Shanghai/Intern--Technical-Sales_2601143",
+        "title": "Intern, Technical Sales",
+        "company": "Marvell",
+        "location": "3 Locations",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/CN---Shanghai/Intern--Technical-Sales_2601143"
+      },
+      "48": {
+        "id": "/job/Ottawa-Canada/Model-Correlation---SI-Intern---Master-s-Degree_2502364",
+        "title": "Model Correlation & SI Intern - Ph. D Degree",
+        "company": "Marvell",
+        "location": "Ottawa, Canada",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Ottawa-Canada/Model-Correlation---SI-Intern---Master-s-Degree_2502364"
+      },
+      "49": {
+        "id": "/job/Hyderabad/Next-Gen-AI-Systems---Infrastructure-Research-Intern---PhD_2502305",
+        "title": "Next-Gen AI Systems & Infrastructure Research Intern - PhD",
+        "company": "Marvell",
+        "location": "Hyderabad",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Hyderabad/Next-Gen-AI-Systems---Infrastructure-Research-Intern---PhD_2502305"
+      },
+      "50": {
+        "id": "/job/Bucharest-Romania/Layout---Simulations-Engineer-Intern_2502690",
+        "title": "Package Layout Design Intern",
+        "company": "Marvell",
+        "location": "Bucharest, Romania",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Bucharest-Romania/Layout---Simulations-Engineer-Intern_2502690"
+      },
+      "51": {
+        "id": "/job/Cordoba-Argentina/Physical-Design-Intern_2601502",
+        "title": "Physical Design Intern",
+        "company": "Marvell",
+        "location": "Cordoba, Argentina",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Cordoba-Argentina/Physical-Design-Intern_2601502"
+      },
+      "52": {
+        "id": "/job/Singapore/Silicon-Photonics-Intern---PhD_2502472",
+        "title": "Silicon Photonics Intern - Ph.D",
+        "company": "Marvell",
+        "location": "Singapore",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Singapore/Silicon-Photonics-Intern---PhD_2502472"
+      },
+      "53": {
+        "id": "/job/Ottawa-Canada/Silicon-Photonics-Intern---PhD_2502469-1",
+        "title": "Silicon Photonics Intern - PhD",
+        "company": "Marvell",
+        "location": "Ottawa, Canada",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Ottawa-Canada/Silicon-Photonics-Intern---PhD_2502469-1"
+      },
+      "54": {
+        "id": "/job/Pavia-Italy/Silicon-Validation-Engineer-Junior-Intern_2502761",
+        "title": "Silicon Validation Engineer Junior/Intern",
+        "company": "Marvell",
+        "location": "Pavia, Italy",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Pavia-Italy/Silicon-Validation-Engineer-Junior-Intern_2502761"
+      },
+      "55": {
+        "id": "/job/Madrid/Software-Engineer-Intern_2502344",
+        "title": "Software Engineer Intern",
+        "company": "Marvell",
+        "location": "Madrid",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Madrid/Software-Engineer-Intern_2502344"
+      },
+      "56": {
+        "id": "/job/Irvine-CA/System-Engineer---Optical-DSP-Intern---PhD_2502724",
+        "title": "System Engineer - Optical DSP Intern - PhD",
+        "company": "Marvell",
+        "location": "Irvine, CA",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Irvine-CA/System-Engineer---Optical-DSP-Intern---PhD_2502724"
+      }
+    }
   }
 }
