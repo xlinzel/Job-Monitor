@@ -79,6 +79,12 @@ reminders:
     - coop
     - co-operative
     - cooperative
+    - trainee
+    - traineeship
+    - student
+    - university
+    - apprentice
+    - apprenticeship
 
 # =============================================================================
 # Notifications - set via GitHub Actions secrets

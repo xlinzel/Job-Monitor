@@ -76,7 +76,16 @@ DEFAULT_INTERNSHIP_KEYWORDS = [
     "coop",
     "co-operative",
     "cooperative",
+    "trainee",
+    "traineeship",
+    "student",
+    "university",
+    "apprentice",
+    "apprenticeship",
 ]
+SECTION_NEW_INTERNSHIP_JOBS = "New Internship/Jobs"
+SECTION_INTERNSHIP_REMINDERS = "Internship / co-op / trainee reminders"
+SECTION_OTHER_NEW_JOBS = "Other new jobs"
 
 
 def fetch_greenhouse(company_slug: str, company_name: str) -> list[Job]:
@@ -366,6 +375,22 @@ def is_internship_job(job: Job, keywords: list[str]) -> bool:
             if re.search(r"\bco[-\s]?op\b", text):
                 return True
             continue
+        if keyword in {"co-operative", "cooperative"}:
+            if re.search(r"\bco[-\s]?operative\b", text):
+                return True
+            continue
+        if keyword == "university":
+            if re.search(r"\buniversit(?:y|ies)\b", text):
+                return True
+            continue
+        if keyword == "apprentice":
+            if re.search(r"\bapprentice(?:ship)?s?\b", text):
+                return True
+            continue
+        if keyword == "trainee":
+            if re.search(r"\btrainee(?:ship)?s?\b", text):
+                return True
+            continue
         if re.search(rf"\b{re.escape(keyword)}s?\b", text):
             return True
     return False
@@ -613,9 +638,14 @@ def process_discord_commands(state: dict, bot_token: str, channel_id: str, webho
     return changed
 
 
-def send_webhook(webhook_url: str, new_jobs: list[Job], internship_jobs: list[Job]) -> bool:
+def send_webhook(
+    webhook_url: str,
+    new_internship_jobs: list[Job],
+    internship_jobs: list[Job],
+    other_new_jobs: list[Job],
+) -> bool:
     """Send a notification via Slack or Discord webhook."""
-    if not new_jobs:
+    if not new_internship_jobs and not other_new_jobs:
         return True
 
     webhook_url = webhook_url.strip()
@@ -626,13 +656,14 @@ def send_webhook(webhook_url: str, new_jobs: list[Job], internship_jobs: list[Jo
     link_style = "markdown" if is_discord else "slack"
     messages = chunk_sectioned_alerts(
         [
-            ("New job postings", new_jobs),
-            ("Internship / co-op reminders", internship_jobs),
+            (SECTION_NEW_INTERNSHIP_JOBS, new_internship_jobs),
+            (SECTION_INTERNSHIP_REMINDERS, internship_jobs),
+            (SECTION_OTHER_NEW_JOBS, other_new_jobs),
         ],
         link_style=link_style,
         max_length=1900 if is_discord else 2800,
         header_format="**{title}**" if is_discord else "*{title}*",
-        numbered_sections={"Internship / co-op reminders"},
+        numbered_sections={SECTION_INTERNSHIP_REMINDERS},
     )
 
     delivered_all = True
@@ -649,17 +680,24 @@ def send_webhook(webhook_url: str, new_jobs: list[Job], internship_jobs: list[Jo
     return delivered_all
 
 
-def send_telegram(bot_token: str, chat_id: str, new_jobs: list[Job], internship_jobs: list[Job]) -> bool:
+def send_telegram(
+    bot_token: str,
+    chat_id: str,
+    new_internship_jobs: list[Job],
+    internship_jobs: list[Job],
+    other_new_jobs: list[Job],
+) -> bool:
     """Send notifications via Telegram bot."""
     messages = chunk_sectioned_alerts(
         [
-            ("New job postings", new_jobs),
-            ("Internship / co-op reminders", internship_jobs),
+            (SECTION_NEW_INTERNSHIP_JOBS, new_internship_jobs),
+            (SECTION_INTERNSHIP_REMINDERS, internship_jobs),
+            (SECTION_OTHER_NEW_JOBS, other_new_jobs),
         ],
         link_style="markdown",
         max_length=3800,
         header_format="*{title}*",
-        numbered_sections={"Internship / co-op reminders"},
+        numbered_sections={SECTION_INTERNSHIP_REMINDERS},
     )
 
     delivered_all = True
@@ -690,7 +728,18 @@ def send_test_alert(webhook_url: str, telegram_token: str, telegram_chat: str, n
     test_new_jobs = [
         Job(
             id="test-new-job",
-            title="Test alert from Job Monitor",
+            title="Test Internship Alert from Job Monitor",
+            url="https://github.com/xlinzel/Job-Monitor/actions",
+            location="Notification test",
+            team="Monitor",
+            company="Job Monitor",
+            discovered_at=now,
+        )
+    ]
+    test_other_new_jobs = [
+        Job(
+            id="test-other-new-job",
+            title="Example Other New Job",
             url="https://github.com/xlinzel/Job-Monitor/actions",
             location="Notification test",
             team="Monitor",
@@ -701,7 +750,7 @@ def send_test_alert(webhook_url: str, telegram_token: str, telegram_chat: str, n
     test_internship_jobs = [
         Job(
             id="test-internship-reminder",
-            title="Example Internship / Co-op Reminder",
+            title="Example Internship / Co-op / Trainee Reminder",
             url="https://github.com/xlinzel/Job-Monitor",
             location="Notification test",
             team="Reminder",
@@ -712,15 +761,22 @@ def send_test_alert(webhook_url: str, telegram_token: str, telegram_chat: str, n
 
     delivered = True
     if webhook_url:
-        delivered = send_webhook(webhook_url, test_new_jobs, test_internship_jobs) and delivered
+        delivered = send_webhook(webhook_url, test_new_jobs, test_internship_jobs, test_other_new_jobs) and delivered
     if telegram_token and telegram_chat:
-        delivered = send_telegram(telegram_token, telegram_chat, test_new_jobs, test_internship_jobs) and delivered
+        delivered = send_telegram(
+            telegram_token,
+            telegram_chat,
+            test_new_jobs,
+            test_internship_jobs,
+            test_other_new_jobs,
+        ) and delivered
     if not webhook_url and not telegram_token:
         delivered = False
         log.warning("No notification channel configured - printing test alert to stdout")
         for message in chunk_sectioned_alerts([
-            ("New job postings", test_new_jobs),
-            ("Internship / co-op reminders", test_internship_jobs),
+            (SECTION_NEW_INTERNSHIP_JOBS, test_new_jobs),
+            (SECTION_INTERNSHIP_REMINDERS, test_internship_jobs),
+            (SECTION_OTHER_NEW_JOBS, test_other_new_jobs),
         ]):
             print(message)
     return delivered
@@ -822,6 +878,16 @@ def run():
 
     # Send notifications
     if all_new_jobs:
+        new_internship_jobs = [
+            job
+            for job in all_new_jobs
+            if is_internship_job(job, internship_keywords)
+        ]
+        other_new_jobs = [
+            job
+            for job in all_new_jobs
+            if not is_internship_job(job, internship_keywords)
+        ]
         internship_jobs = [
             job
             for job in all_current_jobs
@@ -829,17 +895,20 @@ def run():
         ]
         meta["last_reminder_map"] = build_reminder_map(internship_jobs)
         log.info("Sending alerts for %d new posting(s)...", len(all_new_jobs))
+        log.info("  -> %d new internship/early-career posting(s)", len(new_internship_jobs))
+        log.info("  -> %d other new posting(s)", len(other_new_jobs))
         log.info("Including %d internship/co-op reminder posting(s).", len(internship_jobs))
         if webhook_url:
-            send_webhook(webhook_url, all_new_jobs, internship_jobs)
+            send_webhook(webhook_url, new_internship_jobs, internship_jobs, other_new_jobs)
         if telegram_token and telegram_chat:
-            send_telegram(telegram_token, telegram_chat, all_new_jobs, internship_jobs)
+            send_telegram(telegram_token, telegram_chat, new_internship_jobs, internship_jobs, other_new_jobs)
         if not webhook_url and not telegram_token:
             log.warning("No notification channel configured - printing to stdout")
             for message in chunk_sectioned_alerts([
-                ("New job postings", all_new_jobs),
-                ("Internship / co-op reminders", internship_jobs),
-            ], numbered_sections={"Internship / co-op reminders"}):
+                (SECTION_NEW_INTERNSHIP_JOBS, new_internship_jobs),
+                (SECTION_INTERNSHIP_REMINDERS, internship_jobs),
+                (SECTION_OTHER_NEW_JOBS, other_new_jobs),
+            ], numbered_sections={SECTION_INTERNSHIP_REMINDERS}):
                 print(message)
         save_state(STATE_PATH, state)
     else:
@@ -851,16 +920,29 @@ def run():
         with open(summary_path, "a") as f:
             f.write(f"## Job Monitor - {now}\n\n")
             if all_new_jobs:
-                f.write(f"**{len(all_new_jobs)} new posting(s) found:**\n\n")
-                for j in all_new_jobs:
+                new_internship_jobs = [
+                    job
+                    for job in all_new_jobs
+                    if is_internship_job(job, internship_keywords)
+                ]
+                other_new_jobs = [
+                    job
+                    for job in all_new_jobs
+                    if not is_internship_job(job, internship_keywords)
+                ]
+                f.write(f"**{SECTION_NEW_INTERNSHIP_JOBS} ({len(new_internship_jobs)}):**\n\n")
+                for j in new_internship_jobs:
                     f.write(f"- [{j.title}]({j.url}) @ {j.company} ({j.location})\n")
                 internship_jobs = [
                     job
                     for job in all_current_jobs
                     if is_internship_job(job, internship_keywords) and job.id not in ignored_internship_ids
                 ]
-                f.write(f"\n**{len(internship_jobs)} internship/co-op reminder posting(s):**\n\n")
+                f.write(f"\n**{SECTION_INTERNSHIP_REMINDERS} ({len(internship_jobs)}):**\n\n")
                 for j in internship_jobs:
+                    f.write(f"- [{j.title}]({j.url}) @ {j.company} ({j.location})\n")
+                f.write(f"\n**{SECTION_OTHER_NEW_JOBS} ({len(other_new_jobs)}):**\n\n")
+                for j in other_new_jobs:
                     f.write(f"- [{j.title}]({j.url}) @ {j.company} ({j.location})\n")
             else:
                 f.write("No new postings.\n")

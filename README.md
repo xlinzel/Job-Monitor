@@ -32,10 +32,11 @@ The first successful run seeds `state.json`, so future runs alert only for genui
 
 Do not paste the webhook URL into `config.yaml`; keep it as a GitHub secret.
 
-Alerts are grouped into two sections:
+Alerts are grouped into three sections:
 
-- `New job postings` - roles that were not seen in the previous run.
-- `Internship / co-op reminders` - all currently open roles matching the reminder keywords in `config.yaml`.
+- `New Internship/Jobs` - new roles matching the internship/early-career keywords.
+- `Internship / co-op / trainee reminders` - all currently open roles matching the reminder keywords in `config.yaml`.
+- `Other new jobs` - every other new posting, still included so nothing gets hidden.
 
 Internship/co-op reminders are numbered. If you add the optional Discord bot setup below, you can reply in Discord with commands like:
 
