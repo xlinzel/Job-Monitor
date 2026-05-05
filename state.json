@@ -348,6 +348,7 @@
     "/job/Irvine-CA/Principal-Hardware-Engineer---High-Performance-Board-level-system-design-for-storage--network-security--and-custom-ASIC-applications_2600008",
     "/job/Irvine-CA/Senior-Financial-Analyst_2503924",
     "/job/Irvine-CA/Senior-Financial-Analyst_2601025",
+    "/job/Irvine-CA/Senior-Staff-Analog-and-Mixed-Signal-IC-Design-Engineer_2601607",
     "/job/Irvine-CA/Senior-Staff-Design--Mixed-Signal-Design_2502617",
     "/job/Irvine-CA/Senior-Staff-Digital-Design-Engineer_2600840-1",
     "/job/Irvine-CA/Senior-Staff-Engineer--ASIC-Design-Implementation----LEC-STA-Power-Analysis_2600691",
@@ -679,7 +680,9 @@
     "/job/Toronto-Canada/Analog-Mixed-Signal-Design-Engineer--Senior-Staff_2600448",
     "/job/Toronto-Canada/Analog-Mixed-Signal-IC-Design-Principal-Engineer_2600943-1",
     "/job/Toronto-Canada/Principal-ASIC-Design-Engineer_2601242",
+    "/job/Toronto-Canada/Principal-Engineer--Digital-IC-Design_2601660",
     "/job/Toronto-Canada/Principal-Mixed-Signal-Design-Engineer_2503736-1",
+    "/job/Toronto-Canada/Principal-Timing-Engineer_2601668",
     "/job/Toronto-Canada/Senior-Staff-Digital-Design-Engineer---Wireline-PHYs_2600957",
     "/job/Toronto-Canada/Senior-Staff-System---Modeling-Engineer---Wireline-Communications_2601046",
     "/job/Toronto-Canada/Sr-Executive-Compensation-Consultant_2600418",
@@ -908,18 +911,18 @@
         "url": "https://jobs.ashbyhq.com/Fuse/ce9c7d6d-da98-421e-bceb-d8db2c798d61"
       },
       "3": {
-        "id": "5117557008",
-        "title": "EDA Infrastructure, Intern",
-        "company": "Lightmatter",
-        "location": "Mountain View, CA",
-        "url": "https://boards.greenhouse.io/lightmatter/jobs/5117557008?gh_jid=5117557008"
-      },
-      "4": {
         "id": "4980400008",
         "title": "Reliability Test, Intern",
         "company": "Lightmatter",
         "location": "Mountain View, CA",
         "url": "https://boards.greenhouse.io/lightmatter/jobs/4980400008?gh_jid=4980400008"
+      },
+      "4": {
+        "id": "/job/Ottawa-Canada/Design-Verification-Design-Intern---Bachelors-Degree_2502780-1",
+        "title": "Design Verification/Design Intern - Bachelor's Degree (Fall 2026)",
+        "company": "Marvell",
+        "location": "Ottawa, Canada",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Ottawa-Canada/Design-Verification-Design-Intern---Bachelors-Degree_2502780-1"
       }
     }
   }
