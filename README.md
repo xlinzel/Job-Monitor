@@ -1,6 +1,6 @@
 # Job Monitor
 
-Watches company career pages every 5 minutes with GitHub Actions and sends new-posting alerts to Discord, Slack, or Telegram.
+Watches company career pages with GitHub Actions and sends new-posting alerts to Discord, Slack, or Telegram.
 
 ## Current Companies
 
@@ -85,7 +85,51 @@ gh secret set WEBHOOK_URL
 
 Paste your Discord webhook URL when `gh secret set WEBHOOK_URL` prompts for it.
 
-Then open the repo on GitHub, go to `Actions`, enable workflows if prompted, and run `Job Monitor` manually once. After that, `.github/workflows/monitor.yml` runs it every 5 minutes.
+Then open the repo on GitHub, go to `Actions`, enable workflows if prompted, and run `Job Monitor` manually once. The workflow also supports GitHub's built-in schedule and external cron triggers.
+
+## Reliable 15-Minute Scheduling
+
+GitHub's built-in `schedule` trigger can be delayed or skipped. For more reliable checks, use cron-job.org to trigger the workflow every 15 minutes.
+
+### 1. Create a GitHub Token
+
+1. Open GitHub `Settings` -> `Developer settings` -> `Personal access tokens` -> `Fine-grained tokens`.
+2. Click `Generate new token`.
+3. Set repository access to `xlinzel/Job-Monitor`.
+4. Under repository permissions, set `Contents` to `Read and write`.
+5. Generate the token and copy it.
+
+### 2. Create the cron-job.org Job
+
+1. Create an account at [cron-job.org](https://cron-job.org/).
+2. Create a new cronjob.
+3. Set the schedule to every 15 minutes.
+4. Set the request method to `POST`.
+5. Set the URL to:
+
+```text
+https://api.github.com/repos/xlinzel/Job-Monitor/dispatches
+```
+
+6. Add these headers:
+
+```text
+Accept: application/vnd.github+json
+Authorization: Bearer YOUR_GITHUB_TOKEN
+X-GitHub-Api-Version: 2022-11-28
+Content-Type: application/json
+User-Agent: cron-job.org
+```
+
+7. Set the request body to:
+
+```json
+{"event_type":"job-monitor"}
+```
+
+8. Save it and run it once manually from cron-job.org.
+
+If it works, GitHub Actions will show a new run with event type `repository_dispatch`.
 
 ## Testing Discord
 
@@ -122,4 +166,5 @@ For Workday, use `tenant/site`, for example:
 
 - `state.json` is intentionally committed so GitHub Actions remembers which jobs it has already seen.
 - The workflow commits updated `state.json` after each run.
-- GitHub scheduled jobs can have a few minutes of delay, even with a 5-minute cron.
+- GitHub scheduled jobs can have a few minutes of delay, even with a 15-minute cron.
+- For more reliable timing, use cron-job.org with the `repository_dispatch` trigger.

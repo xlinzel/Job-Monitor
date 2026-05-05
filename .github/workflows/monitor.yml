@@ -2,7 +2,9 @@ name: Job Monitor
 
 on:
   schedule:
-    - cron: "3,8,13,18,23,28,33,38,43,48,53,58 * * * *"
+    - cron: "7,22,37,52 * * * *"
+  repository_dispatch:
+    types: [job-monitor]
   workflow_dispatch:
     inputs:
       test_alert:
