@@ -628,7 +628,6 @@
     "/job/Santa-Clara-CA/Test-Engineer---ATE---SLT_2601067",
     "/job/Santa-Clara-CA/US-Indirect-Sr-Tax-Manager_2600827",
     "/job/Santa-Clara-CA/Vice-President-Hyperscaler-Global-Account-Manager_2601375",
-    "/job/Santa-Clara-CA/Vulnerability-Management-Professional_2601540",
     "/job/Santa-Clara-CA/XMLNAME-25D-3D-Process-Development-Engineer_2600350",
     "/job/Shanghai/Field-Application-Engineer-Intern--Hardware-_2601507",
     "/job/Shanghai/Field-Application-Engineer-Intern--Software-_2601506",
@@ -712,6 +711,7 @@
     "/job/US-NY---Hudson-Valley/DSP-Architecture-System-Modeling-Engineer_2503822",
     "/job/US-NY---Hudson-Valley/Senior-Staff-Engineer---SerDes-Digital-Design_2502611",
     "/job/US-OR---Hillsboro/Analog-Mixed-Signal-Design-Engineer--Principal_2601542",
+    "/job/US-TX---Austin/Vulnerability-Management-Professional_2601540",
     "/job/US-VT---Burlington/Senior-Staff-Static-Timing-Analysis---Physical-Design-Engineer_2600748-1",
     "/job/VN---Da-Nang/Design-Verification-Senior-to-Staff-Engineer_2502978",
     "/job/VN---Da-Nang/Design-Verification-Senior-to-Staff-Engineer_2502979",
@@ -849,7 +849,7 @@
     "96434501"
   ],
   "_meta": {
-    "last_discord_command_message_id": "1501661069616222248",
+    "last_discord_command_message_id": "1501701462814752770",
     "ignored_internship_job_ids": [
       "/job/Bucharest-Romania/Layout---Simulations-Engineer-Intern_2502690",
       "/job/CN---Shanghai/Intern--Technical-Sales_2601143",
