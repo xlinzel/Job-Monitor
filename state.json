@@ -631,7 +631,6 @@
     "/job/Santa-Clara-CA/Staff-DFT-Engineer_2600364",
     "/job/Santa-Clara-CA/Staff-EDA-Licensing---Infrastructure-Engineer_2600947",
     "/job/Santa-Clara-CA/Staff-Engineer---Embedded-Firmware-Development---CXL---PCIe---Memory_2600112",
-    "/job/Santa-Clara-CA/Staff-Engineer--Application-Engineering_2503985",
     "/job/Santa-Clara-CA/Staff-FPGA-Firmware-Design-Engineer---FPGA-architecture--design--modelling--simulation--and-verification_2601555",
     "/job/Santa-Clara-CA/Staff-Firmware-Software-Engineer--Embedded-SoC-Microcontroller-DSP-SERDES-PCIE-PHY_2600794",
     "/job/Santa-Clara-CA/Staff-Hardware-Engineer--Optics_2601201",
@@ -749,6 +748,7 @@
     "/job/Westborough-MA/Design-for-Test-Engineer---Early-Career_2601055",
     "/job/Westborough-MA/Hardware---Silicon-Validation-Senior-Staff-Engineer_2600850",
     "/job/Westborough-MA/Hardware---Silicon-Validation-Senior-Staff-Engineer_2600851",
+    "/job/Westborough-MA/Physical-Design-Manager_2601808",
     "/job/Westborough-MA/Principal-Engineer--Design-For-Test_2501513",
     "/job/Westborough-MA/Principal-Engineer--Design-For-Test_2503552",
     "/job/Westborough-MA/Principal-Physical-Design-Engineer_2600993",
@@ -869,7 +869,7 @@
     "96434501"
   ],
   "_meta": {
-    "last_discord_command_message_id": "1503411567293894818",
+    "last_discord_command_message_id": "1503435815965954290",
     "ignored_internship_job_ids": [
       "/job/Bucharest-Romania/Layout---Simulations-Engineer-Intern_2502690",
       "/job/CN---Shanghai/Intern--Technical-Sales_2601143",
