@@ -30,7 +30,6 @@
     "b24380d7-5c98-4891-b095-77acaa155b57",
     "b80c2756-242e-470b-9607-70fc82b19985",
     "ba4265e9-90ce-4a36-8931-1d08f79431e2",
-    "cd9471ee-83df-4336-be6f-54e6ad6e68dc",
     "da3ded3c-0705-4a11-b3e6-818e98720462",
     "e540aee1-fd62-4041-979c-6a28e53fda9b",
     "f80e9021-d4a5-464b-bb78-e82581580e51",
@@ -50,6 +49,7 @@
     "44b83c2f-b031-45e6-b3f5-43565fa93e39",
     "4ad624f1-c96f-4415-a7bc-4844fe4bf627",
     "4c1f0b9e-e926-42dd-aa77-dc697900a60a",
+    "534fbb94-7a9e-43a0-9543-f5067dcd8c14",
     "5b1220f5-e8b2-4a9a-ac29-d096f3ef1996",
     "5c2b0eab-7fde-4fb1-b9ea-331373974632",
     "62130dfd-e682-4b15-86f2-6079b58c7a55",
@@ -541,6 +541,7 @@
     "/job/Santa-Clara-CA/Principal-Engineer---Software-Firmware---CXL-PCIe_2503776",
     "/job/Santa-Clara-CA/Principal-Engineer--Analog-IC-Design_2601173",
     "/job/Santa-Clara-CA/Principal-Engineer--Verification_2600564",
+    "/job/Santa-Clara-CA/Principal-Field-Application-Engineer-Transceiver_2601208",
     "/job/Santa-Clara-CA/Principal-Firmware-Engineer---high-speed-optical-interconnects--custom-silicon-ASIC-design---microcontroller-architectures--_2600701",
     "/job/Santa-Clara-CA/Principal-HRIS-Business-Analyst---Compensation-and-Benefits_2601352",
     "/job/Santa-Clara-CA/Principal-Hardware-Engineer--Optics_2503371",
@@ -878,7 +879,7 @@
     "96434501"
   ],
   "_meta": {
-    "last_discord_command_message_id": "1503849418947035187",
+    "last_discord_command_message_id": "1503868297412743188",
     "ignored_internship_job_ids": [
       "/job/Bucharest-Romania/Layout---Simulations-Engineer-Intern_2502690",
       "/job/CN---Shanghai/Intern--Technical-Sales_2601143",
