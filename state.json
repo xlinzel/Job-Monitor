@@ -498,7 +498,6 @@
     "/job/Santa-Clara-CA/Distinguished-Engineer---Memory-Subsystem-Center-of-Excellence--CoE---Custom-Silicon_2600930",
     "/job/Santa-Clara-CA/Distinguished-Engineer--Advanced-Optical-Engines_2501691",
     "/job/Santa-Clara-CA/Distinguished-Engineer--Switch-Architect_2600140",
-    "/job/Santa-Clara-CA/Distinguished-Engineer--Verification_2600485",
     "/job/Santa-Clara-CA/Emulation-Lead-Engineer_2600917",
     "/job/Santa-Clara-CA/Engineering-IP-Program-Manager---Sr-Principal_2503182",
     "/job/Santa-Clara-CA/Engineering-Program-Manager--silicon-product-and-IP-development-PM_2600264",
@@ -835,6 +834,7 @@
     "9c58d97b-4825-466b-895a-478a89d7a3c7",
     "a00cb54c-ed5a-48b4-9dbf-c6ca20702728",
     "a253911b-7fe9-4c52-a032-3b2279e33044",
+    "a6015884-013c-4457-9507-246e03e2620a",
     "a735c757-7d39-47de-9329-77d6362b5547",
     "a76de849-7e75-48c2-a52b-d6078a551cbb",
     "a99318bd-b433-44b7-9600-2ee9533c90a1",
@@ -874,7 +874,7 @@
     "96434501"
   ],
   "_meta": {
-    "last_discord_command_message_id": "1503807870678859898",
+    "last_discord_command_message_id": "1503841849805373704",
     "ignored_internship_job_ids": [
       "/job/Bucharest-Romania/Layout---Simulations-Engineer-Intern_2502690",
       "/job/CN---Shanghai/Intern--Technical-Sales_2601143",
