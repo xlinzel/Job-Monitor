@@ -344,6 +344,7 @@
     "/job/Hyderabad/Staff-Analog-Layout-Engineer_2600492",
     "/job/Hyderabad/Workday-Operations-Specialist_2601131-1",
     "/job/IL---Petah-Tikva/Design-Verification-Engineer_2600413",
+    "/job/IL---Petah-Tikva/Embedded-Software-Intern_2504009",
     "/job/IL---Petah-Tikva/Principal-Design-Engineer_2502908",
     "/job/IL---Petah-Tikva/Senior-Staff-IC-Design-Engineer_2503987",
     "/job/IL---Petah-Tikva/Senior-Staff-RTL-Design--Verification_2501145",
@@ -960,6 +961,13 @@
         "company": "Marvell",
         "location": "Ottawa, Canada",
         "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Ottawa-Canada/Design-Verification-Design-Intern---Bachelors-Degree_2502780-1"
+      },
+      "6": {
+        "id": "/job/IL---Petah-Tikva/Embedded-Software-Intern_2504009",
+        "title": "Embedded Software Intern",
+        "company": "Marvell",
+        "location": "2 Locations",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/IL---Petah-Tikva/Embedded-Software-Intern_2504009"
       }
     }
   }
