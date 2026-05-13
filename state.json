@@ -187,7 +187,6 @@
     "/job/Bangalore/IP-RTL-Design-Engineer_2600329-1",
     "/job/Bangalore/Job-Description-for-Sr-Staff-Engineer--CAD-EDA-Tools---Design-Automation-Engineer_2601497",
     "/job/Bangalore/Memory-Layout-Principal-Engineer_2600055",
-    "/job/Bangalore/Memory-Layout-Senior-Staff-Engineer_2503942",
     "/job/Bangalore/Memory-Layout-Staff-Engineer_2503899",
     "/job/Bangalore/Package-Design-Senior-Staff-Engineer_2600904",
     "/job/Bangalore/Package-Development--Signal-Integrity-and-Power-Integrity-Staff-to-Senior-Staff-Engineer_2600472",
@@ -415,6 +414,7 @@
     "/job/Ottawa-Canada/Senior-Staff-Engineer--Design-For-Test---Automation---Infrastructure_2600427",
     "/job/Ottawa-Canada/Silicon-Photonics-Engineer_2503579-1",
     "/job/Ottawa-Canada/Silicon-Photonics-Intern---PhD_2502469-1",
+    "/job/Ottawa-Canada/Sr-Staff-Engineer--ASIC-Verification---AI-HPC-SOCs_2601810",
     "/job/Ottawa-Canada/Staff-Engineer--Signal-Integrity---Entry-Level-Professional---Ph-D---Post-Doc_2600908",
     "/job/Pavia-Italy/Analog-Design-Engineer--Principal_2502215",
     "/job/Pavia-Italy/Analog-Design-Engineer--Principal_2600082",
@@ -442,7 +442,6 @@
     "/job/Petah-Tikva/Senior-Design-Verification-Engineer_2601045",
     "/job/Petah-Tikva/Senior-Design-Verification-engineer_2502168",
     "/job/Petah-Tikva/Senior-Staff-DFT-Engineer_2503734",
-    "/job/Pune/Principal-Engineer--Design-Verification_2601772",
     "/job/Pune/Senior-Staff-Engineer---RTL-Design_2601086-1",
     "/job/Pune/Senior-Staff-Manager_2601191",
     "/job/Pune/Senior-Staff-Simulation-Engineer_2600715",
@@ -552,7 +551,6 @@
     "/job/Santa-Clara-CA/Principal-HRIS-Business-Analyst---Compensation-and-Benefits_2601352",
     "/job/Santa-Clara-CA/Principal-Hardware-Engineer--Optics_2503371",
     "/job/Santa-Clara-CA/Principal-High-Speed-Analog-Mixed-Signal-Design-Engineer_2601372",
-    "/job/Santa-Clara-CA/Principal-IC-Digital-Design---SoC-Design-Micro-architecture_2601309",
     "/job/Santa-Clara-CA/Principal-Package-Engineer_2503912",
     "/job/Santa-Clara-CA/Principal-Post-Silicon-Validation-Engineer_2600717",
     "/job/Santa-Clara-CA/Principal-Professional---Oracle-EBS-Financials--Techno-functional--AI-and-Latest-Technologies-Expertise-_2601659",
@@ -561,7 +559,6 @@
     "/job/Santa-Clara-CA/Principal-Signal-Integrity-Engineer---Principle-Hardware-Design-Engineer---PCB-SOC-validation_2601020",
     "/job/Santa-Clara-CA/Principal-Silicon-Validation-Engineer_2502218",
     "/job/Santa-Clara-CA/Principal-System-Architect_2600581",
-    "/job/Santa-Clara-CA/Principal-System-QA-Engineer_2601092",
     "/job/Santa-Clara-CA/Principal-Test-Engineer--Optical-Module-_2600730-1",
     "/job/Santa-Clara-CA/Principal-Test-Engineer_2600177",
     "/job/Santa-Clara-CA/Principal-Test-Engineer_2600241",
@@ -581,7 +578,6 @@
     "/job/Santa-Clara-CA/Senior-Embedded-Systems-Engineer---Innovation---Customer-Enablement_2502141",
     "/job/Santa-Clara-CA/Senior-Emulation-Engineer_2600755",
     "/job/Santa-Clara-CA/Senior-Emulation-Engineer_2600759",
-    "/job/Santa-Clara-CA/Senior-Engineer--Physical-Design_2503618",
     "/job/Santa-Clara-CA/Senior-Engineering-Insights-Analyst---Power-BI---SQL---Databricks---Semiconductor-Industry_2600829",
     "/job/Santa-Clara-CA/Senior-Firmware-Engineer---Embedded-SW-Microcontroller-Bare-Metal-Drivers_2600356",
     "/job/Santa-Clara-CA/Senior-Manager--ASIC-Design_2600353",
@@ -766,7 +762,6 @@
     "/job/Westborough-MA/Principal-Static-Timing-Analysis--STA--Engineer---SoC-Design_2600948",
     "/job/Westborough-MA/RTL-Design-Engineer---Early-Career_2601224",
     "/job/Westborough-MA/Senior-Principal-Digital-IC-Design-Engineer_2601226",
-    "/job/Westborough-MA/Senior-Staff-Engineer--Software---Firmware-Engineering---RTOS-low-level-platform-ARM-RISC-V-Drivers-SoC_2601183",
     "/job/Westborough-MA/Senior-Staff-Engineer-Digital-IC-Build-Flow-and-Methodology_2601233",
     "/job/Westborough-MA/Senior-Staff-Engineer-SW-FW-Engineer_2600254",
     "/job/Westborough-MA/Staff-Engineer--Engineering-Compute-Infrastructure-and-Grid-Operations_2601229-1",
@@ -972,13 +967,6 @@
         "company": "Marvell",
         "location": "Ottawa, Canada",
         "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Ottawa-Canada/Design-Verification-Design-Intern---Bachelors-Degree_2502780-1"
-      },
-      "6": {
-        "id": "/job/IL---Petah-Tikva/Embedded-Software-Intern_2504009",
-        "title": "Embedded Software Intern",
-        "company": "Marvell",
-        "location": "2 Locations",
-        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/IL---Petah-Tikva/Embedded-Software-Intern_2504009"
       }
     }
   }
