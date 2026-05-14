@@ -54,6 +54,7 @@
     "62130dfd-e682-4b15-86f2-6079b58c7a55",
     "67069197-08e1-4f12-af0f-3a73fe415896",
     "6b550c11-0ad4-4532-8213-e7b8c6d26965",
+    "6ceb0b7f-692d-4331-9b35-5e390de441b2",
     "711dd5a1-a056-4313-8163-bd88c3228da5",
     "730eb1a4-abb7-4cfe-831b-f29efff9d203",
     "758725ca-4f11-417b-8737-4a87e6118556",
@@ -405,7 +406,6 @@
     "/job/Ottawa-Canada/Model-Correlation---SI-Intern---Master-s-Degree_2502364",
     "/job/Ottawa-Canada/Optical-Test-Engineer_2601317",
     "/job/Ottawa-Canada/Package-Development--Signal-Integrity-and-Power-Integrity-Principal-Engineer_2600606",
-    "/job/Ottawa-Canada/Principal-ASIC-Design-Engineer_2601282",
     "/job/Ottawa-Canada/Principal-Digital-Design-Engineer_2600834",
     "/job/Ottawa-Canada/Principal-Digital-Design-Engineer_2600894",
     "/job/Ottawa-Canada/Principal-Engineer--ASIC-Verification---AI-HPC-SOCs_2601283-1",
@@ -888,7 +888,7 @@
     "96434501"
   ],
   "_meta": {
-    "last_discord_command_message_id": "1504559078977048756",
+    "last_discord_command_message_id": "1504593017812553799",
     "ignored_internship_job_ids": [
       "/job/Bucharest-Romania/Layout---Simulations-Engineer-Intern_2502690",
       "/job/CN---Shanghai/Intern--Technical-Sales_2601143",
