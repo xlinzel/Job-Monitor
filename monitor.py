@@ -103,6 +103,7 @@ SESSION = ThreadLocalSession()
 REQUEST_TIMEOUT = 30
 COMPANY_FETCH_WORKERS = max(1, int(os.environ.get("COMPANY_FETCH_WORKERS", "8")))
 WORKDAY_PAGE_WORKERS = max(1, int(os.environ.get("WORKDAY_PAGE_WORKERS", "6")))
+DISCORD_COMMAND_FETCH_LIMIT = max(100, int(os.environ.get("DISCORD_COMMAND_FETCH_LIMIT", "1000")))
 DEFAULT_INTERNSHIP_KEYWORDS = [
     "intern",
     "internship",
@@ -1113,18 +1114,42 @@ def print_alert_message(message: str):
 def fetch_discord_messages(bot_token: str, channel_id: str, after_id: str = "") -> list[dict]:
     """Fetch recent Discord channel messages using a bot token."""
     url = f"https://discord.com/api/v10/channels/{channel_id}/messages"
-    params = {"limit": 100}
-    if after_id:
-        params["after"] = after_id
-    resp = SESSION.get(
-        url,
-        headers={"Authorization": f"Bot {bot_token}"},
-        params=params,
-        timeout=10,
-    )
-    resp.raise_for_status()
-    messages = resp.json()
-    return sorted(messages, key=lambda msg: int(msg["id"]))
+    headers = {"Authorization": f"Bot {bot_token}"}
+    seen_messages: dict[str, dict] = {}
+    cursor = str(after_id or "")
+
+    while len(seen_messages) < DISCORD_COMMAND_FETCH_LIMIT:
+        params = {"limit": min(100, DISCORD_COMMAND_FETCH_LIMIT - len(seen_messages))}
+        if cursor:
+            params["after"] = cursor
+        resp = SESSION.get(url, headers=headers, params=params, timeout=10)
+        resp.raise_for_status()
+        batch = resp.json()
+        if not batch:
+            break
+
+        new_messages = 0
+        for message in batch:
+            message_id = str(message["id"])
+            if message_id not in seen_messages:
+                seen_messages[message_id] = message
+                new_messages += 1
+
+        sorted_batch = sorted(batch, key=lambda msg: int(msg["id"]))
+        highest_id = str(sorted_batch[-1]["id"])
+        if highest_id == cursor or new_messages == 0:
+            break
+        cursor = highest_id
+        if len(batch) < 100:
+            break
+
+    if len(seen_messages) >= DISCORD_COMMAND_FETCH_LIMIT:
+        log.warning(
+            "Fetched Discord command message limit (%d). Increase DISCORD_COMMAND_FETCH_LIMIT if commands are missed.",
+            DISCORD_COMMAND_FETCH_LIMIT,
+        )
+
+    return sorted(seen_messages.values(), key=lambda msg: int(msg["id"]))
 
 
 def parse_command_numbers(text: str) -> list[int]:
@@ -1260,13 +1285,22 @@ def process_discord_commands(state: dict, bot_token: str, channel_id: str, webho
             action_label = "Unignored"
 
         changed = True
+        log.info(
+            "Processed Discord %s command: %d selected reminder(s), %d unknown number(s).",
+            command,
+            len(selected_jobs),
+            len(missing_numbers),
+        )
         lines = [f"{action_label} {len(selected_jobs)} reminder posting(s)."]
         for number, mapped_job in selected_jobs[:10]:
             lines.append(f"- {number}. {describe_mapped_job(mapped_job)}")
         if len(selected_jobs) > 10:
             lines.append(f"- ...and {len(selected_jobs) - 10} more")
         if missing_numbers:
-            lines.append(f"Unknown reminder number(s): {', '.join(str(n) for n in missing_numbers)}")
+            shown_missing = ", ".join(str(n) for n in missing_numbers[:25])
+            if len(missing_numbers) > 25:
+                shown_missing += f", ...and {len(missing_numbers) - 25} more"
+            lines.append(f"Unknown reminder number(s): {shown_missing}")
         send_plain_webhook(webhook_url, "\n".join(lines))
 
     meta["ignored_internship_job_ids"] = sorted(ignored_ids)
