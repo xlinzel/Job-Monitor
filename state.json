@@ -1490,7 +1490,8 @@
     "5844547004",
     "5971924004",
     "5971925004",
-    "5982597004"
+    "5982597004",
+    "5997380004"
   ],
   "Samsung Electronics": [
     "/job/-----Visual-Display-Talent-Pool_R4766",
@@ -2177,7 +2178,6 @@
     "/job/USA-CA---Promontory-E/Technology-Product-Management_R025678",
     "/job/USA-CA-Irvine-Alton-Parkway-Bldg-1/Analog-Mixed-Signal-Verilog-Modeling-Design-Engineer_R024672",
     "/job/USA-CA-Irvine-Alton-Parkway-Bldg-1/Analog-and-Mixed-Signal-IC-Design-Engineer_R026004",
-    "/job/USA-CA-Irvine-Alton-Parkway-Bldg-1/Hardware-Engineer_R024242",
     "/job/USA-CA-Irvine-Alton-Parkway-Bldg-1/Hardware-Engineer_R026046",
     "/job/USA-CA-Irvine-Alton-Parkway-Bldg-1/IC-CAD-Engineer_R025792",
     "/job/USA-CA-Irvine-Alton-Parkway-Bldg-1/IC-Design-AI-ML-Silicon-Debug---Yield-Engineer_R025133",
@@ -2206,7 +2206,6 @@
     "/job/USA-CA-Irvine-Alton-Parkway-Bldg-2/R-D-IC-Design-Engineer_R024629",
     "/job/USA-CA-Irvine-Alton-Parkway-Bldg-2/R-D-IC-Design-Engineer_R024630",
     "/job/USA-CA-Irvine-Alton-Parkway-Bldg-2/R-D-IC-Design-Engineer_R024631",
-    "/job/USA-CA-Irvine-Alton-Parkway-Bldg-2/Staff-Analog-Design-Engineer_R025586",
     "/job/USA-CA-San-Jose-Innovation-Drive/AI-Systems-Performance-Engineer_R025748",
     "/job/USA-CA-San-Jose-Innovation-Drive/ASIC-DFT-Engineer_R025568",
     "/job/USA-CA-San-Jose-Innovation-Drive/ASIC-Implementation-Engineer_R025211",
@@ -2475,7 +2474,6 @@
     "/job/CA---San-Jose---3850-N-First-St/Senior-Technical-Staff-Engineer---Design_R744-26",
     "/job/CA---San-Jose---3850-N-First-St/Technical-Staff-Engineer---Architecture--System-Power-_R689-25-1",
     "/job/CA---San-Jose---3850-N-First-St/Technical-Staff-Engineer---Architecture--System-_R2777-25",
-    "/job/CA---San-Jose---3850-N-First-St/Technical-Staff-Engineer---Design--FPGA-Fabric-_R1659-25",
     "/job/CA---San-Jose---3850-N-First-St/Technical-Staff-Engineer---Software--C-C----Qt--MSVC--Linux-_R760-26",
     "/job/CA---San-Jose---3850-N-First-St/Technician-III---Equipment--Maintenance-_R1225-25",
     "/job/CA---San-Jose---3870-N-First-St/Associate-Fellow---Architecture_R1889-26",
@@ -3805,7 +3803,6 @@
     "77407",
     "77422",
     "77429",
-    "77431",
     "77434",
     "77435",
     "77442",
@@ -3841,7 +3838,6 @@
     "77966",
     "78018",
     "78035",
-    "78038",
     "78054",
     "78059",
     "78063",
@@ -4944,7 +4940,6 @@
     "26404",
     "26432",
     "26433",
-    "26438",
     "26534",
     "26568",
     "26588",
@@ -5212,7 +5207,6 @@
     "30287",
     "30288",
     "30291",
-    "30296",
     "30306",
     "30319",
     "30320",
@@ -5288,6 +5282,7 @@
     "30617",
     "30619",
     "30621",
+    "30624",
     "30628",
     "30629",
     "30631",
@@ -15734,7 +15729,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-15 21:00 UTC",
+      "checked_at": "2026-05-15 21:15 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
