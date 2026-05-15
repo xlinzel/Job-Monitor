@@ -499,6 +499,7 @@
     "/job/Santa-Clara-CA/Director---Supply-Chain---Gross-Margin-Program-Management_2601524",
     "/job/Santa-Clara-CA/Director--AI-Governance---Enablement_2601240-1",
     "/job/Santa-Clara-CA/Director--Design-Verification---MEM-PCIE-COE_2601560",
+    "/job/Santa-Clara-CA/Director--Design-Verification_2601590",
     "/job/Santa-Clara-CA/Director--Intelligent-Management-and-Control_2601766",
     "/job/Santa-Clara-CA/Director--SOC-Design_2503731",
     "/job/Santa-Clara-CA/Director-Product-Marketing_2601855",
@@ -947,41 +948,27 @@
     ],
     "last_reminder_map": {
       "1": {
-        "id": "65773f79-7be1-4594-816d-65b4576237e9",
-        "title": "Internship - Montreal",
-        "company": "Fuse",
-        "location": "Montreal, Quebec, Canada",
-        "url": "https://jobs.ashbyhq.com/Fuse/65773f79-7be1-4594-816d-65b4576237e9"
-      },
-      "2": {
-        "id": "ce9c7d6d-da98-421e-bceb-d8db2c798d61",
-        "title": "Internship - San Leandro",
-        "company": "Fuse",
-        "location": "San Leandro, California",
-        "url": "https://jobs.ashbyhq.com/Fuse/ce9c7d6d-da98-421e-bceb-d8db2c798d61"
-      },
-      "3": {
         "id": "4980400008",
         "title": "Reliability Test, Intern",
         "company": "Lightmatter",
         "location": "Mountain View, CA",
         "url": "https://boards.greenhouse.io/lightmatter/jobs/4980400008?gh_jid=4980400008"
       },
-      "4": {
+      "2": {
         "id": "/job/Hsinchu-City/Application-Engineer-Intern---Master-s-Degree_2502388",
         "title": "Application Engineer Intern",
         "company": "Marvell",
         "location": "Hsinchu City",
         "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Hsinchu-City/Application-Engineer-Intern---Master-s-Degree_2502388"
       },
-      "5": {
+      "3": {
         "id": "/job/Ottawa-Canada/Design-Verification-Design-Intern---Bachelors-Degree_2502780-1",
         "title": "Design Verification/Design Intern - Bachelor's Degree (Fall 2026)",
         "company": "Marvell",
         "location": "Ottawa, Canada",
         "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Ottawa-Canada/Design-Verification-Design-Intern---Bachelors-Degree_2502780-1"
       },
-      "6": {
+      "4": {
         "id": "/job/Toronto-Canada/Machine-Learning-Intern---Bachelor-s-Degree_2601122-1",
         "title": "Machine Learning Intern - Bachelor's Degree",
         "company": "Marvell",
