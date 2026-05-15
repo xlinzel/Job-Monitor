@@ -11,6 +11,7 @@ import logging
 import os
 import re
 import sys
+import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field, asdict
@@ -72,9 +73,35 @@ REQUEST_HEADERS = {
     ),
     "Accept": "application/json, text/html;q=0.9, */*;q=0.8",
 }
-SESSION = requests.Session()
-SESSION.headers.update(REQUEST_HEADERS)
+
+
+class ThreadLocalSession:
+    """Give each worker thread its own requests session and connection pool."""
+
+    def __init__(self):
+        self._local = threading.local()
+
+    def _session(self) -> requests.Session:
+        session = getattr(self._local, "session", None)
+        if session is None:
+            session = requests.Session()
+            session.headers.update(REQUEST_HEADERS)
+            adapter = requests.adapters.HTTPAdapter(pool_connections=64, pool_maxsize=64)
+            session.mount("http://", adapter)
+            session.mount("https://", adapter)
+            self._local.session = session
+        return session
+
+    def get(self, *args, **kwargs):
+        return self._session().get(*args, **kwargs)
+
+    def post(self, *args, **kwargs):
+        return self._session().post(*args, **kwargs)
+
+
+SESSION = ThreadLocalSession()
 REQUEST_TIMEOUT = 30
+COMPANY_FETCH_WORKERS = max(1, int(os.environ.get("COMPANY_FETCH_WORKERS", "8")))
 WORKDAY_PAGE_WORKERS = max(1, int(os.environ.get("WORKDAY_PAGE_WORKERS", "6")))
 DEFAULT_INTERNSHIP_KEYWORDS = [
     "intern",
@@ -243,9 +270,16 @@ def fetch_workday(company_slug: str, company_name: str) -> list[Job]:
 
     def fetch_page(page_offset: int) -> tuple[int, dict]:
         payload = {"appliedFacets": {}, "limit": page_size, "offset": page_offset, "searchText": ""}
-        resp = SESSION.post(url, json=payload, headers=headers, timeout=REQUEST_TIMEOUT)
-        resp.raise_for_status()
-        return page_offset, resp.json()
+        last_error = None
+        for attempt in range(3):
+            try:
+                resp = SESSION.post(url, json=payload, headers=headers, timeout=max(REQUEST_TIMEOUT, 45))
+                resp.raise_for_status()
+                return page_offset, resp.json()
+            except requests.RequestException as exc:
+                last_error = exc
+                time.sleep(1 + attempt)
+        raise last_error
 
     def add_postings(postings: list[dict]):
         for item in postings:
@@ -1066,6 +1100,16 @@ def send_plain_webhook(webhook_url: str, content: str) -> bool:
         return False
 
 
+def print_alert_message(message: str):
+    """Print alerts safely on Windows consoles with non-UTF-8 encodings."""
+    try:
+        print(message)
+    except UnicodeEncodeError:
+        encoding = sys.stdout.encoding or "utf-8"
+        safe_message = message.encode(encoding, errors="replace").decode(encoding, errors="replace")
+        print(safe_message)
+
+
 def fetch_discord_messages(bot_token: str, channel_id: str, after_id: str = "") -> list[dict]:
     """Fetch recent Discord channel messages using a bot token."""
     url = f"https://discord.com/api/v10/channels/{channel_id}/messages"
@@ -1083,10 +1127,35 @@ def fetch_discord_messages(bot_token: str, channel_id: str, after_id: str = "") 
     return sorted(messages, key=lambda msg: int(msg["id"]))
 
 
+def parse_command_numbers(text: str) -> list[int]:
+    """Parse command numbers, including ranges such as '3-7'."""
+    numbers = []
+    range_pattern = r"\b(\d+)\s*-\s*(\d+)\b"
+
+    for match in re.finditer(range_pattern, text):
+        start = int(match.group(1))
+        end = int(match.group(2))
+        step = 1 if start <= end else -1
+        numbers.extend(range(start, end + step, step))
+
+    text_without_ranges = re.sub(range_pattern, " ", text)
+    numbers.extend(int(n) for n in re.findall(r"\b\d+\b", text_without_ranges))
+
+    deduped = []
+    seen = set()
+    for number in numbers:
+        if number in seen:
+            continue
+        seen.add(number)
+        deduped.append(number)
+    return deduped
+
+
 def parse_discord_command(content: str) -> Optional[tuple[str, list[int], bool]]:
     """
     Parse commands:
       ignore 3 7 12
+      ignore 3-7 12
       unignore 3
       ignore all
       ignored
@@ -1099,7 +1168,7 @@ def parse_discord_command(content: str) -> Optional[tuple[str, list[int], bool]]
     command = match.group(1).lower()
     rest = match.group(2).strip().lower()
     all_requested = bool(re.search(r"\ball\b", rest))
-    numbers = [int(n) for n in re.findall(r"\d+", rest)]
+    numbers = parse_command_numbers(rest)
     return command, numbers, all_requested
 
 
@@ -1146,8 +1215,8 @@ def process_discord_commands(state: dict, bot_token: str, channel_id: str, webho
             send_plain_webhook(
                 webhook_url,
                 "Job Monitor commands:\n"
-                "- `ignore 3 7 12` hides numbered internship/co-op reminders.\n"
-                "- `unignore 3 7` shows numbered reminders again.\n"
+                "- `ignore 3 7 12` or `ignore 3-7 12` hides numbered internship/co-op reminders.\n"
+                "- `unignore 3 7` or `unignore 3-7` shows numbered reminders again.\n"
                 "- `ignore all` hides all currently numbered reminders.\n"
                 "- `ignored` lists how many reminder jobs are hidden.",
             )
@@ -1169,7 +1238,7 @@ def process_discord_commands(state: dict, bot_token: str, channel_id: str, webho
 
         selected_numbers = sorted(int(n) for n in reminder_map.keys()) if all_requested else numbers
         if not selected_numbers:
-            send_plain_webhook(webhook_url, f"Usage: `{command} 3 7 12`")
+            send_plain_webhook(webhook_url, f"Usage: `{command} 3 7 12` or `{command} 3-7 12`")
             continue
 
         selected_jobs = []
@@ -1344,8 +1413,25 @@ def send_test_alert(webhook_url: str, telegram_token: str, telegram_chat: str, n
             (SECTION_INTERNSHIP_REMINDERS, test_internship_jobs),
             (SECTION_OTHER_NEW_JOBS, test_other_new_jobs),
         ]):
-            print(message)
+            print_alert_message(message)
     return delivered
+
+
+def fetch_company_current_jobs(company: dict) -> tuple[list[Job], float]:
+    """Fetch current jobs for one configured company."""
+    name = company["name"]
+    ats = company["ats"]
+    slug = company.get("slug", "")
+    url = company.get("url", "")
+
+    fetcher = FETCHERS.get(ats)
+    if not fetcher:
+        raise ValueError(f"Unknown ATS type '{ats}'")
+
+    started = time.time()
+    target = url if ats == "html" else slug
+    current_jobs = fetcher(target, name)
+    return current_jobs, time.time() - started
 
 
 # ---------------------------------------------------------------------------
@@ -1395,28 +1481,35 @@ def run():
     all_new_jobs: list[Job] = []
     all_current_jobs: list[Job] = []
 
-    for company in companies:
+    fetch_results: dict[int, tuple[list[Job], Optional[Exception], float]] = {}
+    fetch_workers = min(COMPANY_FETCH_WORKERS, len(companies)) if companies else 1
+    log.info("Fetching %d compan%s with %d worker(s)...", len(companies), "y" if len(companies) == 1 else "ies", fetch_workers)
+
+    with ThreadPoolExecutor(max_workers=fetch_workers) as executor:
+        future_to_index = {}
+        for index, company in enumerate(companies):
+            log.info("Checking %s (%s)...", company["name"], company["ats"])
+            future = executor.submit(fetch_company_current_jobs, company)
+            future_to_index[future] = index
+
+        for future in as_completed(future_to_index):
+            index = future_to_index[future]
+            company = companies[index]
+            name = company["name"]
+            try:
+                current_jobs, elapsed = future.result()
+                fetch_results[index] = (current_jobs, None, elapsed)
+                log.info("  -> Fetched %d posting(s) for %s in %.1fs", len(current_jobs), name, elapsed)
+            except Exception as e:
+                fetch_results[index] = ([], e, 0.0)
+                log.error("Failed to fetch %s: %s", name, e)
+
+    for index, company in enumerate(companies):
         name = company["name"]
-        ats = company["ats"]
-        slug = company.get("slug", "")
-        url = company.get("url", "")
         include = company.get("include_keywords", global_include)
         exclude = company.get("exclude_keywords", global_exclude)
-
-        log.info("Checking %s (%s)...", name, ats)
-
-        fetcher = FETCHERS.get(ats)
-        if not fetcher:
-            log.warning("Unknown ATS type '%s' for %s - skipping", ats, name)
-            continue
-
-        try:
-            if ats == "html":
-                current_jobs = fetcher(url, name)
-            else:
-                current_jobs = fetcher(slug, name)
-        except Exception as e:
-            log.error("Failed to fetch %s: %s", name, e)
+        current_jobs, error, _ = fetch_results.get(index, ([], RuntimeError("Fetch did not run"), 0.0))
+        if error:
             continue
         all_current_jobs.extend(current_jobs)
 
@@ -1475,7 +1568,7 @@ def run():
                 (SECTION_INTERNSHIP_REMINDERS, internship_jobs),
                 (SECTION_OTHER_NEW_JOBS, other_new_jobs),
             ], numbered_sections={SECTION_INTERNSHIP_REMINDERS}):
-                print(message)
+                print_alert_message(message)
         save_state(STATE_PATH, state)
     else:
         log.info("No new postings found this run.")
