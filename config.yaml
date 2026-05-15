@@ -1,7 +1,10 @@
 # =============================================================================
 # Job Monitor Configuration
 # =============================================================================
-# Supported ATS types: greenhouse, lever, ashby, workday, smartrecruiters, html
+# Supported ATS types:
+#   greenhouse, lever, ashby, workday, smartrecruiters, jazzhr, bamboohr,
+#   jibe, eightfold, oracle_hcm, successfactors, radancy, asml_sitemap,
+#   samsungsemi, html
 #
 # To find a company's ATS, check their careers page URL:
 #   - Greenhouse: boards.greenhouse.io/SLUG
@@ -9,7 +12,7 @@
 #   - Ashby: jobs.ashbyhq.com/SLUG
 #   - Workday: TENANT.wd1.myworkdayjobs.com (slug = "tenant/site")
 #   - SmartRecruiters: careers.smartrecruiters.com/SLUG
-#   - Otherwise: use html with the full careers page URL
+#   - Otherwise: use html with the full careers page URL, or add a custom fetcher
 # =============================================================================
 
 companies:
@@ -37,11 +40,35 @@ companies:
     ats: lever
     slug: diamondfoundry
 
+  - name: Zoox
+    ats: lever
+    slug: zoox
+
+  - name: Lumafield
+    ats: lever
+    slug: lumafield
+
   # --- Greenhouse companies ---
 
   - name: Lightmatter
     ats: greenhouse
     slug: lightmatter
+
+  - name: Figure
+    ats: greenhouse
+    slug: figureai
+
+  - name: Astera Labs
+    ats: greenhouse
+    slug: asteralabs
+
+  - name: Cerebras
+    ats: greenhouse
+    slug: cerebrassystems
+
+  - name: Factorial Energy
+    ats: greenhouse
+    slug: factorialenergy
 
   # --- Workday companies ---
 
@@ -49,11 +76,124 @@ companies:
     ats: workday
     slug: marvell/MarvellCareers
 
+  - name: Samsung Electronics
+    ats: workday
+    slug: sec.wd3/Samsung_Careers
+
+  - name: Broadcom
+    ats: workday
+    slug: broadcom/External_Career
+
+  - name: Microchip Technology
+    ats: workday
+    slug: https://wd5.myworkdaysite.com/recruiting/microchiphr/External
+
+  - name: NXP Semiconductors
+    ats: workday
+    slug: nxp.wd3/careers
+
+  - name: Alphawave Semi
+    ats: workday
+    slug: alphawave.wd10/Alphawave_External
+
   # --- SmartRecruiters companies ---
 
   - name: Neurable
     ats: smartrecruiters
     slug: NeurableINC
+
+  # --- JazzHR / ApplyToJob companies ---
+
+  - name: Xanadu
+    ats: jazzhr
+    slug: https://xanadu.applytojob.com/apply
+
+  - name: TechInsights
+    ats: jazzhr
+    slug: https://techinsights.applytojob.com/apply
+
+  # --- BambooHR companies ---
+
+  - name: Anyon
+    ats: bamboohr
+    slug: https://anyon.bamboohr.com/careers
+
+  - name: VueReal
+    ats: bamboohr
+    slug: https://vuereal.bamboohr.com/careers
+
+  # --- Jibe / iCIMS frontend companies ---
+
+  - name: AMD
+    ats: jibe
+    slug: https://careers.amd.com
+
+  - name: Rivian
+    ats: jibe
+    slug: https://careers.rivian.com
+
+  # --- Eightfold companies ---
+
+  - name: Micron
+    ats: eightfold
+    slug: https://micron.eightfold.ai/careers|micron.com
+
+  - name: GlobalFoundries
+    ats: eightfold
+    slug: https://careers.gf.com/careers|globalfoundries.com
+
+  - name: Infineon Technologies
+    ats: eightfold
+    slug: https://jobs.infineon.com/careers|infineon.com
+
+  # --- Oracle HCM companies ---
+
+  - name: Texas Instruments
+    ats: oracle_hcm
+    slug: https://careers.ti.com/en/sites/CX/jobs|https://edbz.fa.us2.oraclecloud.com|CX|US
+
+  # --- SuccessFactors companies ---
+
+  - name: Oxford Instruments
+    ats: successfactors
+    slug: https://jobs.oxinst.com/search/
+
+  - name: Seagate Technology
+    ats: successfactors
+    slug: https://seagatecareers.com/search/
+
+  # --- Radancy / TalentBrew companies ---
+
+  - name: Applied Materials
+    ats: radancy
+    slug: https://jobs.appliedmaterials.com/search-jobs
+
+  - name: Arm
+    ats: radancy
+    slug: https://careers.arm.com/search-jobs
+
+  - name: Synopsys
+    ats: radancy
+    slug: https://careers.synopsys.com/search-jobs
+
+  # --- Custom/public search companies ---
+
+  - name: ASML
+    ats: asml_sitemap
+    slug: https://www.asml.com/en/job_posting-sitemap.xml
+
+  - name: Samsung Semiconductor
+    ats: samsungsemi
+    slug: https://semiconductor.samsung.com/us/about-us/careers/jobs/
+
+  # --- Not enabled yet ---
+  # C2MI: removed - no good extractable page.
+  # High Q Technologies: removed - no good extractable page.
+  # Integran Technologies: removed - no good extractable page.
+  # Analog Devices: removed - no good extractable page.
+  # CINT: provided Sandia URL is an informational internships page, not a current job feed.
+  # IBM: current IBM careers page did not expose a stable parseable jobs feed in local tests.
+  # TSMC: current careers pages were blocked by Cloudflare during local tests.
 
 # =============================================================================
 # Global keyword filters

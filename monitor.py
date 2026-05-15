@@ -17,6 +17,7 @@ from dataclasses import dataclass, field, asdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
+from urllib.parse import urljoin, urlparse
 
 import requests
 import yaml
@@ -63,7 +64,14 @@ class Job:
 # ATS Fetchers
 # ---------------------------------------------------------------------------
 
-REQUEST_HEADERS = {"User-Agent": "JobMonitorBot/1.0"}
+REQUEST_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0 Safari/537.36 JobMonitorBot/1.0"
+    ),
+    "Accept": "application/json, text/html;q=0.9, */*;q=0.8",
+}
 SESSION = requests.Session()
 SESSION.headers.update(REQUEST_HEADERS)
 REQUEST_TIMEOUT = 30
@@ -86,6 +94,17 @@ DEFAULT_INTERNSHIP_KEYWORDS = [
 SECTION_NEW_INTERNSHIP_JOBS = "New Internship/Jobs"
 SECTION_INTERNSHIP_REMINDERS = "Internship / co-op / trainee reminders"
 SECTION_OTHER_NEW_JOBS = "Other new jobs"
+
+
+def stable_id(*parts: str) -> str:
+    """Build a short stable ID when an ATS does not expose one cleanly."""
+    raw = "|".join(p for p in parts if p)
+    return hashlib.md5(raw.encode()).hexdigest()[:16]
+
+
+def clean_text(value: str) -> str:
+    """Collapse HTML/text whitespace."""
+    return re.sub(r"\s+", " ", value or "").strip()
 
 
 def fetch_greenhouse(company_slug: str, company_name: str) -> list[Job]:
@@ -155,6 +174,51 @@ def fetch_ashby(company_slug: str, company_name: str) -> list[Job]:
     return jobs
 
 
+def parse_workday_slug(company_slug: str) -> tuple[str, str, str, str, str]:
+    """
+    Return tenant, wd instance, site, API URL, public URL base.
+    Supported formats:
+      tenant/site
+      tenant.wd3/site
+      https://tenant.wd3.myworkdayjobs.com/Site
+      https://wd5.myworkdaysite.com/recruiting/tenant/Site
+    """
+    if company_slug.startswith("http"):
+        parsed = urlparse(company_slug)
+        host = parsed.netloc
+        path_parts = [part for part in parsed.path.strip("/").split("/") if part]
+
+        if host.endswith(".myworkdayjobs.com"):
+            tenant_part = host.split(".myworkdayjobs.com", 1)[0]
+            if "." in tenant_part:
+                tenant, wd_instance = tenant_part.rsplit(".", 1)
+            else:
+                tenant, wd_instance = tenant_part, "wd1"
+            site = path_parts[0] if path_parts else ""
+            public_base = f"https://{tenant}.{wd_instance}.myworkdayjobs.com"
+        elif host.endswith(".myworkdaysite.com") and len(path_parts) >= 3 and path_parts[0] == "recruiting":
+            wd_instance = host.split(".myworkdaysite.com", 1)[0]
+            tenant = path_parts[1]
+            site = path_parts[2]
+            public_base = f"https://{host}/recruiting/{tenant}"
+        else:
+            raise ValueError(f"Unsupported Workday URL: {company_slug}")
+    else:
+        tenant_part, site = company_slug.split("/", 1)
+        if "." in tenant_part:
+            tenant, wd_instance = tenant_part.rsplit(".", 1)
+        else:
+            tenant = tenant_part
+            wd_instance = "wd1"
+        public_base = f"https://{tenant}.{wd_instance}.myworkdayjobs.com"
+
+    api_url = f"https://{tenant}.{wd_instance}.myworkdayjobs.com/wday/cxs/{tenant}/{site}/jobs"
+    if company_slug.startswith("http") and ".myworkdaysite.com" in urlparse(company_slug).netloc:
+        host = urlparse(company_slug).netloc
+        api_url = f"https://{host}/wday/cxs/{tenant}/{site}/jobs"
+    return tenant, wd_instance, site, api_url, public_base
+
+
 def fetch_workday(company_slug: str, company_name: str) -> list[Job]:
     """
     Fetch jobs from Workday with pagination.
@@ -162,13 +226,15 @@ def fetch_workday(company_slug: str, company_name: str) -> list[Job]:
     Optionally: 'tenant.wd1/site' to specify the Workday instance (wd1, wd5, etc.)
     Default instance is wd1 if not specified.
     """
-    tenant_part, site = company_slug.split("/", 1)
-    if "." in tenant_part:
-        tenant, wd_instance = tenant_part.rsplit(".", 1)
-    else:
-        tenant = tenant_part
-        wd_instance = "wd1"
-    url = f"https://{tenant}.{wd_instance}.myworkdayjobs.com/wday/cxs/{tenant}/{site}/jobs"
+    tenant, wd_instance, site, url, public_base = parse_workday_slug(company_slug)
+    referer = company_slug if company_slug.startswith("http") else f"{public_base}/en-US/{site}"
+    headers = {
+        **REQUEST_HEADERS,
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Origin": public_base,
+        "Referer": referer,
+    }
 
     jobs = []
     seen_ids = set()
@@ -177,7 +243,7 @@ def fetch_workday(company_slug: str, company_name: str) -> list[Job]:
 
     def fetch_page(page_offset: int) -> tuple[int, dict]:
         payload = {"appliedFacets": {}, "limit": page_size, "offset": page_offset, "searchText": ""}
-        resp = requests.post(url, json=payload, headers=REQUEST_HEADERS, timeout=REQUEST_TIMEOUT)
+        resp = SESSION.post(url, json=payload, headers=headers, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
         return page_offset, resp.json()
 
@@ -188,10 +254,14 @@ def fetch_workday(company_slug: str, company_name: str) -> list[Job]:
             if job_id in seen_ids:
                 continue
             seen_ids.add(job_id)
+            if ".myworkdaysite.com/" in public_base:
+                job_url = urljoin(f"{public_base}/{site}/", ext_path.lstrip("/"))
+            else:
+                job_url = urljoin(f"{public_base}/en-US/{site}/", ext_path.lstrip("/"))
             job = Job(
                 id=job_id,
                 title=item.get("title", ""),
-                url=f"https://{tenant}.{wd_instance}.myworkdayjobs.com/en-US/{site}{ext_path}",
+                url=job_url,
                 location=item.get("locationsText", ""),
                 company=company_name,
             )
@@ -272,6 +342,493 @@ def fetch_smartrecruiters(company_slug: str, company_name: str) -> list[Job]:
     return jobs
 
 
+def fetch_jazzhr(board_url: str, company_name: str) -> list[Job]:
+    """Fetch jobs from JazzHR / ApplyToJob public boards."""
+    from bs4 import BeautifulSoup
+
+    resp = SESSION.get(board_url, timeout=REQUEST_TIMEOUT)
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
+
+    jobs = []
+    seen_ids = set()
+    for a_tag in soup.find_all("a", href=True):
+        href = urljoin(board_url, a_tag["href"])
+        parsed = urlparse(href)
+        path_parts = [part for part in parsed.path.strip("/").split("/") if part]
+        if len(path_parts) < 2 or path_parts[0].lower() != "apply":
+            continue
+
+        job_id = path_parts[1]
+        if not re.match(r"^[A-Za-z0-9]+$", job_id):
+            continue
+        if job_id in seen_ids:
+            continue
+
+        title = clean_text(a_tag.get_text(" ", strip=True))
+        if not title or title.lower() in {"apply", "view all", "view all jobs", "skip to content"}:
+            continue
+
+        location = ""
+        parent = a_tag.find_parent(["li", "div", "tr"])
+        if parent:
+            lines = [clean_text(line) for line in parent.get_text("\n", strip=True).splitlines()]
+            lines = [line for line in lines if line and line != title]
+            if lines:
+                location = lines[0]
+
+        seen_ids.add(job_id)
+        jobs.append(Job(
+            id=job_id,
+            title=title,
+            url=href,
+            location=location,
+            company=company_name,
+        ))
+    return jobs
+
+
+def fetch_bamboohr(company_slug: str, company_name: str) -> list[Job]:
+    """Fetch jobs from BambooHR careers/list JSON endpoint."""
+    if company_slug.startswith("http"):
+        host = urlparse(company_slug).netloc
+        subdomain = host.split(".bamboohr.com", 1)[0]
+    else:
+        subdomain = company_slug
+
+    base = f"https://{subdomain}.bamboohr.com"
+    resp = SESSION.get(f"{base}/careers/list", timeout=REQUEST_TIMEOUT)
+    resp.raise_for_status()
+    data = resp.json()
+
+    jobs = []
+    for item in data.get("result", []):
+        loc = item.get("location") or {}
+        location = ", ".join(
+            part for part in [loc.get("city", ""), loc.get("state", ""), loc.get("country", "")]
+            if part
+        )
+        job_id = str(item.get("id", ""))
+        jobs.append(Job(
+            id=job_id,
+            title=item.get("jobOpeningName", ""),
+            url=f"{base}/careers/{job_id}",
+            location=location,
+            team=item.get("departmentLabel", ""),
+            company=company_name,
+        ))
+    return jobs
+
+
+def fetch_jibe(base_url: str, company_name: str) -> list[Job]:
+    """Fetch jobs from Jibe/iCIMS-hosted careers APIs."""
+    jobs = []
+    page = 1
+    limit = 100
+    total = None
+
+    while True:
+        resp = SESSION.get(
+            urljoin(base_url.rstrip("/") + "/", "api/jobs"),
+            params={"page": page, "limit": limit},
+            timeout=REQUEST_TIMEOUT,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        items = data.get("jobs", [])
+        if not items:
+            break
+
+        for item in items:
+            payload = item.get("data", item)
+            meta = payload.get("meta_data") or {}
+            job_id = str(payload.get("req_id") or payload.get("job_id") or payload.get("id") or item.get("id") or "")
+            title = payload.get("title", "")
+            raw_url = meta.get("canonical_url") or payload.get("apply_url") or payload.get("url") or ""
+            if not raw_url:
+                raw_url = f"/jobs/{payload.get('slug', job_id)}"
+            location = (
+                payload.get("full_location")
+                or payload.get("short_location")
+                or payload.get("location_name")
+                or ", ".join(part for part in [payload.get("city", ""), payload.get("state", ""), payload.get("country", "")] if part)
+            )
+            categories = payload.get("categories") or []
+            if isinstance(categories, list):
+                team = ", ".join(str(cat) for cat in categories if cat)
+            else:
+                team = str(categories)
+            jobs.append(Job(
+                id=job_id or stable_id(title, raw_url),
+                title=title,
+                url=urljoin(base_url, raw_url),
+                location=location,
+                team=team,
+                company=company_name,
+            ))
+
+        total = total or data.get("totalCount") or data.get("total")
+        if total and page * limit >= int(total):
+            break
+        page += 1
+        time.sleep(0.2)
+
+    return jobs
+
+
+def fetch_eightfold(company_slug: str, company_name: str) -> list[Job]:
+    """Fetch jobs from Eightfold PCS search APIs."""
+    if "|" not in company_slug:
+        raise ValueError("Eightfold slug must be 'careers_url|domain'")
+    careers_url, domain = [part.strip() for part in company_slug.split("|", 1)]
+    api_url = urljoin(careers_url.rstrip("/") + "/", "../api/pcsx/search")
+    page_size = 10
+    workers = max(1, int(os.environ.get("EIGHTFOLD_PAGE_WORKERS", "8")))
+
+    def fetch_page(start: int) -> tuple[int, dict]:
+        resp = SESSION.get(
+            api_url,
+            params={"domain": domain, "query": "", "location": "", "start": start},
+            timeout=REQUEST_TIMEOUT,
+        )
+        resp.raise_for_status()
+        return start, resp.json()
+
+    _, first = fetch_page(0)
+    data = first.get("data", {})
+    total = int(data.get("count") or 0)
+    pages = {0: data.get("positions", [])}
+
+    starts = list(range(page_size, total, page_size))
+    if starts:
+        with ThreadPoolExecutor(max_workers=min(workers, len(starts))) as executor:
+            futures = [executor.submit(fetch_page, start) for start in starts]
+            for future in as_completed(futures):
+                start, payload = future.result()
+                pages[start] = payload.get("data", {}).get("positions", [])
+
+    jobs = []
+    seen_ids = set()
+    for start in sorted(pages):
+        for item in pages[start]:
+            job_id = str(item.get("id") or item.get("atsJobId") or item.get("displayJobId") or "")
+            if not job_id or job_id in seen_ids:
+                continue
+            seen_ids.add(job_id)
+            raw_url = item.get("positionUrl") or ""
+            job_url = urljoin(careers_url, raw_url)
+            if "domain=" not in job_url:
+                separator = "&" if "?" in job_url else "?"
+                job_url = f"{job_url}{separator}domain={domain}"
+            locations = item.get("locations") or []
+            jobs.append(Job(
+                id=job_id,
+                title=item.get("name", ""),
+                url=job_url,
+                location=", ".join(locations),
+                team=item.get("department", ""),
+                company=company_name,
+            ))
+    return jobs
+
+
+def fetch_oracle_hcm(company_slug: str, company_name: str) -> list[Job]:
+    """Fetch jobs from Oracle HCM candidate experience APIs."""
+    try:
+        public_url, api_host, site_number, language = [part.strip() for part in company_slug.split("|")]
+    except ValueError as exc:
+        raise ValueError("Oracle HCM slug must be 'public_url|api_host|site_number|language'") from exc
+
+    api_url = urljoin(api_host.rstrip("/") + "/", "hcmRestApi/resources/latest/recruitingCEJobRequisitions")
+    jobs = []
+    offset = 0
+    limit = 100
+    total = None
+
+    while True:
+        params = {
+            "onlyData": "true",
+            "expand": "requisitionList.secondaryLocations,requisitionList.requisitionFlexFields",
+            "finder": f"findReqs;siteNumber={site_number},limit={limit},offset={offset},sortBy=POSTING_DATES_DESC",
+        }
+        resp = SESSION.get(
+            api_url,
+            params=params,
+            headers={**REQUEST_HEADERS, "Accept": "application/json", "Ora-Irc-Language": language, "Referer": public_url},
+            timeout=REQUEST_TIMEOUT,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        search = (data.get("items") or [{}])[0]
+        postings = search.get("requisitionList", [])
+        if total is None:
+            total = int(search.get("TotalJobsCount") or 0)
+        if not postings:
+            break
+
+        for item in postings:
+            job_id = str(item.get("Id", ""))
+            jobs.append(Job(
+                id=job_id,
+                title=item.get("Title", ""),
+                url=urljoin(public_url.rstrip("/") + "/", f"../job/{job_id}"),
+                location=item.get("PrimaryLocation", ""),
+                team=item.get("JobFunction") or item.get("JobFamily") or "",
+                company=company_name,
+            ))
+
+        offset += limit
+        if total and offset >= total:
+            break
+        time.sleep(0.2)
+
+    return jobs
+
+
+def fetch_successfactors(career_url: str, company_name: str) -> list[Job]:
+    """Fetch jobs from SAP SuccessFactors public search pages."""
+    from bs4 import BeautifulSoup
+
+    def fetch_page(startrow: int) -> str:
+        last_error = None
+        for attempt in range(3):
+            try:
+                resp = SESSION.get(
+                    career_url,
+                    params={"q": "", "sortColumn": "referencedate", "sortDirection": "desc", "startrow": startrow},
+                    headers={**REQUEST_HEADERS, "Connection": "close"},
+                    timeout=max(REQUEST_TIMEOUT, 45),
+                )
+                resp.raise_for_status()
+                return resp.text
+            except requests.RequestException as exc:
+                last_error = exc
+                time.sleep(1 + attempt)
+        raise last_error
+
+    first_html = fetch_page(0)
+    soup = BeautifulSoup(first_html, "html.parser")
+    total_match = re.search(r"Showing\s+\d+\s+to\s+\d+\s+of\s+([\d,]+)\s+Jobs", soup.get_text(" ", strip=True))
+    total = int(total_match.group(1).replace(",", "")) if total_match else 0
+    per_page = int(soup.select_one("[data-per-page]").get("data-per-page", "25")) if soup.select_one("[data-per-page]") else 25
+
+    jobs = []
+    seen_ids = set()
+
+    def add_jobs(html: str):
+        page_soup = BeautifulSoup(html, "html.parser")
+        for tile in page_soup.select("li.job-tile"):
+            a_tag = tile.select_one("a.jobTitle-link")
+            if not a_tag:
+                continue
+            href = urljoin(career_url, tile.get("data-url") or a_tag.get("href", ""))
+            job_id_match = re.search(r"/(\d+)/?$", href)
+            job_id = job_id_match.group(1) if job_id_match else stable_id(href)
+            if job_id in seen_ids:
+                continue
+            seen_ids.add(job_id)
+            location_node = tile.select_one('div[id$="-desktop-section-location-value"]')
+            team_node = tile.select_one('div[id$="-desktop-section-dept-value"], div[id$="-desktop-section-customfield1-value"]')
+            jobs.append(Job(
+                id=job_id,
+                title=clean_text(a_tag.get_text(" ", strip=True)),
+                url=href,
+                location=clean_text(location_node.get_text(" ", strip=True)) if location_node else "",
+                team=clean_text(team_node.get_text(" ", strip=True)) if team_node else "",
+                company=company_name,
+            ))
+
+    add_jobs(first_html)
+    for startrow in range(per_page, total, per_page):
+        add_jobs(fetch_page(startrow))
+        time.sleep(0.2)
+
+    return jobs
+
+
+def fetch_radancy(career_url: str, company_name: str) -> list[Job]:
+    """Fetch jobs from Radancy/TalentBrew search pages."""
+    from bs4 import BeautifulSoup
+
+    resp = SESSION.get(career_url, timeout=REQUEST_TIMEOUT)
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
+    root = soup.select_one("#search-results")
+    if not root:
+        return []
+
+    attrs = root.attrs
+    total_pages = int(attrs.get("data-total-pages") or 1)
+    records_per_page = int(attrs.get("data-records-per-page") or 15)
+    total_results = int(attrs.get("data-total-results") or 0)
+    ajax_url = urljoin(career_url, attrs.get("data-ajax-url") or "/search-jobs/results")
+
+    jobs = []
+    seen_ids = set()
+
+    def add_jobs(html: str):
+        page_soup = BeautifulSoup(html, "html.parser")
+        for a_tag in page_soup.select('a[href*="/job/"]'):
+            href = urljoin(career_url, a_tag.get("href", ""))
+            job_id = a_tag.get("data-job-id") or stable_id(href)
+            if job_id in seen_ids:
+                continue
+            seen_ids.add(job_id)
+            parts = [clean_text(part) for part in a_tag.get_text("\n", strip=True).splitlines()]
+            parts = [part for part in parts if part]
+            title = parts[0] if parts else clean_text(a_tag.get_text(" ", strip=True))
+            location = parts[1] if len(parts) > 1 and "job id" not in parts[1].lower() else ""
+            team = ""
+            for index, part in enumerate(parts):
+                if part.lower().startswith("category") and index + 1 < len(parts):
+                    team = parts[index + 1]
+                    break
+            jobs.append(Job(
+                id=job_id,
+                title=title,
+                url=href,
+                location=location,
+                team=team,
+                company=company_name,
+            ))
+
+    add_jobs(resp.text)
+    for page in range(2, total_pages + 1):
+        params = {
+            "ActiveFacetID": 0,
+            "CurrentPage": page,
+            "RecordsPerPage": records_per_page,
+            "TotalPages": total_pages,
+            "TotalResults": total_results,
+            "Distance": 50,
+            "RadiusUnitType": 2,
+            "Keywords": "",
+            "Location": "",
+            "Latitude": "",
+            "Longitude": "",
+            "ShowRadius": "False",
+            "IsPagination": "True",
+            "CustomFacetName": "",
+            "FacetTerm": "",
+            "FacetType": 0,
+            "SearchResultsModuleName": attrs.get("data-search-results-module-name") or "Search Results",
+            "SortCriteria": attrs.get("data-sort-criteria") or 0,
+            "SortDirection": attrs.get("data-sort-direction") or 1,
+            "SearchType": attrs.get("data-search-type") or 5,
+            "CategoryFacetTerm": "",
+            "CategoryFacetType": "",
+            "LocationFacetTerm": "",
+            "LocationFacetType": "",
+            "KeywordType": "",
+            "LocationType": "",
+            "LocationPath": "",
+            "OrganizationIds": "",
+            "PostalCode": "",
+            "ResultsType": 0,
+            "fc": "",
+            "fl": "",
+            "fcf": "",
+            "afc": "",
+            "afl": "",
+            "afcf": "",
+        }
+        page_resp = SESSION.get(ajax_url, params=params, timeout=REQUEST_TIMEOUT)
+        page_resp.raise_for_status()
+        payload = page_resp.json()
+        add_jobs(payload.get("results", ""))
+        time.sleep(0.1)
+
+    return jobs
+
+
+def fetch_asml_sitemap(sitemap_url: str, company_name: str) -> list[Job]:
+    """Fetch ASML jobs from its public job-posting sitemap."""
+    import xml.etree.ElementTree as ET
+
+    resp = SESSION.get(sitemap_url, timeout=REQUEST_TIMEOUT)
+    resp.raise_for_status()
+    root = ET.fromstring(resp.content)
+    jobs = []
+    for loc in root.findall(".//{*}loc"):
+        job_url = (loc.text or "").strip()
+        if not job_url:
+            continue
+        slug = urlparse(job_url).path.rstrip("/").split("/")[-1]
+        title = re.sub(r"-j\d+$", "", slug, flags=re.I).replace("-", " ").strip().title()
+        jobs.append(Job(
+            id=stable_id(job_url),
+            title=title,
+            url=job_url,
+            company=company_name,
+        ))
+    return jobs
+
+
+def fetch_samsungsemi(company_slug: str, company_name: str) -> list[Job]:
+    """Fetch Samsung Semiconductor jobs from its public search API."""
+    api_url = "https://search.semiconductor.samsung.com/semi/insightfinder"
+    boards = [
+        ("semius", "careersJob"),
+        ("semiemea", "careersJob"),
+        ("semissir", "workday"),
+    ]
+    jobs = []
+    seen_urls = set()
+
+    for site, category in boards:
+        start = 0
+        page = 1
+        page_size = 10
+        total = None
+        while True:
+            params = {
+                "onlyfilter": "N",
+                "filter": "",
+                "sort": "Newest",
+                "stage": "real",
+                "pagetype": "page",
+                "site": site,
+                "category": category,
+                "q": "",
+                "startno": start,
+                "pageno": page,
+                "num": page_size,
+            }
+            resp = SESSION.get(api_url, params=params, timeout=REQUEST_TIMEOUT)
+            resp.raise_for_status()
+            result_list = resp.json().get("response", {}).get("resultData", {}).get("resultList", [])
+            result = result_list[0] if result_list else {}
+            if total is None:
+                total = int(result.get("resultCount") or 0)
+            items = result.get("insightLandingContentList") or result.get("contentList") or []
+            if not items:
+                break
+
+            for item in items:
+                job_url = item.get("careersUrl") or item.get("workdayUrl") or item.get("pageUrl") or item.get("dispUrl") or item.get("docIdUrl") or ""
+                if not job_url or job_url in seen_urls:
+                    continue
+                seen_urls.add(job_url)
+                title = item.get("careersTitle") or item.get("workdayTitle") or item.get("title") or ""
+                location = item.get("careersLocation") or item.get("workdayLocation") or ""
+                jobs.append(Job(
+                    id=stable_id(job_url),
+                    title=clean_text(title),
+                    url=job_url,
+                    location=location,
+                    team=item.get("careersCtgry") or item.get("workdayCtgry") or "",
+                    company=company_name,
+                ))
+
+            start += page_size
+            page += 1
+            if total and start >= total:
+                break
+            time.sleep(0.1)
+
+    return jobs
+
+
 def fetch_generic_html(career_url: str, company_name: str) -> list[Job]:
     """
     Fallback: fetch an HTML page and extract links that look like job postings.
@@ -318,6 +875,15 @@ FETCHERS = {
     "ashby": fetch_ashby,
     "workday": fetch_workday,
     "smartrecruiters": fetch_smartrecruiters,
+    "jazzhr": fetch_jazzhr,
+    "bamboohr": fetch_bamboohr,
+    "jibe": fetch_jibe,
+    "eightfold": fetch_eightfold,
+    "oracle_hcm": fetch_oracle_hcm,
+    "successfactors": fetch_successfactors,
+    "radancy": fetch_radancy,
+    "asml_sitemap": fetch_asml_sitemap,
+    "samsungsemi": fetch_samsungsemi,
     "html": fetch_generic_html,
 }
 
