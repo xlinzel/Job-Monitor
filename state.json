@@ -578,6 +578,7 @@
     "/job/Santa-Clara-CA/Prinicipal-Emulation-Engineer_2601564",
     "/job/Santa-Clara-CA/Prinicpal-Physical-Design-Implementation-Engineer_2601787",
     "/job/Santa-Clara-CA/Rack-Level-Integration-Engineer_2600698",
+    "/job/Santa-Clara-CA/Senior---Principal-Applications-Engineer---Advance-Packaged-Optics--CPO-_2601797",
     "/job/Santa-Clara-CA/Senior-Accounting-Analyst---Technical-Accounting---SEC-Reporting_2601391",
     "/job/Santa-Clara-CA/Senior-Benefits-Program-Manager---Americas_2600924",
     "/job/Santa-Clara-CA/Senior-Director-Product-Line-Management---CPO_2503304",
@@ -4860,6 +4861,7 @@
     "86035",
     "86037",
     "86040",
+    "86047",
     "86051",
     "86052",
     "86060",
@@ -7092,7 +7094,6 @@
     "41062690",
     "41062694",
     "41062697",
-    "41062714",
     "41062811",
     "41063166",
     "41063399",
@@ -7982,7 +7983,6 @@
     "41728652",
     "41728657",
     "41728661",
-    "41728665",
     "41728667",
     "41728793",
     "41728834",
@@ -8444,7 +8444,6 @@
     "41943231",
     "41943252",
     "41943535",
-    "41943538",
     "41943791",
     "41943964",
     "41943993",
@@ -15733,7 +15732,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-15 22:14 UTC",
+      "checked_at": "2026-05-15 22:30 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
