@@ -1207,34 +1207,58 @@ def describe_mapped_job(mapped_job: dict) -> str:
 
 def process_discord_commands(state: dict, bot_token: str, channel_id: str, webhook_url: str) -> bool:
     """Process ignore/unignore commands from Discord and persist them in state metadata."""
+    meta = get_state_meta(state)
+    status = {
+        "checked_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+        "status": "unknown",
+    }
+    meta["last_discord_command_status"] = status
+
     if not bot_token or not channel_id:
+        missing = []
+        if not bot_token:
+            missing.append("DISCORD_BOT_TOKEN")
+        if not channel_id:
+            missing.append("DISCORD_CHANNEL_ID")
+        status.update({"status": "disabled", "missing": missing})
+        log.warning("Discord command processing disabled; missing %s", ", ".join(missing))
         return False
 
-    meta = get_state_meta(state)
     last_message_id = str(meta.get("last_discord_command_message_id", ""))
     try:
         messages = fetch_discord_messages(bot_token, channel_id, last_message_id)
     except Exception as e:
+        status.update({"status": "fetch_failed", "error": str(e)})
         log.error("Failed to fetch Discord messages for commands: %s", e)
         return False
 
     if not messages:
+        status.update({
+            "status": "ok",
+            "messages_fetched": 0,
+            "commands_processed": 0,
+            "last_message_id": last_message_id,
+        })
         return False
 
     reminder_map = meta.get("last_reminder_map", {})
     ignored_ids = set(meta.get("ignored_internship_job_ids", []))
     changed = False
+    commands_processed = 0
+    user_messages_seen = 0
 
     for message in messages:
         meta["last_discord_command_message_id"] = message["id"]
         author = message.get("author", {})
         if author.get("bot") or message.get("webhook_id"):
             continue
+        user_messages_seen += 1
 
         parsed = parse_discord_command(message.get("content", ""))
         if not parsed:
             continue
 
+        commands_processed += 1
         command, numbers, all_requested = parsed
         if command == "help":
             send_plain_webhook(
@@ -1304,6 +1328,13 @@ def process_discord_commands(state: dict, bot_token: str, channel_id: str, webho
         send_plain_webhook(webhook_url, "\n".join(lines))
 
     meta["ignored_internship_job_ids"] = sorted(ignored_ids)
+    status.update({
+        "status": "ok",
+        "messages_fetched": len(messages),
+        "user_messages_seen": user_messages_seen,
+        "commands_processed": commands_processed,
+        "last_message_id": meta.get("last_discord_command_message_id", ""),
+    })
     return changed
 
 
