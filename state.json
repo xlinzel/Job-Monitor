@@ -723,6 +723,7 @@
     "/job/Toronto-Canada/Analog-Layout-Staff-Engineer_2601370",
     "/job/Toronto-Canada/Analog-Mixed-Signal-Design-Engineer--Senior-Staff_2600448",
     "/job/Toronto-Canada/Analog-Mixed-Signal-IC-Design-Principal-Engineer_2600943-1",
+    "/job/Toronto-Canada/Machine-Learning-Intern---Bachelor-s-Degree_2601122-1",
     "/job/Toronto-Canada/Principal-ASIC-Design-Engineer_2601242",
     "/job/Toronto-Canada/Principal-Engineer--Digital-IC-Design_2601660",
     "/job/Toronto-Canada/Principal-Mixed-Signal-Design-Engineer_2503736-1",
@@ -891,7 +892,7 @@
     "96434501"
   ],
   "_meta": {
-    "last_discord_command_message_id": "1504857239717154988",
+    "last_discord_command_message_id": "1504876147941441767",
     "ignored_internship_job_ids": [
       "/job/Bucharest-Romania/Layout---Simulations-Engineer-Intern_2502690",
       "/job/CN---Shanghai/Intern--Technical-Sales_2601143",
@@ -980,6 +981,13 @@
         "company": "Marvell",
         "location": "Ottawa, Canada",
         "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Ottawa-Canada/Design-Verification-Design-Intern---Bachelors-Degree_2502780-1"
+      },
+      "6": {
+        "id": "/job/Toronto-Canada/Machine-Learning-Intern---Bachelor-s-Degree_2601122-1",
+        "title": "Machine Learning Intern - Bachelor's Degree",
+        "company": "Marvell",
+        "location": "Toronto, Canada",
+        "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Toronto-Canada/Machine-Learning-Intern---Bachelor-s-Degree_2601122-1"
       }
     }
   }
