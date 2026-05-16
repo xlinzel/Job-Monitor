@@ -9117,7 +9117,6 @@
     "563808961449920",
     "563808961449921",
     "563808961449922",
-    "563808961463333",
     "563808961472358",
     "563808961477470",
     "563808961478809",
@@ -15735,7 +15734,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-16 08:30 UTC",
+      "checked_at": "2026-05-16 08:45 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
