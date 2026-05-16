@@ -780,6 +780,7 @@
     "/job/Westborough-MA/Senior-Staff-Engineer-Digital-IC-Build-Flow-and-Methodology_2601233",
     "/job/Westborough-MA/Senior-Staff-Engineer-SW-FW-Engineer_2600254",
     "/job/Westborough-MA/Staff-Engineer--Engineering-Compute-Infrastructure-and-Grid-Operations_2601229-1",
+    "/job/Westlake-Village-CA/Hardware---Silicon-Validation-Engineer---Early-Career_2601748",
     "/job/Westlake-Village-CA/Hardware-and-Silicon-Validation_2600895",
     "/job/Westlake-Village-CA/Senior-Staff-Analog-Mixed-Signal-Design---Optical_2600100",
     "/job/Westlake-Village-CA/Sr-Staff-Software-Engineer-Embedded-System-Level-Firmware---BGP--OSPF--VXLAN--EVPN--SDN--network-virtualization_2601444",
@@ -1033,6 +1034,7 @@
     "95c86867-e8d7-4f16-9986-42311d785380",
     "9ab192af-3480-40a7-9ff3-f81061ac6301",
     "9abd3543-0d46-4fd8-882c-2fe93d75a51b",
+    "9bb633af-2517-4e5b-9363-0f75836687f6",
     "9db0172d-df26-4ff1-b5c4-07c2d6be5fde",
     "9e038e75-7a0e-4176-abcf-f57343284d3b",
     "9e0751cd-f651-4cc7-bea7-f21663f082c0",
@@ -2206,6 +2208,7 @@
     "/job/USA-CA-Irvine-Alton-Parkway-Bldg-2/R-D-Engineer-Hardware_R025064-1",
     "/job/USA-CA-Irvine-Alton-Parkway-Bldg-2/R-D-Engineer-Hardware_R025790",
     "/job/USA-CA-Irvine-Alton-Parkway-Bldg-2/R-D-Engineer-IC-Design_R025157",
+    "/job/USA-CA-Irvine-Alton-Parkway-Bldg-2/R-D-Engineer-IC-Design_R026035",
     "/job/USA-CA-Irvine-Alton-Parkway-Bldg-2/R-D-Hardware-Design-Engineer--High-Speed-Analog-_R024941-1",
     "/job/USA-CA-Irvine-Alton-Parkway-Bldg-2/R-D-IC-Design-Engineer_R024629",
     "/job/USA-CA-Irvine-Alton-Parkway-Bldg-2/R-D-IC-Design-Engineer_R024630",
@@ -8435,6 +8438,7 @@
     "41942351",
     "41942355",
     "41942361",
+    "41942920",
     "41942923",
     "41943060",
     "41943229",
@@ -8459,7 +8463,6 @@
   ],
   "GlobalFoundries": [
     "563980768882149",
-    "563980768882165",
     "563980768882166",
     "563980768903280",
     "563980768903288",
@@ -8472,7 +8475,6 @@
     "563980768903307",
     "563980768903311",
     "563980768903312",
-    "563980768903316",
     "563980768903319",
     "563980768903323",
     "563980768903336",
@@ -8593,7 +8595,6 @@
     "563980768904117",
     "563980768904123",
     "563980768904125",
-    "563980768904127",
     "563980768904129",
     "563980768904132",
     "563980768904139",
@@ -8988,6 +8989,9 @@
     "563980769430407",
     "563980769431149",
     "563980769431383",
+    "563980769431384",
+    "563980769446740",
+    "563980769446751",
     "563980769456568",
     "563980769466871"
   ],
@@ -15729,7 +15733,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-16 00:00 UTC",
+      "checked_at": "2026-05-16 00:11 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
