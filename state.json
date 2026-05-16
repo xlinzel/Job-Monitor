@@ -2290,7 +2290,6 @@
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/ASIC-DFT-Engineer_R025177",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/ASIC-Floor-Plan-Automation-Engineer_R024259",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/Advanced-Package-Technology-Engineer_R024784",
-    "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/Analog-and-Mixed-Signal-IC-Design-Engineer_R024958",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/CMP-Plating-Wafer-Bond-Equipment-Maintenance-Technician--Night-Shift-_R025788",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/D-Shift-Line-Technician_R025782",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/DCIM-Equipment-Maintenance-Technician--Diffusion--CVD--Implant--Milling--Night-Shift-_R025861",
@@ -4968,7 +4967,6 @@
     "27516",
     "27552",
     "27563",
-    "27593",
     "27619",
     "27693",
     "27814",
@@ -8155,7 +8153,6 @@
     "41824199",
     "41824643",
     "41825409",
-    "41827337",
     "41828900",
     "41829944",
     "41829953",
@@ -8438,7 +8435,6 @@
     "41942351",
     "41942355",
     "41942361",
-    "41942920",
     "41942923",
     "41943060",
     "41943229",
@@ -8992,9 +8988,6 @@
     "563980769430407",
     "563980769431149",
     "563980769431383",
-    "563980769431384",
-    "563980769446740",
-    "563980769446751",
     "563980769456568",
     "563980769466871"
   ],
@@ -15736,7 +15729,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-15 23:45 UTC",
+      "checked_at": "2026-05-16 00:00 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
