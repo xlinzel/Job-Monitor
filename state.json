@@ -2802,7 +2802,6 @@
     "/job/Philippines---Mphil-1/Technician-I_R1216-26",
     "/job/Philippines---Mphil-3/Analyst---Finance_R925-26",
     "/job/Philippines---Mphil-3/Inspector-I_R1700-26",
-    "/job/Philippines---Mphil-3/Operator-I_R1284-26",
     "/job/Philippines---Mphil-3/Operator-I_R1311-26",
     "/job/Philippines---Mphil-3/Operator-I_R1346-26",
     "/job/Philippines---Mphil-3/Operator-I_R1347-26",
@@ -8455,6 +8454,8 @@
     "41943538",
     "41943567",
     "41943791",
+    "41943964",
+    "41943993",
     "41944160",
     "41944187",
     "41945076",
@@ -9785,7 +9786,6 @@
     "563808970320786",
     "563808970323162",
     "563808970323163",
-    "563808970358099",
     "563808970358100",
     "563808970358110",
     "563808970358117",
@@ -10158,7 +10158,8 @@
     "563808970765673",
     "563808970765871",
     "563808970771656",
-    "563808970772439"
+    "563808970772439",
+    "563808970778150"
   ],
   "Texas Instruments": [
     "240001HW",
@@ -15734,7 +15735,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-16 04:30 UTC",
+      "checked_at": "2026-05-16 04:45 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
