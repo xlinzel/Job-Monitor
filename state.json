@@ -8276,13 +8276,11 @@
     "41853722",
     "41853911",
     "41853913",
-    "41853920",
     "41853929",
     "41854375",
     "41854413",
     "41854424",
     "41854437",
-    "41854777",
     "41854780",
     "41854787",
     "41854802",
@@ -15736,7 +15734,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-16 05:00 UTC",
+      "checked_at": "2026-05-16 05:15 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
