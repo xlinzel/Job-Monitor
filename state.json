@@ -2778,6 +2778,7 @@
     "/job/Philippines---Mphil-1/Engineer-II-Test_R881-26",
     "/job/Philippines---Mphil-1/Operator-1_R1717-26-1",
     "/job/Philippines---Mphil-1/Operator-I_R1719-26-1",
+    "/job/Philippines---Mphil-1/Operator-I_R1824-26-1",
     "/job/Philippines---Mphil-1/Operator-I_R915-26-1",
     "/job/Philippines---Mphil-1/Senior-Engineer-I---Quality_R1572-26",
     "/job/Philippines---Mphil-1/Senior-Planner_R399-26",
@@ -15726,7 +15727,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-16 22:26 UTC",
+      "checked_at": "2026-05-16 22:30 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
