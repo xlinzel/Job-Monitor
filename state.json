@@ -2420,7 +2420,6 @@
     "/job/AZ---Chandler/Engineer-II---Application_R1594-26",
     "/job/AZ---Chandler/Engineer-II---Systems--HPC-Engineer-_R1591-26",
     "/job/AZ---Chandler/Intern---Engineering--Business-Intelligence-_R1727-26",
-    "/job/AZ---Chandler/Intern--Administrative--Accounting-_R1964-26",
     "/job/AZ---Chandler/Intern-Engineering--HPS-_R1930-26",
     "/job/AZ---Chandler/Manager--Product-Marketing_R1029-26-1",
     "/job/AZ---Chandler/Manager-Product-Line_R1794-26",
@@ -2855,7 +2854,8 @@
     "/job/United-Kingdom---Whiteley/Principle-Firmware-Engineer_R2013-26",
     "/job/United-Kingdom---Wokingham/Senior-Client-Engagement-Manager_R1881-26",
     "/job/Vietnam---Saigon/Design-Engineer_R340-26",
-    "/job/Vietnam---Saigon/Engineer-I---Design_R1373-26"
+    "/job/Vietnam---Saigon/Engineer-I---Design_R1373-26",
+    "R1694-26"
   ],
   "NXP Semiconductors": [
     "/job/Austin-Ed-Bluestein-Manufacturing/ATMC-Cu-Plate-Equipment-Technician_R-10063093-1",
@@ -15734,7 +15734,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-16 09:45 UTC",
+      "checked_at": "2026-05-16 10:00 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
