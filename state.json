@@ -6275,7 +6275,6 @@
     "40205046",
     "40270227",
     "40270231",
-    "40270690",
     "40272481",
     "40272491",
     "40272492",
@@ -6382,7 +6381,6 @@
     "40420993",
     "40424266",
     "40431129",
-    "40431130",
     "40431443",
     "40431608",
     "40431614",
@@ -15728,9 +15726,9 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-16 16:15 UTC",
+      "checked_at": "2026-05-16 16:30 UTC",
       "status": "fetch_failed",
-      "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
+      "error": "HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085 (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1010)')))"
     }
   }
 }
