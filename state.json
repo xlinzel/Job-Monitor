@@ -14213,7 +14213,6 @@
     "180db05049a8683e",
     "1816264e7741ca4d",
     "1915b400cfe93a6c",
-    "19623370077d97b9",
     "1984847c4fdf40e9",
     "1a06888e12bb5fe0",
     "1a1e4ca9db6a1a8f",
@@ -15457,7 +15456,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-17 07:58 UTC",
+      "checked_at": "2026-05-17 08:00 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
