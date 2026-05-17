@@ -2870,10 +2870,12 @@
     "/job/Austin-Oakhill-Office/Director--Global-HR-Business-Partner_R-10063091-1",
     "/job/Austin-Oakhill-Office/GenAI-DevOps-Program-Manager_R-10060536",
     "/job/Austin-Oakhill-Office/HW-Security-Architect_R-10062083",
+    "/job/Austin-Oakhill-Office/HW-Validation-Engineer_R-10063521",
     "/job/Austin-Oakhill-Office/IT-Leader-for-Go-To-Market--GTM----Sales-Application-Stack_R-10062996-1",
     "/job/Austin-Oakhill-Office/Litigation-Paralegal-and-E-Discovery-Specialist_R-10062399",
     "/job/Austin-Oakhill-Office/OHT-Facilities-Operations-Tech-Watch_R-10062673",
     "/job/Austin-Oakhill-Office/Outside-Sales-Representative_R-10063008",
+    "/job/Austin-Oakhill-Office/Principal-Applications-Engineer_R-10063522",
     "/job/Austin-Oakhill-Office/Principal-DFT-Engineer_R-10062783",
     "/job/Austin-Oakhill-Office/Product-Marketing---Automotive-SoCs_R-10062906",
     "/job/Austin-Oakhill-Office/Real-Estate-Americas_R-10061707",
@@ -15700,10 +15702,17 @@
         "company": "Applied Materials",
         "location": "",
         "url": "https://jobs.appliedmaterials.com/job/santa-clara/2026-summer-optical-intern-adv-degree-santa-clara-ca/95/95159311408"
+      },
+      "2": {
+        "id": "29848",
+        "title": "UIUC Research Park Intern - Machine Learning",
+        "company": "Rivian",
+        "location": "Champaign, Illinois",
+        "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-17 15:11 UTC",
+      "checked_at": "2026-05-17 15:15 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
