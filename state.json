@@ -2884,6 +2884,7 @@
     "/job/Austin-Oakhill-Office/Senior-Manager---Regional-Lead---Export-Control-and-Sanctions-Compliance_R-10060190-1",
     "/job/Austin-Oakhill-Office/Senior-Manager--Threat-Intel-Analyst_R-10062218",
     "/job/Austin-Oakhill-Office/SoC-Validation-Engineer_R-10062747",
+    "/job/Austin-Oakhill-Office/Systems-IC-Architect_R-10063523",
     "/job/Austin-Oakhill-Office/Test-Strategic-Capacity-Planning-Manager_R-10062384",
     "/job/Austin-Oakhill-Office/XMLNAME--Senior--Commodity-Manager-Innovation----IP--EDA---Outsourced-Design_R-10062342",
     "/job/Bangalore/AI---BI-Enablement_R-10061551-1",
@@ -7799,7 +7800,6 @@
     "41554762",
     "41554768",
     "41554771",
-    "41554776",
     "41554778",
     "41554787",
     "41554791",
@@ -10696,7 +10696,6 @@
     "1324762300",
     "1324762500",
     "1326432700",
-    "1333210300",
     "1333225700",
     "1337017700",
     "1337374900",
@@ -10875,7 +10874,6 @@
     "1389676400",
     "1389679200",
     "1389681900",
-    "1389685200",
     "1390084700",
     "1390087700",
     "1390106800",
@@ -10896,7 +10894,8 @@
     "1391310300",
     "1391554600",
     "1391647100",
-    "1391647300"
+    "1391647300",
+    "1391650600"
   ],
   "Applied Materials": [
     "46146390576",
@@ -15712,7 +15711,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-17 15:15 UTC",
+      "checked_at": "2026-05-17 15:30 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
