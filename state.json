@@ -1909,7 +1909,6 @@
     "/job/Morumbi-SP-Sao-Paulo-Brazil/Ads-Sales-Executive---Samsung-Ads_R116939",
     "/job/NAND-BM-IP-DV-Engineer_R114266",
     "/job/NAND-BM-IP-RTL-Design-Engineer_R114267",
-    "/job/NSW-Sydney-Australia/NSW-Channel-Sales-Manager_R115005-1",
     "/job/One-Pennsylvania-Plaza-26th-Floor-New-York-NY-USA/Finance-Manager_R116396",
     "/job/One-Pennsylvania-Plaza-26th-Floor-New-York-NY-USA/Financial-Operations-Manager_R113815-2",
     "/job/One-Pennsylvania-Plaza-26th-Floor-New-York-NY-USA/Head-of-Agency-Sales_R116750",
@@ -7296,7 +7295,6 @@
     "41160871",
     "41160876",
     "41160878",
-    "41160893",
     "41160895",
     "41160896",
     "41160900",
@@ -8883,6 +8881,7 @@
     "563980769206918",
     "563980769224507",
     "563980769224508",
+    "563980769224511",
     "563980769224512",
     "563980769224513",
     "563980769239045",
@@ -8946,6 +8945,8 @@
     "563980769402615",
     "563980769402620",
     "563980769402621",
+    "563980769402626",
+    "563980769402630",
     "563980769402638",
     "563980769402642",
     "563980769402643",
@@ -15700,17 +15701,10 @@
         "company": "Applied Materials",
         "location": "",
         "url": "https://jobs.appliedmaterials.com/job/santa-clara/2026-summer-optical-intern-adv-degree-santa-clara-ca/95/95159311408"
-      },
-      "2": {
-        "id": "29848",
-        "title": "UIUC Research Park Intern - Machine Learning",
-        "company": "Rivian",
-        "location": "Champaign, Illinois",
-        "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-17 13:45 UTC",
+      "checked_at": "2026-05-17 14:00 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
