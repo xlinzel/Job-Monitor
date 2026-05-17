@@ -294,6 +294,7 @@
     "/job/Cordoba-Argentina/Analog-Layout-Junior-Engineer_2503718",
     "/job/Cordoba-Argentina/DSP-Firmware-Engineer_2600542",
     "/job/Cordoba-Argentina/Digital-IC-Design-Verification-Engineer_2602034",
+    "/job/Cordoba-Argentina/Electrical-Design-Validation-Testing-Engineer_2601455-1",
     "/job/Cordoba-Argentina/Firmware-Engineer_2600394",
     "/job/Cordoba-Argentina/Firmware-Intern_2502689",
     "/job/Cordoba-Argentina/Firmware-Intern_2600638",
@@ -8477,6 +8478,7 @@
     "563980768903349",
     "563980768903365",
     "563980768903367",
+    "563980768903371",
     "563980768903374",
     "563980768903380",
     "563980768903389",
@@ -8890,6 +8892,7 @@
     "563980769224512",
     "563980769224513",
     "563980769239045",
+    "563980769257043",
     "563980769260432",
     "563980769261289",
     "563980769261346",
@@ -15726,7 +15729,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-17 18:15 UTC",
+      "checked_at": "2026-05-17 18:30 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
