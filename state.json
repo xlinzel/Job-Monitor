@@ -170,7 +170,8 @@
     "5208196008",
     "5210439008",
     "5210440008",
-    "5210441008"
+    "5210441008",
+    "5217421008"
   ],
   "Marvell": [
     "/job/Austin-TX/Commercial-Contracts-Specialist_2601800",
@@ -1792,6 +1793,7 @@
     "/job/645-Clyde-Avenue-Mountain-View-CA-USA/Product-Development-Operations-Lead-_R116954",
     "/job/645-Clyde-Avenue-Mountain-View-CA-USA/STS-Senior-Director--Developer-Experience-and-AI-Experience_R117111",
     "/job/645-Clyde-Avenue-Mountain-View-CA-USA/Senior-Director-of-Product-Management--Performance-Advertising_R113529",
+    "/job/645-Clyde-Avenue-Mountain-View-CA-USA/Senior-HR-Business-Partner--Ads-Product---Engineering_R117136-1",
     "/job/645-Clyde-Avenue-Mountain-View-CA-USA/Senior-Software-Engineer_R115926",
     "/job/645-Clyde-Avenue-Mountain-View-CA-USA/Software-Engineer_R116921",
     "/job/645-Clyde-Avenue-Mountain-View-CA-USA/Specialist-1---Technology-Sourcing_R114965",
@@ -1998,7 +2000,6 @@
     "/job/AUS-Brisbane-Remote-Location/Customer-Success-Technical-Adoption-Manager--Australia--Canberra--Remote-_R025316",
     "/job/AUS-Canberra-Marcus-Street/Mainframe-Business-Specialist--Melbourne--Australia--Remote-_R026031-4",
     "/job/AUS-New-South-Wales-Remote-Location/Kubernetes-Platform-Architect--Australia--Remote-_R025225",
-    "/job/AUS-Sydney--Pitt-St/Mainframe-Principal-Technical-Support-Engineer--Sydney--Australia-_R025187",
     "/job/Belgium-Remote-Location/Client-Services-Consultant-Data-Management_R026080",
     "/job/CAN-Alberta-Remote-Location/Senior-Technical-Adoption-Manager_R025463",
     "/job/CAN-Ontario-Remote-Location/Senior-Technical-Adoption-Manager_R025464",
@@ -2038,7 +2039,6 @@
     "/job/ISR-Tel-Aviv-University/Software-Engineer---R-D-Software-Development-Position_R025034",
     "/job/ISR-Tel-Aviv-University/Software-Engineer---R-D-Software-Development-Position_R026036",
     "/job/ITA-Milan-Remote-Location/Mainframe-Technical-Consultant----Mainframe-AIOPS_R023914",
-    "/job/JPN-Tokyo-Tamachi-Station/Application-Marketing-Engineer_R025081-8",
     "/job/JPN-Tokyo-Tamachi-Station/Client-Services-Management_R024768-5",
     "/job/JPN-Tokyo-Tamachi-Station/Industrial-Sales_R025970-4",
     "/job/JPN-Tokyo-Tamachi-Station/Kubernetes-Platform-Architect--Japan--Remote-_R025226",
@@ -2749,7 +2749,6 @@
     "/job/Philippines---Mphil-1/Engineer-II-Test_R881-26",
     "/job/Philippines---Mphil-1/Operator-1_R1717-26-1",
     "/job/Philippines---Mphil-1/Operator-I_R1824-26-1",
-    "/job/Philippines---Mphil-1/Operator-I_R2061-26-1",
     "/job/Philippines---Mphil-1/Operator-I_R915-26-1",
     "/job/Philippines---Mphil-1/Senior-Engineer-I---Quality_R1572-26",
     "/job/Philippines---Mphil-1/Senior-Planner_R399-26",
@@ -4869,7 +4868,6 @@
     "86221",
     "86222",
     "86231",
-    "86234",
     "86235",
     "86236",
     "86237",
@@ -5160,7 +5158,6 @@
     "30158",
     "30164",
     "30165",
-    "30169",
     "30171",
     "30182",
     "30189",
@@ -5985,6 +5982,7 @@
     "39686338",
     "39686344",
     "39689550",
+    "39689556",
     "39689558",
     "39689559",
     "39689564",
@@ -6567,7 +6565,6 @@
     "40730356",
     "40730357",
     "40730359",
-    "40730360",
     "40730362",
     "40730565",
     "40730566",
@@ -6991,7 +6988,6 @@
     "41037384",
     "41037396",
     "41037407",
-    "41037411",
     "41037447",
     "41037567",
     "41037569",
@@ -7294,6 +7290,7 @@
     "41177157",
     "41177158",
     "41179269",
+    "41179279",
     "41179288",
     "41179359",
     "41179368",
@@ -7432,6 +7429,7 @@
     "41253253",
     "41253412",
     "41253586",
+    "41253743",
     "41261190",
     "41261404",
     "41261405",
@@ -7887,7 +7885,6 @@
     "41679957",
     "41680025",
     "41680035",
-    "41680143",
     "41680537",
     "41680559",
     "41682991",
@@ -8187,7 +8184,6 @@
     "41844255",
     "41844390",
     "41844425",
-    "41846923",
     "41847458",
     "41847492",
     "41847538",
@@ -8385,7 +8381,6 @@
     "41931985",
     "41931997",
     "41932004",
-    "41932029",
     "41932043",
     "41932525",
     "41932676",
@@ -8422,20 +8417,24 @@
     "41944160",
     "41944187",
     "41945076",
-    "41945086",
+    "41945663",
     "41945664",
     "41945665",
     "41945884",
+    "41947546",
     "41951782",
     "41954073",
     "41954224",
     "41954264",
     "41954575",
     "41967160",
-    "41967193",
+    "41967168",
+    "41967189",
     "41967194",
-    "41967326",
-    "41970263"
+    "41967319",
+    "41967508",
+    "41970263",
+    "41970470"
   ],
   "GlobalFoundries": [
     "563980768882149",
@@ -13951,6 +13950,7 @@
     "52f65a1ae82192ef",
     "533854b39f899074",
     "53660e593f9fad8e",
+    "5366150f6a0fe36f",
     "53ac0c0d7f2aff1e",
     "53bff321f468f4a2",
     "53df42d22fd718d2",
@@ -15695,34 +15695,27 @@
         "url": "https://micron.eightfold.ai/careers/job/41970263?domain=micron.com"
       },
       "13": {
-        "id": "41967326",
-        "title": "Intern-Assembly Equipment",
-        "company": "Micron",
-        "location": "Singapore, Singapore",
-        "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
-      },
-      "14": {
         "id": "/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872",
         "title": "Internship: Software Developer - Tools (m/f/d)",
         "company": "NXP Semiconductors",
         "location": "Gratkorn",
         "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872"
       },
-      "15": {
+      "14": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "16": {
+      "15": {
         "id": "25002465",
         "title": "Field Applications Engineering Student Worker m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002465"
       },
-      "17": {
+      "16": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15731,7 +15724,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 14:15 UTC",
+      "checked_at": "2026-05-18 14:30 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
