@@ -60,6 +60,7 @@
     "7f2b2a79-ffac-499d-98ed-165dfc2f1ec6",
     "7f945a41-1032-4b55-bbb2-7804762bd3c9",
     "7fe2381c-bce7-4d05-80c9-a5db2d1a304d",
+    "80c2c6b8-aa43-44b0-afe6-2210006a4aba",
     "854da376-d196-408d-bad4-7a1c6012334e",
     "86f57221-387a-4ccc-bb17-24566b08e5f2",
     "886a782a-dd62-47c4-b476-daf228fe91ea",
@@ -73,6 +74,7 @@
     "b9777344-29fc-4e57-ad3b-7f6b4b8455a6",
     "c3e3ca80-3065-4226-a630-40fa73a1f158",
     "d734477f-b64c-4232-a0f8-361bc7831b96",
+    "d8b30e40-1e3f-4d7d-bdfe-2fb6e7ce9c3b",
     "dba12287-2ca5-4878-aa9d-33748f5aef73",
     "dd2e9b23-6a64-4da3-8b15-02b6c3628f6a",
     "e41cd4b0-e141-4318-8f99-ad654c20dda2",
@@ -2543,7 +2545,6 @@
     "/job/Germany---Dresden/Senior-Engineer---Validation-and-Design_R588-26",
     "/job/Germany---Dresden/Senior-Engineer---Verification_R595-26",
     "/job/Germany---Garching---30-Parkring/HMID-BU-Marketing-Manager_R1901-26",
-    "/job/Germany---Heilbronn-MCHP/Principal-Engineer---Analog-Design_R2767-25-1",
     "/job/Germany---Heilbronn-MCHP/Principal-Engineer-Analog-Design-RF_R827-26-1",
     "/job/Germany---Hoehenkirchen-FTD/Technical-Pre-Sales-Engineer--FAE--Time-and-Frequency-Systems-_R1352-26",
     "/job/Germany---Karlsruhe/Principal-Design-Engineer---Emulation_R1505-26",
@@ -3452,8 +3453,7 @@
     "/job/Yokneam-Ilit/Director-of-FE-Engineering---SoC-MCU_R-10062775",
     "/job/Yokneam-Ilit/Senior-Analog-Design-Engineer---MCU_R-10062774",
     "/job/Yokneam-Ilit/Senior-Physical-Design-Leader-MCU_R-10062777",
-    "/job/Yokneam-Ilit/Senior-SoC-Architect---MCU_R-10062776",
-    "R-10062951"
+    "/job/Yokneam-Ilit/Senior-SoC-Architect---MCU_R-10062776"
   ],
   "Alphawave Semi": [
     "/job/Hsinchu-County/Senior-Engineer---Physical-Design_JR100609",
@@ -6502,7 +6502,6 @@
     "40649348",
     "40649624",
     "40650150",
-    "40650774",
     "40651632",
     "40656351",
     "40658888",
@@ -8476,7 +8475,6 @@
     "563980768903349",
     "563980768903365",
     "563980768903367",
-    "563980768903371",
     "563980768903374",
     "563980768903380",
     "563980768903389",
@@ -8807,6 +8805,7 @@
     "563980768975535",
     "563980768976353",
     "563980768978558",
+    "563980768978590",
     "563980768978600",
     "563980768978603",
     "563980768978701",
@@ -8900,6 +8899,7 @@
     "563980769261379",
     "563980769270118",
     "563980769270131",
+    "563980769270132",
     "563980769270134",
     "563980769270135",
     "563980769274825",
@@ -8932,6 +8932,8 @@
     "563980769344070",
     "563980769344219",
     "563980769353378",
+    "563980769353825",
+    "563980769354736",
     "563980769355020",
     "563980769355935",
     "563980769363091",
@@ -8968,10 +8970,13 @@
     "563980769409591",
     "563980769409592",
     "563980769410047",
+    "563980769419706",
+    "563980769419708",
     "563980769420718",
     "563980769420759",
     "563980769420760",
     "563980769420765",
+    "563980769420766",
     "563980769421070",
     "563980769430280",
     "563980769430407",
@@ -10126,6 +10131,7 @@
     "563808970765673",
     "563808970765871",
     "563808970771656",
+    "563808970771728",
     "563808970772208",
     "563808970772439",
     "563808970778150",
@@ -13796,6 +13802,7 @@
     "09a910f176ba1d69",
     "09f63dc776e2cbbf",
     "0ade431f31256f71",
+    "0b047bd031c5ea65",
     "0b2578df413ff991",
     "0b717cfc0b22c06e",
     "0b8b0f5f4361b222",
@@ -14044,6 +14051,7 @@
     "74011484f2fec6f4",
     "7410c993cf8fec42",
     "7514a2f36f774608",
+    "754b99c32f93bb0c",
     "754e550cdf7643cb",
     "757bbfef630c70e9",
     "7581c1d3d094ade1",
@@ -15625,104 +15633,111 @@
         "url": "https://www.asml.com/en/careers/find-your-job/applied-physics-internship-data-science-and-image-processing-for-sem-metrology-j00341379"
       },
       "2": {
+        "id": "754b99c32f93bb0c",
+        "title": "Data Analytics  Supply Chain Internship Circular Performance Insights",
+        "company": "ASML",
+        "location": "",
+        "url": "https://www.asml.com/en/careers/find-your-job/data-analytics--supply-chain-internship-circular-performance-insights-j00339087"
+      },
+      "3": {
         "id": "9679df0e69ab4184",
         "title": "Data Science  Machine Learning Internship Dose Control Algorithms",
         "company": "ASML",
         "location": "",
         "url": "https://www.asml.com/en/careers/find-your-job/data-science--machine-learning-internship-dose-control-algorithms-j00339525"
       },
-      "3": {
+      "4": {
         "id": "1876754901eb8f26",
         "title": "Finance  Law Internship Tax Technology",
         "company": "ASML",
         "location": "",
         "url": "https://www.asml.com/en/careers/find-your-job/finance--law-internship-tax-technology-j00340561"
       },
-      "4": {
+      "5": {
         "id": "b7cc75b7a47db09e",
         "title": "Ta Intern",
         "company": "ASML",
         "location": "",
         "url": "https://www.asml.com/en/careers/find-your-job/ta-intern-j00341384"
       },
-      "5": {
+      "6": {
         "id": "95159311408",
         "title": "2026 Summer Optical Intern (Adv Degree) - Santa Clara, CA",
         "company": "Applied Materials",
         "location": "",
         "url": "https://jobs.appliedmaterials.com/job/santa-clara/2026-summer-optical-intern-adv-degree-santa-clara-ca/95/95159311408"
       },
-      "6": {
+      "7": {
         "id": "563980769353378",
         "title": "AMHS Apprentice Maintenance Technician (Days)",
         "company": "GlobalFoundries",
         "location": "Malta, New York, United States of America",
         "url": "https://careers.gf.com/careers/job/563980769353378?domain=globalfoundries.com"
       },
-      "7": {
+      "8": {
         "id": "563808970772208",
         "title": "Working Student - Software Development for Test Engineering Tools Automation (f/m/div)",
         "company": "Infineon Technologies",
         "location": "Munich (Germany)",
         "url": "https://jobs.infineon.com/careers/job/563808970772208?domain=infineon.com"
       },
-      "8": {
+      "9": {
         "id": "563808970736078",
         "title": "Working student - Embedded Software (f/m/div) ",
         "company": "Infineon Technologies",
         "location": "Munich (Germany)",
         "url": "https://jobs.infineon.com/careers/job/563808970736078?domain=infineon.com"
       },
-      "9": {
+      "10": {
         "id": "41967194",
         "title": "Intern - ADTS PIE PI",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41967194?domain=micron.com"
       },
-      "10": {
+      "11": {
         "id": "41943288",
         "title": "Intern - Component Test Engineering",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41943288?domain=micron.com"
       },
-      "11": {
+      "12": {
         "id": "41970263",
         "title": "Intern - Manufacturing Chemical Vapour Deposition (CVD)",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41970263?domain=micron.com"
       },
-      "12": {
+      "13": {
         "id": "41967326",
         "title": "Intern-Assembly Equipment",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
       },
-      "13": {
+      "14": {
         "id": "/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872",
         "title": "Internship: Software Developer - Tools (m/f/d)",
         "company": "NXP Semiconductors",
         "location": "Gratkorn",
         "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872"
       },
-      "14": {
+      "15": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "15": {
+      "16": {
         "id": "25002465",
         "title": "Field Applications Engineering Student Worker m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002465"
       },
-      "16": {
+      "17": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15731,7 +15746,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 13:30 UTC",
+      "checked_at": "2026-05-18 13:45 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
