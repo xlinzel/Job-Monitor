@@ -2384,7 +2384,8 @@
     "/job/United-Kingdom--Edinburgh--Exchange-Tower/Analog-Mixed-Signal-Design-Engineer_R025746",
     "/job/United-Kingdom-Cambridge-Milton-Road-Cambridge-Science-Park/AI-Software-Engineer_R025524",
     "/job/United-Kingdom-Remote-Location/Kubernetes-Platform-Architect_R025880",
-    "/job/United-Kingdom-Remote-Location/Senior-Project-Manager_R025706"
+    "/job/United-Kingdom-Remote-Location/Senior-Project-Manager_R025706",
+    "R025627"
   ],
   "Microchip Technology": [
     "/job/AL---Tuscaloosa/Engineer-I---Product_R1955-26",
@@ -4917,6 +4918,7 @@
     "26700",
     "26761",
     "26832",
+    "26835",
     "26945",
     "26965",
     "27061",
@@ -5914,6 +5916,7 @@
     "39596083",
     "39596119",
     "39596120",
+    "39596136",
     "39596174",
     "39596198",
     "39596204",
@@ -6559,6 +6562,7 @@
     "40730356",
     "40730357",
     "40730359",
+    "40730360",
     "40730362",
     "40730565",
     "40730566",
@@ -8273,6 +8277,7 @@
     "41886038",
     "41886567",
     "41886568",
+    "41887724",
     "41887780",
     "41887782",
     "41887799",
@@ -15765,7 +15770,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 19:00 UTC",
+      "checked_at": "2026-05-18 19:15 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
