@@ -8407,7 +8407,6 @@
     "41941756",
     "41941763",
     "41941772",
-    "41941774",
     "41941792",
     "41941794",
     "41941798",
@@ -8444,6 +8443,7 @@
     "41954575",
     "41967189",
     "41967194",
+    "41967326",
     "41967508",
     "41970263"
   ],
@@ -9034,7 +9034,6 @@
     "563808959066084",
     "563808959159451",
     "563808959178630",
-    "563808959178632",
     "563808959225747",
     "563808959286730",
     "563808959307102",
@@ -15737,20 +15736,27 @@
         "url": "https://micron.eightfold.ai/careers/job/41970263?domain=micron.com"
       },
       "7": {
+        "id": "41967326",
+        "title": "Intern-Assembly Equipment",
+        "company": "Micron",
+        "location": "Singapore, Singapore",
+        "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
+      },
+      "8": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "8": {
+      "9": {
         "id": "95214446224",
         "title": "Intern",
         "company": "Synopsys",
         "location": "Noida, India",
         "url": "https://careers.synopsys.com/job/noida/intern/44408/95214446224"
       },
-      "9": {
+      "10": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15759,7 +15765,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 08:30 UTC",
+      "checked_at": "2026-05-18 08:38 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
