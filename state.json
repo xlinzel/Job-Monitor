@@ -44,7 +44,6 @@
     "233dace2-56bd-4498-b22a-9feb84f2704e",
     "2838cf54-bda5-455a-881d-2c6d0282beb9",
     "341a7fad-ce22-442c-83ed-99654e67628c",
-    "3c603098-03d5-4c9b-be08-454222f1b2df",
     "4ad624f1-c96f-4415-a7bc-4844fe4bf627",
     "4c1f0b9e-e926-42dd-aa77-dc697900a60a",
     "534fbb94-7a9e-43a0-9543-f5067dcd8c14",
@@ -3016,7 +3015,6 @@
     "/job/Catania/SoC-Digital-Physical-Design-Engineer---MCU_R-10061277",
     "/job/Catania/Sr-Analog-Design-Engineer_R-10062822",
     "/job/Catania/Test-Engineer--NPI-NTI----Principal_R-10062061",
-    "/job/Chandler-Manufacturing/A2---Manufacturing-Associate_R-10062951",
     "/job/Chandler-Manufacturing/CVD-Maintenance-Technician_R-10062799",
     "/job/Chandler-Manufacturing/Facilities-Electrical-Maintenance-Technician_R-10063056",
     "/job/Chandler-Manufacturing/Facilities-O-M-Supervisor---Nights_R-10061284",
@@ -3088,6 +3086,7 @@
     "/job/Gratkorn/Internship--Human-Resources--HR---m-f-d-_R-10061779-1",
     "/job/Gratkorn/Internship--Marketing-Communications---part-time--m-f-d-_R-10062465",
     "/job/Gratkorn/Internship--NFC-RF-System-Validation--m-f-d-_R-10062072",
+    "/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872",
     "/job/Gratkorn/Internship--UWB-Validation-Test-Management-Automotive-UWB--m-f-d-_R-10062493",
     "/job/Gratkorn/NFC-Mobile-Wallet-Technical-Director--m-f-d-_R-10063038",
     "/job/Gratkorn/Principal-Product-Security-Certification-Expert--m-f-d-_R-10061721",
@@ -3453,7 +3452,8 @@
     "/job/Yokneam-Ilit/Director-of-FE-Engineering---SoC-MCU_R-10062775",
     "/job/Yokneam-Ilit/Senior-Analog-Design-Engineer---MCU_R-10062774",
     "/job/Yokneam-Ilit/Senior-Physical-Design-Leader-MCU_R-10062777",
-    "/job/Yokneam-Ilit/Senior-SoC-Architect---MCU_R-10062776"
+    "/job/Yokneam-Ilit/Senior-SoC-Architect---MCU_R-10062776",
+    "R-10062951"
   ],
   "Alphawave Semi": [
     "/job/Hsinchu-County/Senior-Engineer---Physical-Design_JR100609",
@@ -4891,7 +4891,6 @@
     "86294",
     "86295",
     "86330",
-    "86331",
     "86336",
     "86379"
   ],
@@ -6411,6 +6410,7 @@
     "40502912",
     "40511215",
     "40517256",
+    "40520924",
     "40520958",
     "40520976",
     "40521201",
@@ -6557,6 +6557,7 @@
     "40708047",
     "40709712",
     "40709801",
+    "40709803",
     "40709807",
     "40709813",
     "40709869",
@@ -6611,6 +6612,7 @@
     "40736102",
     "40736533",
     "40736549",
+    "40736558",
     "40736612",
     "40736639",
     "40737267",
@@ -7278,6 +7280,7 @@
     "41161450",
     "41163893",
     "41165175",
+    "41165768",
     "41170107",
     "41172439",
     "41172440",
@@ -7594,6 +7597,7 @@
     "41439503",
     "41439547",
     "41439648",
+    "41439709",
     "41439727",
     "41439733",
     "41440233",
@@ -7608,6 +7612,7 @@
     "41441277",
     "41441280",
     "41441282",
+    "41441699",
     "41443028",
     "41443142",
     "41444007",
@@ -7825,6 +7830,7 @@
     "41667901",
     "41669368",
     "41670764",
+    "41671143",
     "41671446",
     "41671537",
     "41671546",
@@ -8014,9 +8020,12 @@
     "41771496",
     "41772142",
     "41772287",
+    "41782263",
     "41782268",
     "41782272",
+    "41782285",
     "41782286",
+    "41782319",
     "41782380",
     "41782399",
     "41787962",
@@ -8098,6 +8107,7 @@
     "41817647",
     "41822011",
     "41822156",
+    "41822194",
     "41823004",
     "41823305",
     "41823411",
@@ -8265,6 +8275,7 @@
     "41882074",
     "41882146",
     "41882150",
+    "41882151",
     "41882169",
     "41882191",
     "41884809",
@@ -8394,6 +8405,7 @@
     "41941540",
     "41941753",
     "41941754",
+    "41941756",
     "41941763",
     "41941772",
     "41941774",
@@ -8433,10 +8445,14 @@
     "41954264",
     "41954575",
     "41967160",
+    "41967168",
     "41967189",
     "41967193",
+    "41967194",
     "41967326",
-    "41970263"
+    "41967508",
+    "41970263",
+    "41970470"
   ],
   "GlobalFoundries": [
     "563980768882149",
@@ -8460,6 +8476,7 @@
     "563980768903349",
     "563980768903365",
     "563980768903367",
+    "563980768903371",
     "563980768903374",
     "563980768903380",
     "563980768903389",
@@ -8790,7 +8807,6 @@
     "563980768975535",
     "563980768976353",
     "563980768978558",
-    "563980768978590",
     "563980768978600",
     "563980768978603",
     "563980768978701",
@@ -8884,7 +8900,6 @@
     "563980769261379",
     "563980769270118",
     "563980769270131",
-    "563980769270132",
     "563980769270134",
     "563980769270135",
     "563980769274825",
@@ -8917,8 +8932,6 @@
     "563980769344070",
     "563980769344219",
     "563980769353378",
-    "563980769353825",
-    "563980769354736",
     "563980769355020",
     "563980769355935",
     "563980769363091",
@@ -8934,6 +8947,7 @@
     "563980769402621",
     "563980769402627",
     "563980769402630",
+    "563980769402637",
     "563980769402638",
     "563980769402639",
     "563980769402642",
@@ -8954,13 +8968,10 @@
     "563980769409591",
     "563980769409592",
     "563980769410047",
-    "563980769419706",
-    "563980769419708",
     "563980769420718",
     "563980769420759",
     "563980769420760",
     "563980769420765",
-    "563980769420766",
     "563980769421070",
     "563980769430280",
     "563980769430407",
@@ -10077,6 +10088,7 @@
     "563808970724938",
     "563808970725031",
     "563808970725170",
+    "563808970725337",
     "563808970727004",
     "563808970728440",
     "563808970728950",
@@ -13811,6 +13823,7 @@
     "17a890ff9c8bd338",
     "17cbca94b7491b82",
     "185baa9da6442ffa",
+    "1876754901eb8f26",
     "197d6ab53bd72cdd",
     "19c263a478775f59",
     "1a0d1a15d60c0adc",
@@ -15619,76 +15632,97 @@
         "url": "https://www.asml.com/en/careers/find-your-job/data-science--machine-learning-internship-dose-control-algorithms-j00339525"
       },
       "3": {
+        "id": "1876754901eb8f26",
+        "title": "Finance  Law Internship Tax Technology",
+        "company": "ASML",
+        "location": "",
+        "url": "https://www.asml.com/en/careers/find-your-job/finance--law-internship-tax-technology-j00340561"
+      },
+      "4": {
         "id": "b7cc75b7a47db09e",
         "title": "Ta Intern",
         "company": "ASML",
         "location": "",
         "url": "https://www.asml.com/en/careers/find-your-job/ta-intern-j00341384"
       },
-      "4": {
+      "5": {
         "id": "95159311408",
         "title": "2026 Summer Optical Intern (Adv Degree) - Santa Clara, CA",
         "company": "Applied Materials",
         "location": "",
         "url": "https://jobs.appliedmaterials.com/job/santa-clara/2026-summer-optical-intern-adv-degree-santa-clara-ca/95/95159311408"
       },
-      "5": {
+      "6": {
         "id": "563980769353378",
         "title": "AMHS Apprentice Maintenance Technician (Days)",
         "company": "GlobalFoundries",
         "location": "Malta, New York, United States of America",
         "url": "https://careers.gf.com/careers/job/563980769353378?domain=globalfoundries.com"
       },
-      "6": {
+      "7": {
         "id": "563808970772208",
         "title": "Working Student - Software Development for Test Engineering Tools Automation (f/m/div)",
         "company": "Infineon Technologies",
         "location": "Munich (Germany)",
         "url": "https://jobs.infineon.com/careers/job/563808970772208?domain=infineon.com"
       },
-      "7": {
+      "8": {
         "id": "563808970736078",
         "title": "Working student - Embedded Software (f/m/div) ",
         "company": "Infineon Technologies",
         "location": "Munich (Germany)",
         "url": "https://jobs.infineon.com/careers/job/563808970736078?domain=infineon.com"
       },
-      "8": {
+      "9": {
+        "id": "41967194",
+        "title": "Intern - ADTS PIE PI",
+        "company": "Micron",
+        "location": "Singapore, Singapore",
+        "url": "https://micron.eightfold.ai/careers/job/41967194?domain=micron.com"
+      },
+      "10": {
         "id": "41943288",
         "title": "Intern - Component Test Engineering",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41943288?domain=micron.com"
       },
-      "9": {
+      "11": {
         "id": "41970263",
         "title": "Intern - Manufacturing Chemical Vapour Deposition (CVD)",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41970263?domain=micron.com"
       },
-      "10": {
+      "12": {
         "id": "41967326",
         "title": "Intern-Assembly Equipment",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
       },
-      "11": {
+      "13": {
+        "id": "/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872",
+        "title": "Internship: Software Developer - Tools (m/f/d)",
+        "company": "NXP Semiconductors",
+        "location": "Gratkorn",
+        "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872"
+      },
+      "14": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "12": {
+      "15": {
         "id": "25002465",
         "title": "Field Applications Engineering Student Worker m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002465"
       },
-      "13": {
+      "16": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15697,7 +15731,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 13:15 UTC",
+      "checked_at": "2026-05-18 13:30 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
