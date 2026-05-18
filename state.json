@@ -1753,7 +1753,6 @@
     "/job/6-Duntes-Street-Riga-Latvia/Marketing-Project-Manager--MX-Smartphones-_R116511-1",
     "/job/6-rue-Fructidor-Saint-Ouen-France/Alternance-Charg-e--de-mission-Learning---Development--H-F-_R114292",
     "/job/6-rue-Fructidor-Saint-Ouen-France/Alternant-e--Responsable-comptes-techniques-pour-les-Services-et-Solutions-de-la-division-MX-B2B_R113544",
-    "/job/6-rue-Fructidor-Saint-Ouen-France/Assistant-Chef-de-Produit-Objets-Connects--Tablettes---PC--Saint-Ouen--93--H-F----Stage_R113960",
     "/job/6-rue-Fructidor-Saint-Ouen-France/Assistant-Chef-de-projets-D2C--E-commerce---Saint-Ouen--93--H-F----Alternance_R116772",
     "/job/6-rue-Fructidor-Saint-Ouen-France/Assistant-Supply-Planner--H-F----Stage_R114336",
     "/job/6-rue-Fructidor-Saint-Ouen-France/Assistant-e--Ingnieur-Technique-et-Service-Client---H-F----Alternance_R115572",
@@ -1992,7 +1991,9 @@
     "/job/Via-Mike-Bongiorno-Milano-Italy/E-Commerce-Analyst-and-Control-Tower-Support--INTERNSHIP-_R117010",
     "/job/Via-Mike-Bongiorno-Milano-Italy/Health-Medical-Equipment---Key-Account-Manager--Northern-Italy-_R115634",
     "/job/Via-Mike-Bongiorno-Milano-Italy/Samsung-s-Internship_R114528-1",
-    "R113346"
+    "R113346",
+    "R113960",
+    "R115638"
   ],
   "Broadcom": [
     "/job/ARE-Dubai-Business-Central-Tower/Kubernetes-Platform-Architect--UAE--Remote-_R025877",
@@ -3082,7 +3083,6 @@
     "/job/Gratkorn/Experienced-AI-ML-System-Security-Architect--m-f-d-_R-10060511",
     "/job/Gratkorn/Experienced-System-Security-Architect--m-f-d-_R-10060123",
     "/job/Gratkorn/Internship---Lab-support--f-m-d-_R-10061991",
-    "/job/Gratkorn/Internship--Firmware-Engineer--m-f-d-_R-10061740",
     "/job/Gratkorn/Internship--Human-Resources--HR---m-f-d-_R-10061779-1",
     "/job/Gratkorn/Internship--Marketing-Communications---part-time--m-f-d-_R-10062465",
     "/job/Gratkorn/Internship--NFC-RF-System-Validation--m-f-d-_R-10062072",
@@ -3451,8 +3451,7 @@
     "/job/Yokneam-Ilit/Director-of-FE-Engineering---SoC-MCU_R-10062775",
     "/job/Yokneam-Ilit/Senior-Analog-Design-Engineer---MCU_R-10062774",
     "/job/Yokneam-Ilit/Senior-Physical-Design-Leader-MCU_R-10062777",
-    "/job/Yokneam-Ilit/Senior-SoC-Architect---MCU_R-10062776",
-    "R-10063495"
+    "/job/Yokneam-Ilit/Senior-SoC-Architect---MCU_R-10062776"
   ],
   "Alphawave Semi": [
     "/job/Hsinchu-County/Senior-Engineer---Physical-Design_JR100609",
@@ -4483,7 +4482,6 @@
     "84880",
     "84881",
     "84882",
-    "84883",
     "84887",
     "84893",
     "84894",
@@ -5477,6 +5475,7 @@
     "27677842",
     "27692162",
     "27713699",
+    "27763461",
     "27783580",
     "27799249",
     "27943747",
@@ -5530,6 +5529,7 @@
     "30888914",
     "30912851",
     "30912858",
+    "30912860",
     "30912934",
     "30914920",
     "30921622",
@@ -5678,7 +5678,6 @@
     "38874634",
     "38887010",
     "38899446",
-    "38899771",
     "38899774",
     "38899791",
     "38899809",
@@ -5713,6 +5712,7 @@
     "39058446",
     "39058626",
     "39062549",
+    "39064043",
     "39064044",
     "39064048",
     "39064049",
@@ -5831,6 +5831,7 @@
     "39470249",
     "39479924",
     "39483351",
+    "39497237",
     "39497766",
     "39498185",
     "39504706",
@@ -6302,6 +6303,7 @@
     "40385422",
     "40385520",
     "40395838",
+    "40395840",
     "40395841",
     "40395846",
     "40404129",
@@ -6407,7 +6409,6 @@
     "40502912",
     "40511215",
     "40517256",
-    "40520924",
     "40520958",
     "40520976",
     "40521201",
@@ -6609,7 +6610,6 @@
     "40736102",
     "40736533",
     "40736549",
-    "40736558",
     "40736612",
     "40736639",
     "40737267",
@@ -6996,7 +6996,6 @@
     "41037384",
     "41037396",
     "41037407",
-    "41037411",
     "41037447",
     "41037567",
     "41037569",
@@ -7277,7 +7276,6 @@
     "41161450",
     "41163893",
     "41165175",
-    "41165768",
     "41170107",
     "41172439",
     "41172440",
@@ -7594,7 +7592,6 @@
     "41439503",
     "41439547",
     "41439648",
-    "41439709",
     "41439727",
     "41439733",
     "41440233",
@@ -8104,7 +8101,6 @@
     "41817647",
     "41822011",
     "41822156",
-    "41822194",
     "41823004",
     "41823305",
     "41823411",
@@ -8195,7 +8191,6 @@
     "41844255",
     "41844390",
     "41844425",
-    "41846923",
     "41847458",
     "41847492",
     "41847538",
@@ -8287,7 +8282,6 @@
     "41886038",
     "41886567",
     "41886568",
-    "41887724",
     "41887780",
     "41887782",
     "41887799",
@@ -8368,7 +8362,6 @@
     "41921137",
     "41921156",
     "41921164",
-    "41921174",
     "41922396",
     "41923169",
     "41923925",
@@ -8393,16 +8386,13 @@
     "41931985",
     "41931997",
     "41932004",
-    "41932029",
     "41932043",
     "41932525",
     "41932676",
     "41932714",
     "41937478",
     "41941540",
-    "41941753",
     "41941754",
-    "41941756",
     "41941763",
     "41941772",
     "41941774",
@@ -8430,7 +8420,6 @@
     "41944160",
     "41944187",
     "41945076",
-    "41945086",
     "41945663",
     "41945664",
     "41945665",
@@ -8442,12 +8431,7 @@
     "41954264",
     "41954575",
     "41967160",
-    "41967168",
     "41967189",
-    "41967193",
-    "41967194",
-    "41967326",
-    "41967508",
     "41970263",
     "41970470"
   ],
@@ -8473,7 +8457,6 @@
     "563980768903349",
     "563980768903365",
     "563980768903367",
-    "563980768903371",
     "563980768903374",
     "563980768903380",
     "563980768903389",
@@ -10126,6 +10109,7 @@
     "563808970765673",
     "563808970765871",
     "563808970771656",
+    "563808970772208",
     "563808970772439",
     "563808970778150",
     "563808970791180",
@@ -10610,6 +10594,8 @@
     "25010760",
     "25010778",
     "25010793",
+    "25010806",
+    "25010807",
     "25010808"
   ],
   "Oxford Instruments": [
@@ -15649,18 +15635,18 @@
         "url": "https://careers.gf.com/careers/job/563980769353378?domain=globalfoundries.com"
       },
       "6": {
+        "id": "563808970772208",
+        "title": "Working Student - Software Development for Test Engineering Tools Automation (f/m/div)",
+        "company": "Infineon Technologies",
+        "location": "Munich (Germany)",
+        "url": "https://jobs.infineon.com/careers/job/563808970772208?domain=infineon.com"
+      },
+      "7": {
         "id": "563808970736078",
         "title": "Working student - Embedded Software (f/m/div) ",
         "company": "Infineon Technologies",
         "location": "Munich (Germany)",
         "url": "https://jobs.infineon.com/careers/job/563808970736078?domain=infineon.com"
-      },
-      "7": {
-        "id": "41967194",
-        "title": "Intern - ADTS PIE PI",
-        "company": "Micron",
-        "location": "Singapore, Singapore",
-        "url": "https://micron.eightfold.ai/careers/job/41967194?domain=micron.com"
       },
       "8": {
         "id": "41943288",
@@ -15677,27 +15663,20 @@
         "url": "https://micron.eightfold.ai/careers/job/41970263?domain=micron.com"
       },
       "10": {
-        "id": "41967326",
-        "title": "Intern-Assembly Equipment",
-        "company": "Micron",
-        "location": "Singapore, Singapore",
-        "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
-      },
-      "11": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "12": {
+      "11": {
         "id": "25002465",
         "title": "Field Applications Engineering Student Worker m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002465"
       },
-      "13": {
+      "12": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15706,7 +15685,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 12:45 UTC",
+      "checked_at": "2026-05-18 13:00 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
