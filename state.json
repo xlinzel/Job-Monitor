@@ -4144,7 +4144,6 @@
     "80333",
     "80338",
     "80340",
-    "80342",
     "80372",
     "80374",
     "80376",
@@ -4406,7 +4405,6 @@
     "84592",
     "84603",
     "84605",
-    "84614",
     "84615",
     "84616",
     "84617",
@@ -5386,6 +5384,8 @@
     "30951",
     "30952",
     "30953",
+    "30955",
+    "30956",
     "30960",
     "30961",
     "30962",
@@ -5719,7 +5719,6 @@
     "39065417",
     "39078927",
     "39083590",
-    "39083688",
     "39084100",
     "39091550",
     "39092131",
@@ -5958,7 +5957,6 @@
     "39634915",
     "39634917",
     "39636052",
-    "39636073",
     "39636077",
     "39637839",
     "39637894",
@@ -8290,6 +8288,7 @@
     "41886038",
     "41886567",
     "41886568",
+    "41887724",
     "41887780",
     "41887782",
     "41887799",
@@ -8828,7 +8827,6 @@
     "563980769052692",
     "563980769059856",
     "563980769065754",
-    "563980769066838",
     "563980769069320",
     "563980769069367",
     "563980769069389",
@@ -9895,7 +9893,6 @@
     "563808970569768",
     "563808970569769",
     "563808970569791",
-    "563808970569792",
     "563808970569803",
     "563808970569826",
     "563808970569895",
@@ -10080,6 +10077,7 @@
     "563808970723891",
     "563808970723928",
     "563808970723930",
+    "563808970723976",
     "563808970724023",
     "563808970724105",
     "563808970724369",
@@ -10098,6 +10096,7 @@
     "563808970735426",
     "563808970735748",
     "563808970736075",
+    "563808970736078",
     "563808970736084",
     "563808970736087",
     "563808970736119",
@@ -10476,6 +10475,7 @@
     "25010047",
     "25010048",
     "25010054",
+    "25010058",
     "25010064",
     "25010077",
     "25010082",
@@ -13957,6 +13957,7 @@
     "2f16282c7ab1c09d",
     "2f74117652da74b4",
     "2f886fae0e4903f7",
+    "2fb99d9e9fea0d41",
     "2fe7874d4eaa13fa",
     "30a2456f7454767d",
     "32220ca0d63f9c25",
@@ -14126,6 +14127,7 @@
     "77b3919ba7f1790b",
     "7881657700bc5f82",
     "791415150f087c3b",
+    "79ce675877443f04",
     "7b1bfddc91c6fa3e",
     "7b361284d3516e5f",
     "7bdca7d196a0620a",
@@ -15707,34 +15709,41 @@
         "url": "https://jobs.appliedmaterials.com/job/santa-clara/2026-summer-optical-intern-adv-degree-santa-clara-ca/95/95159311408"
       },
       "3": {
+        "id": "563808970736078",
+        "title": "Working student - Embedded Software (f/m/div) ",
+        "company": "Infineon Technologies",
+        "location": "Munich (Germany)",
+        "url": "https://jobs.infineon.com/careers/job/563808970736078?domain=infineon.com"
+      },
+      "4": {
         "id": "41967194",
         "title": "Intern - ADTS PIE PI",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41967194?domain=micron.com"
       },
-      "4": {
+      "5": {
         "id": "41943288",
         "title": "Intern - Component Test Engineering",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41943288?domain=micron.com"
       },
-      "5": {
+      "6": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "6": {
+      "7": {
         "id": "95214446224",
         "title": "Intern",
         "company": "Synopsys",
         "location": "Noida, India",
         "url": "https://careers.synopsys.com/job/noida/intern/44408/95214446224"
       },
-      "7": {
+      "8": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15743,7 +15752,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 08:00 UTC",
+      "checked_at": "2026-05-18 08:15 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
