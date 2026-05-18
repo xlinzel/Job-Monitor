@@ -1769,6 +1769,7 @@
     "/job/6-rue-Fructidor-Saint-Ouen-France/Chef-de-Projet-Junior-Trade-Marketing---Division-Telecom--Saint-Ouen--93--H-F----Stage_R113548",
     "/job/6-rue-Fructidor-Saint-Ouen-France/Chef-de-projet-Junior-Services---Partenariats--Apprentissage--Saint-Ouen--93--H-F-_R113550",
     "/job/6-rue-Fructidor-Saint-Ouen-France/Juriste-Stagiaire--la-Direction-Juridique--Conformite-et-Affaires-Publique--H-F-_R113337",
+    "/job/6-rue-Fructidor-Saint-Ouen-France/KAM-Junior--Ventes-directes-et-Indirectes---H-F----Alternance-1-ou-2-ans_R115861-1",
     "/job/6-rue-Fructidor-Saint-Ouen-France/Sales-Business-Analyst--H-F----Alternance_R114048",
     "/job/6-rue-Fructidor-Saint-Ouen-France/Stage-Assistant-Chef-de-Projet--H-F-_R114291",
     "/job/6-rue-Fructidor-Saint-Ouen-France/Stage-Assistant-Chef-de-Projet-Web--H-F-_R114735",
@@ -3225,6 +3226,7 @@
     "/job/Nijmegen/Internship---Electrical-Failure-Analysis_R-10059829",
     "/job/Nijmegen/Internship--Electro-Thermo-Migration-Reliability-Capabilities-of-IC-Packages_R-10062119",
     "/job/Nijmegen/Lab-technician_R-10063240-1",
+    "/job/Nijmegen/Manufacturing-Engineer_R-10062392-1",
     "/job/Nijmegen/Netwerk-en-Control-Engineer_R-10061326",
     "/job/Nijmegen/Operator-Techniek-DRY-2-ploegen_R-10061619-1",
     "/job/Nijmegen/Technician-Area-2_R-10060395-1",
@@ -7496,6 +7498,7 @@
     "41287345",
     "41287367",
     "41287370",
+    "41287434",
     "41287461",
     "41287463",
     "41287468",
@@ -7831,10 +7834,12 @@
     "41669368",
     "41670764",
     "41671143",
+    "41671446",
     "41671537",
     "41671546",
     "41671574",
     "41671575",
+    "41671576",
     "41671652",
     "41671742",
     "41671752",
@@ -8105,11 +8110,13 @@
     "41817647",
     "41822011",
     "41822156",
+    "41823004",
     "41823305",
     "41823411",
     "41823415",
     "41823430",
     "41823438",
+    "41823442",
     "41824180",
     "41824186",
     "41824199",
@@ -8283,7 +8290,6 @@
     "41886038",
     "41886567",
     "41886568",
-    "41887724",
     "41887780",
     "41887782",
     "41887799",
@@ -8569,6 +8575,7 @@
     "563980768904079",
     "563980768904082",
     "563980768904092",
+    "563980768904093",
     "563980768904109",
     "563980768904117",
     "563980768904123",
@@ -8870,6 +8877,7 @@
     "563980769224512",
     "563980769224513",
     "563980769239045",
+    "563980769257043",
     "563980769260432",
     "563980769261289",
     "563980769261346",
@@ -8896,6 +8904,7 @@
     "563980769288356",
     "563980769288914",
     "563980769288916",
+    "563980769298195",
     "563980769299307",
     "563980769326542",
     "563980769330787",
@@ -9287,7 +9296,6 @@
     "563808968922543",
     "563808968951141",
     "563808968952327",
-    "563808968953022",
     "563808968955607",
     "563808968956734",
     "563808968963077",
@@ -10113,6 +10121,7 @@
     "563808970765630",
     "563808970765639",
     "563808970765669",
+    "563808970765673",
     "563808970765871",
     "563808970771656",
     "563808970772439",
@@ -10120,7 +10129,9 @@
     "563808970791180",
     "563808970791401",
     "563808970792869",
-    "563808970793310"
+    "563808970793310",
+    "563808970793422",
+    "563808970793478"
   ],
   "Texas Instruments": [
     "240001HW",
@@ -10347,6 +10358,7 @@
     "25009337",
     "25009360",
     "25009364",
+    "25009368",
     "25009372",
     "25009373",
     "25009374",
@@ -13937,6 +13949,7 @@
     "2be43d0aae4e8454",
     "2bee87a358b3274b",
     "2c06b2b5b607d650",
+    "2e0090efbc46f1c9",
     "2e11e0b24dac5736",
     "2e526a130ddbaca2",
     "2e7637cd831189d4",
@@ -13944,7 +13957,6 @@
     "2f16282c7ab1c09d",
     "2f74117652da74b4",
     "2f886fae0e4903f7",
-    "2fb99d9e9fea0d41",
     "2fe7874d4eaa13fa",
     "30a2456f7454767d",
     "32220ca0d63f9c25",
@@ -14114,7 +14126,6 @@
     "77b3919ba7f1790b",
     "7881657700bc5f82",
     "791415150f087c3b",
-    "79ce675877443f04",
     "7b1bfddc91c6fa3e",
     "7b361284d3516e5f",
     "7bdca7d196a0620a",
@@ -14317,7 +14328,6 @@
     "ce640862172754d9",
     "ce7a206e97a9e2ef",
     "cea86858086cd2fc",
-    "cf6ea636651f4b21",
     "cf7e9befcb5fe457",
     "cfb164142400727f",
     "d0e159266706d271",
@@ -14401,7 +14411,6 @@
     "f194288912582f30",
     "f1a0fc36d79a0f92",
     "f2485f97771b1698",
-    "f3b2e8a77dee554c",
     "f3de09105aa0f41b",
     "f40ca3fa686fa108",
     "f4c097b4db1c955c",
@@ -14428,7 +14437,7 @@
     "023c49d8e3a7a392",
     "02a4eb1b726b4b3b",
     "03cd294e6c806096",
-    "048c4c26e36ec5d1",
+    "04822258d8323696",
     "04b1f0f6fdf9368d",
     "0500fc0dde94ec90",
     "064c3b0956dd9349",
@@ -14586,6 +14595,7 @@
     "807a860678187227",
     "815ca84fff8075a2",
     "844f4c5af67f549e",
+    "862e9aa80c4600ce",
     "870bbe020e36a195",
     "8b3d8148033965f2",
     "8b4541501cc74c56",
@@ -14696,6 +14706,7 @@
     "dfd89761b04090b8",
     "dffd6d4a62bd3a9a",
     "e019e7046711efb8",
+    "e055edde88810068",
     "e0d9a0e619544693",
     "e0f06fd6a0e82bc0",
     "e1380a5f63e71c93",
@@ -15682,41 +15693,48 @@
     ],
     "last_reminder_map": {
       "1": {
+        "id": "2e0090efbc46f1c9",
+        "title": "Applied Physics Internship Data Science And Image Processing For Sem Metrology",
+        "company": "ASML",
+        "location": "",
+        "url": "https://www.asml.com/en/careers/find-your-job/applied-physics-internship-data-science-and-image-processing-for-sem-metrology-j00341379"
+      },
+      "2": {
         "id": "95159311408",
         "title": "2026 Summer Optical Intern (Adv Degree) - Santa Clara, CA",
         "company": "Applied Materials",
         "location": "",
         "url": "https://jobs.appliedmaterials.com/job/santa-clara/2026-summer-optical-intern-adv-degree-santa-clara-ca/95/95159311408"
       },
-      "2": {
+      "3": {
         "id": "41967194",
         "title": "Intern - ADTS PIE PI",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41967194?domain=micron.com"
       },
-      "3": {
+      "4": {
         "id": "41943288",
         "title": "Intern - Component Test Engineering",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41943288?domain=micron.com"
       },
-      "4": {
+      "5": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "5": {
+      "6": {
         "id": "95214446224",
         "title": "Intern",
         "company": "Synopsys",
         "location": "Noida, India",
         "url": "https://careers.synopsys.com/job/noida/intern/44408/95214446224"
       },
-      "6": {
+      "7": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15725,7 +15743,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 07:45 UTC",
+      "checked_at": "2026-05-18 08:00 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
