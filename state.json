@@ -2948,7 +2948,6 @@
     "/job/Bangalore/Sr-Customer-Application-Engineer_R-10062608",
     "/job/Bangalore/Sr-Lead-FW-Verification-and-Validation-Engineer_R-10063023",
     "/job/Bangalore/Sr-Manager--Modem-Systems_R-10061456",
-    "/job/Bangkok/Application-Support-Engineer_R-10062722",
     "/job/Bangkok/DOCUMENTATION-SPECIALIST_R-10062650",
     "/job/Bangkok/DOCUMENTATION-SPECIALIST_R-10062652",
     "/job/Bangkok/Equipment-Engineer_R-10061979",
@@ -3466,7 +3465,8 @@
     "/job/Yokneam-Ilit/Director-of-FE-Engineering---SoC-MCU_R-10062775",
     "/job/Yokneam-Ilit/Senior-Analog-Design-Engineer---MCU_R-10062774",
     "/job/Yokneam-Ilit/Senior-Physical-Design-Leader-MCU_R-10062777",
-    "/job/Yokneam-Ilit/Senior-SoC-Architect---MCU_R-10062776"
+    "/job/Yokneam-Ilit/Senior-SoC-Architect---MCU_R-10062776",
+    "R-10062722"
   ],
   "Alphawave Semi": [
     "/job/Hsinchu-County/Senior-Engineer---Physical-Design_JR100609",
@@ -3830,6 +3830,7 @@
     "77836",
     "77842",
     "77854",
+    "77863",
     "77878",
     "77881",
     "77928",
@@ -4368,7 +4369,6 @@
     "84284",
     "84285",
     "84287",
-    "84292",
     "84310",
     "84316",
     "84324",
@@ -5480,7 +5480,6 @@
     "26557125",
     "26631082",
     "26631106",
-    "26684902",
     "26685829",
     "26904570",
     "27002984",
@@ -5538,7 +5537,6 @@
     "30764689",
     "30765220",
     "30776953",
-    "30786309",
     "30812867",
     "30844597",
     "30868277",
@@ -5572,7 +5570,6 @@
     "37811826",
     "37811953",
     "37819786",
-    "37823909",
     "37823916",
     "37823929",
     "37859311",
@@ -7701,7 +7698,6 @@
     "41501848",
     "41501849",
     "41501981",
-    "41502132",
     "41502246",
     "41502258",
     "41502274",
@@ -8933,7 +8929,6 @@
     "563980769343483",
     "563980769344070",
     "563980769344219",
-    "563980769353825",
     "563980769354736",
     "563980769355935",
     "563980769363091",
@@ -13882,6 +13877,7 @@
     "0bfb8de51b1c3bd9",
     "0cb38a2ed0aa8aa9",
     "0d8308032d0ef40b",
+    "0f5371bb162475cf",
     "104a445958766c30",
     "125a630e1d69137b",
     "12855092b129e8a1",
@@ -15718,7 +15714,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 02:15 UTC",
+      "checked_at": "2026-05-18 02:30 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
