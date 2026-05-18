@@ -1990,8 +1990,7 @@
     "/job/Via-Mike-Bongiorno-Milano-Italy/CRM-Support--INTERN-_R116526",
     "/job/Via-Mike-Bongiorno-Milano-Italy/E-Commerce-Analyst-and-Control-Tower-Support--INTERNSHIP-_R117010",
     "/job/Via-Mike-Bongiorno-Milano-Italy/Health-Medical-Equipment---Key-Account-Manager--Northern-Italy-_R115634",
-    "/job/Via-Mike-Bongiorno-Milano-Italy/Samsung-s-Internship_R114528-1",
-    "R115647"
+    "/job/Via-Mike-Bongiorno-Milano-Italy/Samsung-s-Internship_R114528-1"
   ],
   "Broadcom": [
     "/job/ARE-Dubai-Business-Central-Tower/Kubernetes-Platform-Architect--UAE--Remote-_R025877",
@@ -3226,7 +3225,6 @@
     "/job/Nijmegen/Internship---Electrical-Failure-Analysis_R-10059829",
     "/job/Nijmegen/Internship--Electro-Thermo-Migration-Reliability-Capabilities-of-IC-Packages_R-10062119",
     "/job/Nijmegen/Lab-technician_R-10063240-1",
-    "/job/Nijmegen/Manufacturing-Engineer_R-10062392-1",
     "/job/Nijmegen/Netwerk-en-Control-Engineer_R-10061326",
     "/job/Nijmegen/Operator-Techniek-DRY-2-ploegen_R-10061619-1",
     "/job/Nijmegen/Technician-Area-2_R-10060395-1",
@@ -3450,8 +3448,7 @@
     "/job/Yokneam-Ilit/Director-of-FE-Engineering---SoC-MCU_R-10062775",
     "/job/Yokneam-Ilit/Senior-Analog-Design-Engineer---MCU_R-10062774",
     "/job/Yokneam-Ilit/Senior-Physical-Design-Leader-MCU_R-10062777",
-    "/job/Yokneam-Ilit/Senior-SoC-Architect---MCU_R-10062776",
-    "R-10063419"
+    "/job/Yokneam-Ilit/Senior-SoC-Architect---MCU_R-10062776"
   ],
   "Alphawave Semi": [
     "/job/Hsinchu-County/Senior-Engineer---Physical-Design_JR100609",
@@ -6687,6 +6684,7 @@
     "40777988",
     "40777989",
     "40780339",
+    "40780341",
     "40780352",
     "40782687",
     "40783541",
@@ -7498,7 +7496,6 @@
     "41287345",
     "41287367",
     "41287370",
-    "41287434",
     "41287461",
     "41287463",
     "41287468",
@@ -7838,7 +7835,6 @@
     "41671546",
     "41671574",
     "41671575",
-    "41671576",
     "41671652",
     "41671742",
     "41671752",
@@ -8004,7 +8000,6 @@
     "41752280",
     "41752702",
     "41753760",
-    "41754113",
     "41754813",
     "41757119",
     "41757482",
@@ -8064,6 +8059,7 @@
     "41806530",
     "41806531",
     "41806532",
+    "41806535",
     "41806536",
     "41808423",
     "41814101",
@@ -8366,6 +8362,7 @@
     "41921136",
     "41921137",
     "41921156",
+    "41921164",
     "41921174",
     "41922396",
     "41923169",
@@ -8399,13 +8396,14 @@
     "41937478",
     "41941540",
     "41941753",
+    "41941754",
+    "41941756",
     "41941763",
     "41941772",
     "41941774",
     "41941792",
     "41941794",
     "41941798",
-    "41941800",
     "41942316",
     "41942351",
     "41942355",
@@ -8571,7 +8569,6 @@
     "563980768904079",
     "563980768904082",
     "563980768904092",
-    "563980768904093",
     "563980768904109",
     "563980768904117",
     "563980768904123",
@@ -8873,7 +8870,6 @@
     "563980769224512",
     "563980769224513",
     "563980769239045",
-    "563980769257043",
     "563980769260432",
     "563980769261289",
     "563980769261346",
@@ -8900,7 +8896,6 @@
     "563980769288356",
     "563980769288914",
     "563980769288916",
-    "563980769298195",
     "563980769299307",
     "563980769326542",
     "563980769330787",
@@ -9908,7 +9903,6 @@
     "563808970576992",
     "563808970577133",
     "563808970577135",
-    "563808970577191",
     "563808970577688",
     "563808970577692",
     "563808970577693",
@@ -10119,14 +10113,14 @@
     "563808970765630",
     "563808970765639",
     "563808970765669",
-    "563808970765673",
     "563808970765871",
     "563808970771656",
     "563808970772439",
     "563808970778150",
     "563808970791180",
     "563808970791401",
-    "563808970792869"
+    "563808970792869",
+    "563808970793310"
   ],
   "Texas Instruments": [
     "240001HW",
@@ -10588,7 +10582,6 @@
     "25010711",
     "25010716",
     "25010722",
-    "25010723",
     "25010760",
     "25010778"
   ],
@@ -15732,7 +15725,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 07:30 UTC",
+      "checked_at": "2026-05-18 07:45 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
