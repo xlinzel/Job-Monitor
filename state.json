@@ -3217,7 +3217,6 @@
     "/job/Kuala-Lumpur/Sales-Operations-Manager_R-10062623",
     "/job/Kuala-Lumpur/Semiconductor-Assembler_R-10057883",
     "/job/Kuala-Lumpur/Semiconductor-Assembler_R-10063353",
-    "/job/Kuala-Lumpur/Semiconductor-Assembler_R-10063423",
     "/job/Kuala-Lumpur/Senior-Accountant_R-10060431-1",
     "/job/Kuala-Lumpur/Senior-Analog-Layout-Engineer_R-10061617",
     "/job/Kuala-Lumpur/Senior-Customer-Service-Representative_R-10062538",
@@ -5839,7 +5838,6 @@
     "39399661",
     "39399791",
     "39399797",
-    "39402693",
     "39406074",
     "39423817",
     "39424077",
@@ -6043,7 +6041,6 @@
     "39704254",
     "39704256",
     "39704262",
-    "39704263",
     "39704267",
     "39704273",
     "39704305",
@@ -6213,7 +6210,6 @@
     "40103082",
     "40103726",
     "40106651",
-    "40106937",
     "40108655",
     "40117875",
     "40133112",
@@ -6487,7 +6483,6 @@
     "40626386",
     "40627372",
     "40634718",
-    "40634726",
     "40634766",
     "40634776",
     "40634984",
@@ -15723,7 +15718,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 01:00 UTC",
+      "checked_at": "2026-05-18 01:15 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
