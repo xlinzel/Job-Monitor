@@ -537,6 +537,7 @@
     "/job/Santa-Clara-CA/Hardware---Silicon-Validation-Senior-Staff-Engineer_2601077",
     "/job/Santa-Clara-CA/Hardware---Silicon-Validation-Senior-Staff-Engineer_2601078",
     "/job/Santa-Clara-CA/Head-of-Strategic-Portfolio-Management---Corporate-PMO_2600964",
+    "/job/Santa-Clara-CA/Inside-Sales-Representative_2601903",
     "/job/Santa-Clara-CA/Kinaxis-Solution-Architect_2600657",
     "/job/Santa-Clara-CA/Link-Layer-architect_2601002",
     "/job/Santa-Clara-CA/Optical-Engineer--Advanced-Photonic-IC-Development_2600259",
@@ -609,6 +610,7 @@
     "/job/Santa-Clara-CA/Senior-Principal-Engineer--Physical-Design_2503623",
     "/job/Santa-Clara-CA/Senior-Principal-Engineer--Verification_2601027",
     "/job/Santa-Clara-CA/Senior-Principal-Memory-Architect_2503336",
+    "/job/Santa-Clara-CA/Senior-Principal-Product-Engineer_2601960",
     "/job/Santa-Clara-CA/Senior-Principal-SERDES-Engineer_2503601",
     "/job/Santa-Clara-CA/Senior-Principal-Switch-Architect_2503607",
     "/job/Santa-Clara-CA/Senior-Principal-Technical-Program-Manager_2503120-1",
@@ -643,7 +645,6 @@
     "/job/Santa-Clara-CA/SoC-Simulation-Engineer---Software-Engineer_2601320",
     "/job/Santa-Clara-CA/Sr-Human-Resources-Business-Partner_2600515",
     "/job/Santa-Clara-CA/Sr-Principal-Engineer--Advanced-Packaging_2503624-1",
-    "/job/Santa-Clara-CA/Sr-Principal-Product-Engineer_2503337",
     "/job/Santa-Clara-CA/Sr-Staff-Firmware-Engineer---Windows-Kernel-Drivers_2601339",
     "/job/Santa-Clara-CA/Sr-Staff-Global-Immigration---Immigration-Specialist_2600386",
     "/job/Santa-Clara-CA/Sr-Staff-Optical-Product-Engineer_2503368",
@@ -966,6 +967,7 @@
     "3921a393-27c0-4a62-bb4d-2e88d80e45e0",
     "3a5af5fd-d10a-48ad-903c-d5312f0e0b9d",
     "3aa4a45e-36c7-4502-adbf-f33de11e23e0",
+    "3bc964e4-41e5-47e7-b704-c6284d613593",
     "3ec16f47-6e4a-4f27-a0ec-6cde3e4fa810",
     "3f187c4f-71a2-4738-9489-19961485c502",
     "3fa162d1-0953-4971-8a88-3d910dba2f8b",
@@ -1102,6 +1104,7 @@
     "eb782315-c401-44f7-9558-3f14d9a8acf7",
     "ec1de483-ebd5-4b87-96b7-d749f077aefb",
     "eceb3a6d-9cbe-4241-ab70-e6e45509390a",
+    "edd3a8ae-bc78-49ac-a536-2033d7c02dd6",
     "f0323cec-218f-49a0-baf7-dfd873217df5",
     "f1055e57-25c5-4db3-9b4f-1783ee7c7930",
     "f1cff856-94af-476f-8b7f-5af1564c60b7",
@@ -1337,7 +1340,6 @@
     "4674649005",
     "4674832005",
     "4674878005",
-    "4674897005",
     "4674908005",
     "4674945005",
     "4674947005",
@@ -2287,6 +2289,7 @@
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/Equipment-Maintenance-Shift-Supervisor_R025717",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/Fab-Manufacturing-Quality-Engineer_R025543",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/IC-Package-Mechanical-FEA-Engineer--R-D-_R024441-2",
+    "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/IP-Integration-Engineer_R024322",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/Industrial-Engineer_R025422",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/Manufacturing-Operations-Supervisor_R025867",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/Manufacturing-Operator-1_R025833",
@@ -6607,6 +6610,7 @@
     "40736533",
     "40736549",
     "40736558",
+    "40736612",
     "40736639",
     "40737267",
     "40742952",
@@ -8924,6 +8928,7 @@
     "563980769343483",
     "563980769344070",
     "563980769344219",
+    "563980769344351",
     "563980769353378",
     "563980769353825",
     "563980769354736",
@@ -8936,6 +8941,7 @@
     "563980769366238",
     "563980769366942",
     "563980769373416",
+    "563980769377742",
     "563980769402615",
     "563980769402620",
     "563980769402621",
@@ -8955,6 +8961,8 @@
     "563980769402656",
     "563980769402661",
     "563980769405896",
+    "563980769405897",
+    "563980769405919",
     "563980769406330",
     "563980769406572",
     "563980769406781",
@@ -8965,7 +8973,6 @@
     "563980769410047",
     "563980769419706",
     "563980769419708",
-    "563980769420300",
     "563980769420718",
     "563980769420759",
     "563980769420760",
@@ -8973,7 +8980,6 @@
     "563980769420766",
     "563980769421070",
     "563980769430280",
-    "563980769430406",
     "563980769430407",
     "563980769431149",
     "563980769431383",
@@ -15729,41 +15735,34 @@
         "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872"
       },
       "16": {
-        "id": "29848",
-        "title": "UIUC Research Park Intern - Machine Learning",
-        "company": "Rivian",
-        "location": "Champaign, Illinois",
-        "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
-      },
-      "17": {
         "id": "95257149664",
         "title": "FC PV Internship \u2013 AI Driven Runtime Validation",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/fc-pv-internship-ai-driven-runtime-validation/44408/95257149664"
       },
-      "18": {
+      "17": {
         "id": "94950528864",
         "title": "Software Engineering Internship \u2013 LLM-driven Engineering Analysis",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/software-engineering-internship-llm-driven-engineering-analysis/44408/94950528864"
       },
-      "19": {
+      "18": {
         "id": "25002653",
         "title": "Field Applications Engineering Intern m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002653"
       },
-      "20": {
+      "19": {
         "id": "25002465",
         "title": "Field Applications Engineering Student Worker m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002465"
       },
-      "21": {
+      "20": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15772,7 +15771,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 21:15 UTC",
+      "checked_at": "2026-05-18 21:30 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
