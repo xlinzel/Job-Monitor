@@ -1565,6 +1565,7 @@
     "/job/12100-Samsung-Blvd-Austin-TX-USA/Procurement-Senior-Buyer_R114191-1",
     "/job/12100-Samsung-Blvd-Austin-TX-USA/Q-R-New-Technology-Product-Quality-Engineer_R115162",
     "/job/12100-Samsung-Blvd-Austin-TX-USA/Q-R-New-Technology-Product-Quality-Team-Representative_R113764",
+    "/job/12100-Samsung-Blvd-Austin-TX-USA/Senior-Compensation-Professional_R117184",
     "/job/12100-Samsung-Blvd-Austin-TX-USA/Senior-Engineer--Defect-Engineering_R116949",
     "/job/12100-Samsung-Blvd-Austin-TX-USA/Spare-Parts-Supervisor_R116328",
     "/job/12100-Samsung-Blvd-Austin-TX-USA/Staff-Engineer---Industrial-Water-Treatment_R109106",
@@ -1811,6 +1812,7 @@
     "/job/6625-Excellence-Way-Plano-TX-USA/Director-of-Social--Creators-and-Culture_R105974",
     "/job/6625-Excellence-Way-Plano-TX-USA/Professional--Mobile-Financial-Management_R115379",
     "/job/6625-Excellence-Way-Plano-TX-USA/Professional-III-M---IMC-Strategy_R116429",
+    "/job/6625-Excellence-Way-Plano-TX-USA/Senior-Finance-Manager--Onsite---Plano--TX-_R117233",
     "/job/6625-Excellence-Way-Plano-TX-USA/Senior-Professional-II--M---Online-Biz-Sales-Management_R116565",
     "/job/6625-Excellence-Way-Plano-TX-USA/Senior-Sales-Finance-Manager_R115592",
     "/job/6625-Excellence-Way-Plano-TX-USA/Sr-Director---Retail-Strategy--Analytics--Innovation_R116065",
@@ -2473,6 +2475,7 @@
     "/job/CA---San-Jose---Holger/FAE---Senior-Field-Applications-Engineer_R2355-25",
     "/job/CA---San-Jose---Holger/Principal-Engineer-Design_R2095-26",
     "/job/CA---San-Jose---Holger/Senior-Client-Engagement-Manager_R1530-25",
+    "/job/CA---San-Jose---Holger/Senior-Client-Engagement-Manager_R1917-26-1",
     "/job/CA---Santa-Rosa---Westwind/Senior-Technical-Staff-Engineer---Product-Marketing_R1419-26",
     "/job/CO---Boulder/Manager--Information-Systems-Security--ISSM-_R194-26",
     "/job/CO---Boulder/Senior-Engineer-I----Product_R1610-25",
@@ -2696,7 +2699,7 @@
     "/job/MA---Lowell/Production-Specialist_R1660-26",
     "/job/MA---Lowell/Senior-Engineer-I-Quality_R700-26",
     "/job/MA---Lowell/Senior-Engineer-II-Test_R1258-26",
-    "/job/MA---Lowell/Technician-II---Manufacturing_R935-26",
+    "/job/MA---Lowell/Technician-II---Product-Test_R2122-26",
     "/job/MA---Lowell/Technician-IV---Engineering_R1630-26",
     "/job/MI---Detroit-Sales-Office/FAE---Senior-Field-Applications-Engineer_R2009-25-1",
     "/job/Malaysia---Penang-MCHP/Analyst---Internal-Auditor_R1669-26",
@@ -2817,7 +2820,8 @@
     "/job/United-Kingdom---Whiteley/Principle-Firmware-Engineer_R2013-26",
     "/job/United-Kingdom---Wokingham/Senior-Client-Engagement-Manager_R1881-26",
     "/job/Vietnam---Saigon/Design-Engineer_R340-26",
-    "/job/Vietnam---Saigon/Engineer-I---Design_R1373-26"
+    "/job/Vietnam---Saigon/Engineer-I---Design_R1373-26",
+    "R935-26"
   ],
   "NXP Semiconductors": [
     "/job/Austin-Ed-Bluestein-Manufacturing/ATMC-Cu-Plate-Equipment-Technician_R-10063093-1",
@@ -4849,6 +4853,7 @@
     "86171",
     "86172",
     "86174",
+    "86180",
     "86183",
     "86191",
     "86194",
@@ -5874,6 +5879,7 @@
     "39549210",
     "39549218",
     "39549479",
+    "39552972",
     "39553048",
     "39553065",
     "39553086",
@@ -6397,6 +6403,7 @@
     "40502912",
     "40511215",
     "40517256",
+    "40520924",
     "40520958",
     "40520976",
     "40521201",
@@ -6599,6 +6606,7 @@
     "40736102",
     "40736533",
     "40736549",
+    "40736558",
     "40736612",
     "40736639",
     "40737267",
@@ -6986,6 +6994,7 @@
     "41037396",
     "41037407",
     "41037411",
+    "41037447",
     "41037567",
     "41037569",
     "41037572",
@@ -7581,6 +7590,7 @@
     "41439503",
     "41439547",
     "41439648",
+    "41439709",
     "41439727",
     "41439733",
     "41440233",
@@ -8315,7 +8325,6 @@
     "41896872",
     "41897034",
     "41897045",
-    "41898019",
     "41899296",
     "41899305",
     "41899306",
@@ -8369,6 +8378,7 @@
     "41926374",
     "41926375",
     "41926377",
+    "41926383",
     "41926397",
     "41927356",
     "41931692",
@@ -8417,6 +8427,7 @@
     "41944187",
     "41944277",
     "41945076",
+    "41945086",
     "41945663",
     "41945664",
     "41945665",
@@ -8430,7 +8441,12 @@
     "41954575",
     "41967160",
     "41967168",
+    "41967189",
+    "41967193",
     "41967194",
+    "41967319",
+    "41967326",
+    "41967334",
     "41967488",
     "41967489",
     "41967508",
@@ -8959,6 +8975,7 @@
     "563980769420766",
     "563980769421070",
     "563980769430280",
+    "563980769430406",
     "563980769430407",
     "563980769431149",
     "563980769431383",
@@ -14472,7 +14489,6 @@
     "5ac2cd67447c8774",
     "5b646d73ea8d0dfe",
     "5c8735fdb0dad60f",
-    "5d771aeecc3698e1",
     "5de54009fd690a29",
     "5fb64969268341cf",
     "5fe183e21e4faa67",
@@ -14610,6 +14626,7 @@
     "d1220324712fdb6d",
     "d1fc56dea4b62087",
     "d22befa5d7df17ec",
+    "d3f24697e8b16e02",
     "d45517996de788d1",
     "d5301f038075492a",
     "d57d87758a716123",
@@ -15703,48 +15720,55 @@
         "url": "https://micron.eightfold.ai/careers/job/41970263?domain=micron.com"
       },
       "14": {
+        "id": "41967326",
+        "title": "Intern-Assembly Equipment",
+        "company": "Micron",
+        "location": "Singapore, Singapore",
+        "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
+      },
+      "15": {
         "id": "/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872",
         "title": "Internship: Software Developer - Tools (m/f/d)",
         "company": "NXP Semiconductors",
         "location": "Gratkorn",
         "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872"
       },
-      "15": {
+      "16": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "16": {
+      "17": {
         "id": "95257149664",
         "title": "FC PV Internship \u2013 AI Driven Runtime Validation",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/fc-pv-internship-ai-driven-runtime-validation/44408/95257149664"
       },
-      "17": {
+      "18": {
         "id": "94950528864",
         "title": "Software Engineering Internship \u2013 LLM-driven Engineering Analysis",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/software-engineering-internship-llm-driven-engineering-analysis/44408/94950528864"
       },
-      "18": {
+      "19": {
         "id": "25002653",
         "title": "Field Applications Engineering Intern m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002653"
       },
-      "19": {
+      "20": {
         "id": "25002465",
         "title": "Field Applications Engineering Student Worker m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002465"
       },
-      "20": {
+      "21": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15753,7 +15777,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 20:15 UTC",
+      "checked_at": "2026-05-18 20:30 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
