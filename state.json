@@ -792,6 +792,7 @@
     "/job/Yokneam/Senior-Engineer--Physical-Design_2503613",
     "/job/Yokneam/Senior-Staff-Engineer--Physical-Design_2502628",
     "/job/Yokneam/Senior-Staff-Engineer--Physical-Design_2503611",
+    "/job/Yokneam/Staff-Electrical-Validation-Engineer_2601925",
     "/job/Yokneam/Technical-Director--Physical-Design_2503619",
     "/job/Yokneam/senior-staff-signal-power-integrity-engineer_2503373"
   ],
@@ -2775,7 +2776,9 @@
     "/job/Philippines---Mphil-1/Technician-I_R1214-26",
     "/job/Philippines---Mphil-1/Technician-I_R1216-26",
     "/job/Philippines---Mphil-3/Analyst---Finance_R925-26",
+    "/job/Philippines---Mphil-3/Operator-I_R1687-26",
     "/job/Philippines---Mphil-3/Operator-I_R1695-26",
+    "/job/Philippines---Mphil-3/Operator-I_R1697-26",
     "/job/Philippines---Mphil-3/Principal-Engineer---Manufacturing_R1394-26",
     "/job/Philippines---Mphil-3/Principal-Engineer--Manufacturing_R1392-26",
     "/job/Philippines---Mphil-3/Production-Operator_R1641-26",
@@ -5423,7 +5426,8 @@
     "31045",
     "31050",
     "31061",
-    "31083"
+    "31083",
+    "31102"
   ],
   "Micron": [
     "20185947",
@@ -5610,7 +5614,6 @@
     "38447937",
     "38450852",
     "38450908",
-    "38451200",
     "38451444",
     "38469763",
     "38471424",
@@ -7896,7 +7899,6 @@
     "41679957",
     "41680025",
     "41680035",
-    "41680143",
     "41680537",
     "41680559",
     "41682991",
@@ -8288,6 +8290,7 @@
     "41886038",
     "41886567",
     "41886568",
+    "41887724",
     "41887780",
     "41887782",
     "41887799",
@@ -8388,7 +8391,6 @@
     "41931692",
     "41931711",
     "41931867",
-    "41931886",
     "41931982",
     "41931985",
     "41931997",
@@ -8438,11 +8440,11 @@
     "41947546",
     "41951782",
     "41954073",
-    "41954224",
     "41954264",
     "41954575",
     "41967160",
     "41967168",
+    "41967189",
     "41967193",
     "41967194",
     "41967326",
@@ -15687,7 +15689,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 11:45 UTC",
+      "checked_at": "2026-05-18 12:00 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
