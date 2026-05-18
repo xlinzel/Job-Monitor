@@ -10231,6 +10231,7 @@
     "25005821",
     "25005890",
     "25005959",
+    "25006048",
     "25006114",
     "25006123",
     "25006380",
@@ -15727,10 +15728,17 @@
         "company": "Synopsys",
         "location": "Noida, India",
         "url": "https://careers.synopsys.com/job/noida/intern/44408/95214446224"
+      },
+      "5": {
+        "id": "25006048",
+        "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
+        "company": "Texas Instruments",
+        "location": "Korea, Republic of",
+        "url": "https://careers.ti.com/en/sites/CX/job/25006048"
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 04:45 UTC",
+      "checked_at": "2026-05-18 04:47 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
