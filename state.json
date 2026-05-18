@@ -1977,6 +1977,8 @@
     "/job/Samsung-Space-Eschborn-Germany/Praktikant--m-w-d--Channel-Marketing_R115981",
     "/job/Samsung-Space-Eschborn-Germany/Product-Manager--m-w-d--TV---Audio_R110946",
     "/job/Samsung-Space-Eschborn-Germany/Product-Manager-TV_R108373-1",
+    "/job/Science-Hub-Tower-4-Manila-Philippines/Product-Manager_R116409",
+    "/job/Science-Hub-Tower-4-Manila-Philippines/Product-Marketing-Category-Head_R116405",
     "/job/Science-Hub-Tower-4-Manila-Philippines/SCM-Specialist_R117123-1",
     "/job/Senior-Staff-Engineer_R112659-1",
     "/job/The-Park--Prague-Czech-Republic/Cloud-Solution-Architect_R115191",
@@ -3465,8 +3467,7 @@
     "/job/Yokneam-Ilit/Director-of-FE-Engineering---SoC-MCU_R-10062775",
     "/job/Yokneam-Ilit/Senior-Analog-Design-Engineer---MCU_R-10062774",
     "/job/Yokneam-Ilit/Senior-Physical-Design-Leader-MCU_R-10062777",
-    "/job/Yokneam-Ilit/Senior-SoC-Architect---MCU_R-10062776",
-    "R-10062722"
+    "/job/Yokneam-Ilit/Senior-SoC-Architect---MCU_R-10062776"
   ],
   "Alphawave Semi": [
     "/job/Hsinchu-County/Senior-Engineer---Physical-Design_JR100609",
@@ -5480,6 +5481,7 @@
     "26557125",
     "26631082",
     "26631106",
+    "26684902",
     "26685829",
     "26904570",
     "27002984",
@@ -5537,6 +5539,7 @@
     "30764689",
     "30765220",
     "30776953",
+    "30786309",
     "30812867",
     "30844597",
     "30868277",
@@ -5570,6 +5573,7 @@
     "37811826",
     "37811953",
     "37819786",
+    "37823909",
     "37823916",
     "37823929",
     "37859311",
@@ -8146,7 +8150,6 @@
     "41830242",
     "41830245",
     "41830246",
-    "41830251",
     "41830254",
     "41830255",
     "41830263",
@@ -8216,6 +8219,7 @@
     "41844255",
     "41844390",
     "41844425",
+    "41846923",
     "41847458",
     "41847492",
     "41847538",
@@ -8430,6 +8434,7 @@
     "41943229",
     "41943231",
     "41943252",
+    "41943288",
     "41943535",
     "41943538",
     "41943567",
@@ -8444,11 +8449,13 @@
     "41945664",
     "41945665",
     "41945884",
-    "41951782",
+    "41947546",
     "41954073",
     "41954224",
     "41954264",
-    "41954575"
+    "41954575",
+    "41967194",
+    "41967508"
   ],
   "GlobalFoundries": [
     "563980768882149",
@@ -8929,6 +8936,7 @@
     "563980769343483",
     "563980769344070",
     "563980769344219",
+    "563980769353825",
     "563980769354736",
     "563980769355935",
     "563980769363091",
@@ -9121,7 +9129,6 @@
     "563808962167377",
     "563808966848553",
     "563808966883189",
-    "563808966905810",
     "563808966905811",
     "563808966931073",
     "563808966936582",
@@ -9539,7 +9546,6 @@
     "563808970012910",
     "563808970014247",
     "563808970014419",
-    "563808970022710",
     "563808970022841",
     "563808970023227",
     "563808970024112",
@@ -9891,7 +9897,6 @@
     "563808970560336",
     "563808970560340",
     "563808970560452",
-    "563808970560459",
     "563808970565747",
     "563808970565749",
     "563808970565862",
@@ -15699,13 +15704,27 @@
         "url": "https://jobs.appliedmaterials.com/job/santa-clara/2026-summer-optical-intern-adv-degree-santa-clara-ca/95/95159311408"
       },
       "2": {
+        "id": "41967194",
+        "title": "Intern - ADTS PIE PI",
+        "company": "Micron",
+        "location": "Singapore, Singapore",
+        "url": "https://micron.eightfold.ai/careers/job/41967194?domain=micron.com"
+      },
+      "3": {
+        "id": "41943288",
+        "title": "Intern - Component Test Engineering",
+        "company": "Micron",
+        "location": "Singapore, Singapore",
+        "url": "https://micron.eightfold.ai/careers/job/41943288?domain=micron.com"
+      },
+      "4": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "3": {
+      "5": {
         "id": "95214446224",
         "title": "Intern",
         "company": "Synopsys",
@@ -15714,7 +15733,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 02:30 UTC",
+      "checked_at": "2026-05-18 02:45 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
