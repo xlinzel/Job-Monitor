@@ -5719,6 +5719,7 @@
     "39065417",
     "39078927",
     "39083590",
+    "39083688",
     "39084100",
     "39091550",
     "39092131",
@@ -5957,6 +5958,7 @@
     "39634915",
     "39634917",
     "39636052",
+    "39636073",
     "39636077",
     "39637839",
     "39637894",
@@ -8442,7 +8444,8 @@
     "41954575",
     "41967189",
     "41967194",
-    "41967508"
+    "41967508",
+    "41970263"
   ],
   "GlobalFoundries": [
     "563980768882149",
@@ -10763,7 +10766,6 @@
     "1374382100",
     "1374783000",
     "1374783100",
-    "1374786700",
     "1375179500",
     "1375582200",
     "1376009400",
@@ -13957,7 +13959,6 @@
     "2f16282c7ab1c09d",
     "2f74117652da74b4",
     "2f886fae0e4903f7",
-    "2fb99d9e9fea0d41",
     "2fe7874d4eaa13fa",
     "30a2456f7454767d",
     "32220ca0d63f9c25",
@@ -14127,7 +14128,6 @@
     "77b3919ba7f1790b",
     "7881657700bc5f82",
     "791415150f087c3b",
-    "79ce675877443f04",
     "7b1bfddc91c6fa3e",
     "7b361284d3516e5f",
     "7bdca7d196a0620a",
@@ -15730,20 +15730,27 @@
         "url": "https://micron.eightfold.ai/careers/job/41943288?domain=micron.com"
       },
       "6": {
+        "id": "41970263",
+        "title": "Intern - Manufacturing Chemical Vapour Deposition (CVD)",
+        "company": "Micron",
+        "location": "Singapore, Singapore",
+        "url": "https://micron.eightfold.ai/careers/job/41970263?domain=micron.com"
+      },
+      "7": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "7": {
+      "8": {
         "id": "95214446224",
         "title": "Intern",
         "company": "Synopsys",
         "location": "Noida, India",
         "url": "https://careers.synopsys.com/job/noida/intern/44408/95214446224"
       },
-      "8": {
+      "9": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15752,7 +15759,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 08:15 UTC",
+      "checked_at": "2026-05-18 08:30 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
