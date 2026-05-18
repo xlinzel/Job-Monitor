@@ -2384,9 +2384,7 @@
     "/job/United-Kingdom--Edinburgh--Exchange-Tower/Analog-Mixed-Signal-Design-Engineer_R025746",
     "/job/United-Kingdom-Cambridge-Milton-Road-Cambridge-Science-Park/AI-Software-Engineer_R025524",
     "/job/United-Kingdom-Remote-Location/Kubernetes-Platform-Architect_R025880",
-    "/job/United-Kingdom-Remote-Location/Senior-Project-Manager_R025706",
-    "R024881",
-    "R025463"
+    "/job/United-Kingdom-Remote-Location/Senior-Project-Manager_R025706"
   ],
   "Microchip Technology": [
     "/job/AL---Tuscaloosa/Engineer-I---Product_R1955-26",
@@ -2802,7 +2800,6 @@
     "/job/TX---Austin---Park-Centre/Technical-Staff-Engineer-Product-Marketing_R1203-26",
     "/job/TX---Austin---Park-Centre/Technician-IV-Product-Test_R1330-26",
     "/job/TX---Houston---Compaq-Center-Dr/Engineer-I-Software_R2074-26-1",
-    "/job/TX---Houston---Compaq-Center-Dr/Engineer-II-Software-Development_R1884-26",
     "/job/TX---Houston---Compaq-Center-Dr/Human-Resources-Business-Partner_R1678-26",
     "/job/TX---Houston---Compaq-Center-Dr/Senior-Engineer-II-Applications--Software-Firmware-_R1842-26",
     "/job/TX---Houston---Compaq-Center-Dr/Technical-Staff-Engineer-Software--macOS-Driver-Developer-_R814-26",
@@ -3783,7 +3780,6 @@
     "77434",
     "77435",
     "77442",
-    "77459",
     "77482",
     "77534",
     "77566",
@@ -5342,6 +5338,7 @@
     "30881",
     "30882",
     "30885",
+    "30889",
     "30891",
     "30892",
     "30894",
@@ -6134,7 +6131,6 @@
     "40061371",
     "40061378",
     "40061739",
-    "40061740",
     "40061741",
     "40061803",
     "40066161",
@@ -6833,6 +6829,7 @@
     "40890698",
     "40890699",
     "40892688",
+    "40895963",
     "40895971",
     "40895981",
     "40896006",
@@ -7579,7 +7576,6 @@
     "41433847",
     "41433853",
     "41439436",
-    "41439444",
     "41439445",
     "41439447",
     "41439452",
@@ -8052,7 +8048,6 @@
     "41806532",
     "41806535",
     "41806536",
-    "41808423",
     "41814101",
     "41816073",
     "41816076",
@@ -15771,7 +15766,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 18:00 UTC",
+      "checked_at": "2026-05-18 18:07 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
