@@ -6993,6 +6993,8 @@
     "41037384",
     "41037396",
     "41037407",
+    "41037411",
+    "41037447",
     "41037567",
     "41037569",
     "41037572",
@@ -8191,6 +8193,7 @@
     "41844255",
     "41844390",
     "41844425",
+    "41846923",
     "41847458",
     "41847492",
     "41847538",
@@ -8282,6 +8285,7 @@
     "41886038",
     "41886567",
     "41886568",
+    "41887724",
     "41887780",
     "41887782",
     "41887799",
@@ -8362,6 +8366,7 @@
     "41921137",
     "41921156",
     "41921164",
+    "41921174",
     "41922396",
     "41923169",
     "41923925",
@@ -8412,6 +8417,7 @@
     "41943229",
     "41943231",
     "41943252",
+    "41943288",
     "41943535",
     "41943538",
     "41943567",
@@ -8874,6 +8880,7 @@
     "563980769224512",
     "563980769224513",
     "563980769239045",
+    "563980769257043",
     "563980769260432",
     "563980769261289",
     "563980769261346",
@@ -8900,6 +8907,7 @@
     "563980769288356",
     "563980769288914",
     "563980769288916",
+    "563980769298195",
     "563980769299307",
     "563980769326542",
     "563980769330787",
@@ -14251,7 +14259,6 @@
     "d4cbb08c87918477",
     "d4fc405ebbd0230a",
     "d5c2f51a18e4223d",
-    "d5d43d5896057398",
     "d6037200110fff1d",
     "d6b0f7312c552392",
     "d6eb3d1dd8e77265",
@@ -14299,7 +14306,6 @@
     "e98f6b1e121cde46",
     "e9c31128be83d2f6",
     "ea7be2a267af8ab0",
-    "eaa0e6b2082479bb",
     "eaaa03e9e96a8791",
     "ead4509925b4508d",
     "eb8ae1859da510c9",
@@ -15647,27 +15653,34 @@
         "url": "https://micron.eightfold.ai/careers/job/41967194?domain=micron.com"
       },
       "8": {
+        "id": "41943288",
+        "title": "Intern - Component Test Engineering",
+        "company": "Micron",
+        "location": "Singapore, Singapore",
+        "url": "https://micron.eightfold.ai/careers/job/41943288?domain=micron.com"
+      },
+      "9": {
         "id": "41970263",
         "title": "Intern - Manufacturing Chemical Vapour Deposition (CVD)",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41970263?domain=micron.com"
       },
-      "9": {
+      "10": {
         "id": "41967326",
         "title": "Intern-Assembly Equipment",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
       },
-      "10": {
+      "11": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "11": {
+      "12": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15676,7 +15689,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 10:45 UTC",
+      "checked_at": "2026-05-18 11:00 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
