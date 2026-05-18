@@ -1990,7 +1990,8 @@
     "/job/Via-Mike-Bongiorno-Milano-Italy/CRM-Support--INTERN-_R116526",
     "/job/Via-Mike-Bongiorno-Milano-Italy/E-Commerce-Analyst-and-Control-Tower-Support--INTERNSHIP-_R117010",
     "/job/Via-Mike-Bongiorno-Milano-Italy/Health-Medical-Equipment---Key-Account-Manager--Northern-Italy-_R115634",
-    "/job/Via-Mike-Bongiorno-Milano-Italy/Samsung-s-Internship_R114528-1"
+    "/job/Via-Mike-Bongiorno-Milano-Italy/Samsung-s-Internship_R114528-1",
+    "R115647"
   ],
   "Broadcom": [
     "/job/ARE-Dubai-Business-Central-Tower/Kubernetes-Platform-Architect--UAE--Remote-_R025877",
@@ -2282,7 +2283,6 @@
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/AI-Software-Engineer_R026064-1",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/ASIC-DFT-Engineer_R025176",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/ASIC-DFT-Engineer_R025177",
-    "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/ASIC-Floor-Plan-Automation-Engineer_R024259",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/Advanced-Package-Technology-Engineer_R024784",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/CMP-Plating-Wafer-Bond-Equipment-Maintenance-Technician--Night-Shift-_R025788",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/D-Shift-Line-Technician_R025782",
@@ -2296,9 +2296,7 @@
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/Equipment-Maintenance-Shift-Supervisor_R025717",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/Fab-Manufacturing-Quality-Engineer_R025543",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/IC-Package-Mechanical-FEA-Engineer--R-D-_R024441-2",
-    "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/IP-Integration-Engineer_R024322",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/Industrial-Engineer_R025422",
-    "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/Infrastructure-Design-Automation-Engineer_R026039-1",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/Manufacturing-Operations-Supervisor_R025867",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/Manufacturing-Operator-1_R025833",
     "/job/USA-Colorado-Fort-Collins-4380-Ziegler-Road/Manufacturing-Operator-1_R025854",
@@ -2791,6 +2789,7 @@
     "/job/Philippines---Mphil-3/Principal-Engineer--Manufacturing_R1392-26",
     "/job/Philippines---Mphil-3/Production-Operator_R1641-26",
     "/job/Philippines---Mphil-3/Production-Operator_R1642-26",
+    "/job/Philippines---Mphil-3/Production-Operator_R1662-26",
     "/job/Philippines---Mphil-3/Production-Operator_R1663-26",
     "/job/Philippines---Mphil-3/Production-Operator_R1664-26",
     "/job/Philippines---Mphil-3/Senior-Engineer-I-Process_R908-26-1",
@@ -8293,6 +8292,7 @@
     "41884809",
     "41885317",
     "41885345",
+    "41885348",
     "41885350",
     "41885352",
     "41885382",
@@ -8413,6 +8413,7 @@
     "41932714",
     "41937478",
     "41941540",
+    "41941753",
     "41941763",
     "41941772",
     "41941774",
@@ -8986,7 +8987,8 @@
     "563980769446740",
     "563980769446751",
     "563980769456568",
-    "563980769466871"
+    "563980769466871",
+    "563980769467662"
   ],
   "Infineon Technologies": [
     "563808955939145",
@@ -9580,11 +9582,9 @@
     "563808970058262",
     "563808970060356",
     "563808970065115",
-    "563808970065230",
     "563808970071489",
     "563808970071621",
     "563808970072691",
-    "563808970085106",
     "563808970085725",
     "563808970085887",
     "563808970086720",
@@ -9752,7 +9752,6 @@
     "563808970307438",
     "563808970307802",
     "563808970308174",
-    "563808970308181",
     "563808970308508",
     "563808970308762",
     "563808970308855",
@@ -15744,7 +15743,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 06:45 UTC",
+      "checked_at": "2026-05-18 07:00 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
