@@ -1952,7 +1952,9 @@
     "/job/SSIR-Goldstone-Bangalore-India/DRAM-Linux-Kernel-Architect_R116884-1",
     "/job/SSIR-Goldstone-Bangalore-India/DRAM-Senior-Security-Architect_R116885",
     "/job/SSIR-Goldstone-Bangalore-India/Firmware-Development_R116887",
+    "/job/SSIR-Goldstone-Bangalore-India/IP-Design-Verification-Engineer_R117217",
     "/job/SSIR-Goldstone-Bangalore-India/IP-RTL-Design-Engineer_R115142",
+    "/job/SSIR-Goldstone-Bangalore-India/IP-RTL-Design-Engineer_R117218",
     "/job/SSIR-Goldstone-Bangalore-India/Linux-BSP-Engineer_R114954",
     "/job/SSIR-Goldstone-Bangalore-India/Linux-Kernel-Driver-Development_R116886",
     "/job/SSIR-Goldstone-Bangalore-India/Physical-Design---Foundry-Team_R55611-3",
@@ -1989,8 +1991,7 @@
     "/job/Via-Mike-Bongiorno-Milano-Italy/CRM-Support--INTERN-_R116526",
     "/job/Via-Mike-Bongiorno-Milano-Italy/E-Commerce-Analyst-and-Control-Tower-Support--INTERNSHIP-_R117010",
     "/job/Via-Mike-Bongiorno-Milano-Italy/Health-Medical-Equipment---Key-Account-Manager--Northern-Italy-_R115634",
-    "/job/Via-Mike-Bongiorno-Milano-Italy/Samsung-s-Internship_R114528-1",
-    "R114091"
+    "/job/Via-Mike-Bongiorno-Milano-Italy/Samsung-s-Internship_R114528-1"
   ],
   "Broadcom": [
     "/job/ARE-Dubai-Business-Central-Tower/Kubernetes-Platform-Architect--UAE--Remote-_R025877",
@@ -8406,6 +8407,7 @@
     "41926383",
     "41927356",
     "41931692",
+    "41931711",
     "41931867",
     "41931886",
     "41931982",
@@ -10904,7 +10906,8 @@
     "1391647100",
     "1391647300",
     "1391650600",
-    "1391667500"
+    "1391667500",
+    "1391668000"
   ],
   "Applied Materials": [
     "46146390576",
@@ -15739,7 +15742,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-18 04:00 UTC",
+      "checked_at": "2026-05-18 04:15 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
