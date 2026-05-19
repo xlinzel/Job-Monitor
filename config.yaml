@@ -208,7 +208,7 @@ filters:
     # - "director"
 
 # =============================================================================
-# Reminder sections included with new-job alerts
+# Internship / early-career keyword matching
 # =============================================================================
 reminders:
   internship_keywords:
@@ -225,6 +225,10 @@ reminders:
     - university
     - apprentice
     - apprenticeship
+    - fall
+    - winter
+    - spring
+    - working student
 
 # =============================================================================
 # Notifications - set via GitHub Actions secrets

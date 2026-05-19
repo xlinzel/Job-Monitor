@@ -39,8 +39,6 @@ jobs:
       - name: Run monitor
         env:
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
-          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
-          DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TEST_ALERT: ${{ github.event.inputs.test_alert || 'false' }}
