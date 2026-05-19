@@ -2043,7 +2043,6 @@
     "/job/IND-Pune-EON-Kharadi-Infrastructure/Senior--Software-Engineer_R025190",
     "/job/IND-Pune-Panchshil/R-D-Software-Engineer_R025636",
     "/job/IRL-Cork-Kavanagh-House/Technical-Support-Engineer_R026021-1",
-    "/job/ISR-Tel-Aviv-University/DFT-Engineer_R024548-5",
     "/job/ISR-Tel-Aviv-University/Software-Engineer---R-D-Software-Development-Position_R025034",
     "/job/ISR-Tel-Aviv-University/Software-Engineer---R-D-Software-Development-Position_R026036",
     "/job/ITA-Milan-Remote-Location/Mainframe-Technical-Consultant----Mainframe-AIOPS_R023914",
@@ -3756,7 +3755,6 @@
     "77257",
     "77285",
     "77287",
-    "77295",
     "77298",
     "77300",
     "77301",
@@ -5623,6 +5621,7 @@
     "38520371",
     "38529213",
     "38529408",
+    "38533029",
     "38535468",
     "38536115",
     "38538523",
@@ -6490,7 +6489,6 @@
     "40649348",
     "40649624",
     "40650150",
-    "40650774",
     "40651632",
     "40656351",
     "40658888",
@@ -6703,8 +6701,8 @@
     "40799424",
     "40799610",
     "40799613",
+    "40799754",
     "40799759",
-    "40801087",
     "40801089",
     "40801102",
     "40802036",
@@ -6929,6 +6927,9 @@
     "40965637",
     "40965644",
     "40965672",
+    "40965696",
+    "40965699",
+    "40965722",
     "40969635",
     "40972393",
     "40972403",
@@ -7076,7 +7077,6 @@
     "41065045",
     "41065126",
     "41065973",
-    "41070389",
     "41070513",
     "41070870",
     "41072515",
@@ -7667,6 +7667,7 @@
     "41502258",
     "41502274",
     "41502276",
+    "41502282",
     "41506417",
     "41508545",
     "41509836",
@@ -7829,6 +7830,7 @@
     "41673371",
     "41673379",
     "41673495",
+    "41673688",
     "41673761",
     "41673797",
     "41673800",
@@ -7849,6 +7851,7 @@
     "41674987",
     "41675228",
     "41675245",
+    "41677596",
     "41678642",
     "41678645",
     "41678647",
@@ -7919,7 +7922,6 @@
     "41723670",
     "41725949",
     "41728479",
-    "41728649",
     "41728652",
     "41728661",
     "41728665",
@@ -7937,6 +7939,7 @@
     "41730573",
     "41730574",
     "41736332",
+    "41736337",
     "41736341",
     "41736370",
     "41736371",
@@ -8456,8 +8459,7 @@
     "41973184",
     "41973187",
     "41978275",
-    "41980076",
-    "41980078"
+    "41980076"
   ],
   "GlobalFoundries": [
     "563980768882149",
@@ -9030,7 +9032,6 @@
     "563808958519716",
     "563808958552025",
     "563808958560352",
-    "563808958589136",
     "563808958600187",
     "563808958606123",
     "563808958727011",
@@ -9501,7 +9502,6 @@
     "563808969887802",
     "563808969887921",
     "563808969888082",
-    "563808969889125",
     "563808969889172",
     "563808969889221",
     "563808969889718",
@@ -9592,6 +9592,7 @@
     "563808970089135",
     "563808970089210",
     "563808970089512",
+    "563808970093639",
     "563808970093987",
     "563808970093989",
     "563808970094439",
@@ -10083,6 +10084,7 @@
     "563808970723976",
     "563808970724023",
     "563808970724105",
+    "563808970724270",
     "563808970724299",
     "563808970724369",
     "563808970724811",
@@ -10140,7 +10142,9 @@
     "563808970793422",
     "563808970793476",
     "563808970793478",
-    "563808970805105"
+    "563808970805105",
+    "563808970805424",
+    "563808970805446"
   ],
   "Texas Instruments": [
     "240001HW",
@@ -10774,7 +10778,6 @@
     "1373497300",
     "1373500100",
     "1373505700",
-    "1374353600",
     "1374381800",
     "1374382100",
     "1374783000",
@@ -10783,11 +10786,9 @@
     "1375582200",
     "1376009400",
     "1376021800",
-    "1376394400",
     "1376441200",
     "1376459900",
     "1376877900",
-    "1376901200",
     "1377119900",
     "1377390900",
     "1378129300",
@@ -10913,7 +10914,8 @@
     "1392044300",
     "1392044400",
     "1392056000",
-    "1392060100"
+    "1392060100",
+    "1392063100"
   ],
   "Applied Materials": [
     "46146390576",
@@ -13897,6 +13899,7 @@
     "2f16282c7ab1c09d",
     "2f886fae0e4903f7",
     "2fe7874d4eaa13fa",
+    "308863a1dc3d05d3",
     "30a2456f7454767d",
     "32220ca0d63f9c25",
     "3258db400aaad75e",
@@ -14065,6 +14068,7 @@
     "791415150f087c3b",
     "7b361284d3516e5f",
     "7bdca7d196a0620a",
+    "7c5c274450f927ca",
     "7c8001afb065b130",
     "7c97ee4cd404ea2d",
     "7cbe98a2701763f8",
@@ -14293,7 +14297,6 @@
     "d7bb4520f6de00ad",
     "d8416d326b243a8b",
     "d8b8da853ac1007b",
-    "d8f9cd25c46a42ac",
     "d91b33e292457d38",
     "da1e126970ce1b81",
     "db70890de1e746e5",
@@ -14301,7 +14304,6 @@
     "dbefd1367be9b52a",
     "dc747c26b4a222eb",
     "dd8974cf18ef6bf2",
-    "de7a544dc0e8d317",
     "df21ec11e585d5c7",
     "df840cdbb3a7254a",
     "df9cb5e84da3711f",
@@ -15748,39 +15750,39 @@
         "url": "https://micron.eightfold.ai/careers/job/41970258?domain=micron.com"
       },
       "18": {
-        "id": "41980078",
-        "title": "Intern - Test Engineering",
-        "company": "Micron",
-        "location": "Singapore, Singapore",
-        "url": "https://micron.eightfold.ai/careers/job/41980078?domain=micron.com"
-      },
-      "19": {
         "id": "41967326",
         "title": "Intern-Assembly Equipment",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
       },
-      "20": {
+      "19": {
         "id": "41970519",
         "title": "Summer Intern \u2013 ASIC Design Flow Exploration with AI",
         "company": "Micron",
         "location": "Taipei City, Taipei City, Taiwan",
         "url": "https://micron.eightfold.ai/careers/job/41970519?domain=micron.com"
       },
-      "21": {
+      "20": {
         "id": "/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872",
         "title": "Internship: Software Developer - Tools (m/f/d)",
         "company": "NXP Semiconductors",
         "location": "Gratkorn",
         "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872"
       },
-      "22": {
+      "21": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
+      },
+      "22": {
+        "id": "1392063100",
+        "title": "Finance Intern",
+        "company": "Seagate Technology",
+        "location": "Wuxi, CN",
+        "url": "https://seagatecareers.com/job/Wuxi-Finance-Intern/1392063100/"
       },
       "23": {
         "id": "95257149664",
@@ -15819,7 +15821,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 07:15 UTC",
+      "checked_at": "2026-05-19 07:30 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
