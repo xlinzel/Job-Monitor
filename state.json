@@ -2771,7 +2771,6 @@
     "/job/Philippines---Mphil-3/Analyst---Finance_R925-26",
     "/job/Philippines---Mphil-3/Operator-I_R1687-26",
     "/job/Philippines---Mphil-3/Operator-I_R1688-26",
-    "/job/Philippines---Mphil-3/Operator-I_R1695-26",
     "/job/Philippines---Mphil-3/Operator-I_R1697-26",
     "/job/Philippines---Mphil-3/Principal-Engineer---Manufacturing_R1394-26",
     "/job/Philippines---Mphil-3/Principal-Engineer--Manufacturing_R1392-26",
@@ -3368,6 +3367,7 @@
     "/job/Shanghai-JingAn/Key-Account-Manager---Automotive_R-10062821",
     "/job/Shanghai-JingAn/Principal-Field-Application-Engineer---Automotive-AMCU_R-10063089",
     "/job/Shanghai-JingAn/Principal-Field-Application-Engineer---Automotive-MCU_R-10063094",
+    "/job/Shanghai-JingAn/Process-Integration-Device-Engineer_R-10063267",
     "/job/Shanghai-JingAn/Senior-Business-Development-Manager---Robotics_R-10063141-1",
     "/job/Shanghai-JingAn/Senior-Marketing-Engineer--Robotics_R-10061750",
     "/job/Shanghai-JingAn/Sr-Sales-Director---Car-OEM_R-10058149-1",
@@ -4300,7 +4300,6 @@
     "81290",
     "81292",
     "81300",
-    "82033",
     "82169",
     "83427",
     "83587",
@@ -6031,7 +6030,6 @@
     "39708359",
     "39713430",
     "39714753",
-    "39715693",
     "39715705",
     "39716246",
     "39717887",
@@ -7671,6 +7669,7 @@
     "41501849",
     "41501981",
     "41502246",
+    "41502258",
     "41502274",
     "41502276",
     "41502282",
@@ -8054,6 +8053,7 @@
     "41816073",
     "41816076",
     "41816207",
+    "41816631",
     "41816939",
     "41817002",
     "41817088",
@@ -8449,6 +8449,7 @@
     "41967508",
     "41970263",
     "41970470",
+    "41970519",
     "41978275"
   ],
   "GlobalFoundries": [
@@ -8780,7 +8781,6 @@
     "563980768959210",
     "563980768959213",
     "563980768959214",
-    "563980768959219",
     "563980768959221",
     "563980768959223",
     "563980768959225",
@@ -14058,7 +14058,6 @@
     "77b3919ba7f1790b",
     "7881657700bc5f82",
     "791415150f087c3b",
-    "7b1bfddc91c6fa3e",
     "7b361284d3516e5f",
     "7bdca7d196a0620a",
     "7c8001afb065b130",
@@ -14144,6 +14143,7 @@
     "9f4010545772a24d",
     "9f72025b55ea5e0d",
     "9f73021b86dd3bb2",
+    "9ff370db4649d187",
     "a027c7f484d5fca0",
     "a055e2aef80211a1",
     "a089db7b6ec465de",
@@ -15721,48 +15721,55 @@
         "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
       },
       "15": {
+        "id": "41970519",
+        "title": "Summer Intern \u2013 ASIC Design Flow Exploration with AI",
+        "company": "Micron",
+        "location": "Taipei City, Taipei City, Taiwan",
+        "url": "https://micron.eightfold.ai/careers/job/41970519?domain=micron.com"
+      },
+      "16": {
         "id": "/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872",
         "title": "Internship: Software Developer - Tools (m/f/d)",
         "company": "NXP Semiconductors",
         "location": "Gratkorn",
         "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872"
       },
-      "16": {
+      "17": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "17": {
+      "18": {
         "id": "95257149664",
         "title": "FC PV Internship \u2013 AI Driven Runtime Validation",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/fc-pv-internship-ai-driven-runtime-validation/44408/95257149664"
       },
-      "18": {
+      "19": {
         "id": "94950528864",
         "title": "Software Engineering Internship \u2013 LLM-driven Engineering Analysis",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/software-engineering-internship-llm-driven-engineering-analysis/44408/94950528864"
       },
-      "19": {
+      "20": {
         "id": "25002653",
         "title": "Field Applications Engineering Intern m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002653"
       },
-      "20": {
+      "21": {
         "id": "25002465",
         "title": "Field Applications Engineering Student Worker m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002465"
       },
-      "21": {
+      "22": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15771,7 +15778,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 01:30 UTC",
+      "checked_at": "2026-05-19 01:45 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
