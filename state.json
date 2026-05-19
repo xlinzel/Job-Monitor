@@ -2772,7 +2772,6 @@
     "/job/Philippines---Mphil-3/Principal-Engineer--Manufacturing_R1392-26",
     "/job/Philippines---Mphil-3/Production-Operator_R1642-26",
     "/job/Philippines---Mphil-3/Production-Operator_R1662-26",
-    "/job/Philippines---Mphil-3/Production-Operator_R1663-26",
     "/job/Philippines---Mphil-3/Production-Operator_R1664-26",
     "/job/Philippines---Mphil-3/Production-Superisor_R2000-26",
     "/job/Philippines---Mphil-3/Senior-Engineer-I-Process_R908-26-1",
@@ -4865,8 +4864,10 @@
     "86241",
     "86242",
     "86248",
+    "86249",
     "86250",
     "86251",
+    "86253",
     "86274",
     "86275",
     "86276",
@@ -6832,6 +6833,8 @@
     "40896006",
     "40898930",
     "40899055",
+    "40899228",
+    "40899241",
     "40899560",
     "40899883",
     "40900168",
@@ -6874,6 +6877,7 @@
     "40918839",
     "40919047",
     "40919073",
+    "40919262",
     "40919307",
     "40920697",
     "40920714",
@@ -7152,7 +7156,6 @@
     "41128760",
     "41129092",
     "41130769",
-    "41130770",
     "41130779",
     "41131010",
     "41131012",
@@ -7547,6 +7550,7 @@
     "41423289",
     "41423291",
     "41423299",
+    "41423301",
     "41423419",
     "41424452",
     "41424523",
@@ -7663,7 +7667,6 @@
     "41502258",
     "41502274",
     "41502276",
-    "41502282",
     "41506417",
     "41508545",
     "41509836",
@@ -7826,7 +7829,6 @@
     "41673371",
     "41673379",
     "41673495",
-    "41673688",
     "41673761",
     "41673797",
     "41673800",
@@ -7847,7 +7849,6 @@
     "41674987",
     "41675228",
     "41675245",
-    "41677596",
     "41678642",
     "41678645",
     "41678647",
@@ -7920,7 +7921,6 @@
     "41728479",
     "41728649",
     "41728652",
-    "41728657",
     "41728661",
     "41728665",
     "41728667",
@@ -7937,7 +7937,6 @@
     "41730573",
     "41730574",
     "41736332",
-    "41736337",
     "41736341",
     "41736370",
     "41736371",
@@ -8312,6 +8311,7 @@
     "41892546",
     "41892547",
     "41892552",
+    "41892563",
     "41896872",
     "41897034",
     "41897045",
@@ -8449,6 +8449,7 @@
     "41970263",
     "41970269",
     "41970470",
+    "41970519",
     "41973062",
     "41973081",
     "41973145",
@@ -9275,7 +9276,6 @@
     "563808968765470",
     "563808968773167",
     "563808968778092",
-    "563808968779191",
     "563808968809541",
     "563808968809599",
     "563808968809625",
@@ -9592,7 +9592,6 @@
     "563808970089135",
     "563808970089210",
     "563808970089512",
-    "563808970093639",
     "563808970093987",
     "563808970093989",
     "563808970094439",
@@ -10029,7 +10028,6 @@
     "563808970675257",
     "563808970675571",
     "563808970681071",
-    "563808970681164",
     "563808970681317",
     "563808970681318",
     "563808970681336",
@@ -10141,7 +10139,8 @@
     "563808970793310",
     "563808970793422",
     "563808970793476",
-    "563808970793478"
+    "563808970793478",
+    "563808970805105"
   ],
   "Texas Instruments": [
     "240001HW",
@@ -10913,7 +10912,8 @@
     "1392041900",
     "1392044300",
     "1392044400",
-    "1392056000"
+    "1392056000",
+    "1392060100"
   ],
   "Applied Materials": [
     "46146390576",
@@ -15692,11 +15692,11 @@
         "url": "https://careers.gf.com/careers/job/563980769353378?domain=globalfoundries.com"
       },
       "10": {
-        "id": "563808970681164",
-        "title": "Internship - Regional Marketing",
+        "id": "563808970805105",
+        "title": "Intern Talent Attraction",
         "company": "Infineon Technologies",
-        "location": "Singapore",
-        "url": "https://jobs.infineon.com/careers/job/563808970681164?domain=infineon.com"
+        "location": "Shanghai, \u4e0a\u6d77 (China)",
+        "url": "https://jobs.infineon.com/careers/job/563808970805105?domain=infineon.com"
       },
       "11": {
         "id": "563808970661044",
@@ -15762,48 +15762,55 @@
         "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
       },
       "20": {
+        "id": "41970519",
+        "title": "Summer Intern \u2013 ASIC Design Flow Exploration with AI",
+        "company": "Micron",
+        "location": "Taipei City, Taipei City, Taiwan",
+        "url": "https://micron.eightfold.ai/careers/job/41970519?domain=micron.com"
+      },
+      "21": {
         "id": "/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872",
         "title": "Internship: Software Developer - Tools (m/f/d)",
         "company": "NXP Semiconductors",
         "location": "Gratkorn",
         "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872"
       },
-      "21": {
+      "22": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "22": {
+      "23": {
         "id": "95257149664",
         "title": "FC PV Internship \u2013 AI Driven Runtime Validation",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/fc-pv-internship-ai-driven-runtime-validation/44408/95257149664"
       },
-      "23": {
+      "24": {
         "id": "94950528864",
         "title": "Software Engineering Internship \u2013 LLM-driven Engineering Analysis",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/software-engineering-internship-llm-driven-engineering-analysis/44408/94950528864"
       },
-      "24": {
+      "25": {
         "id": "25002653",
         "title": "Field Applications Engineering Intern m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002653"
       },
-      "25": {
+      "26": {
         "id": "25002465",
         "title": "Field Applications Engineering Student Worker m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002465"
       },
-      "26": {
+      "27": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15812,7 +15819,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 07:00 UTC",
+      "checked_at": "2026-05-19 07:15 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
