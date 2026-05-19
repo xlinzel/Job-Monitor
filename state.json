@@ -843,6 +843,7 @@
     "610c3836-9798-46ea-931a-02bb95b29467",
     "61860739-5aa9-4f64-920d-f4c1cca71af8",
     "639fe410-56a4-44aa-ac93-8ee7c10c7d75",
+    "65ba5419-d633-460a-a03d-7d5b5dec0115",
     "68edcc93-f0d0-483e-829d-b48e002ab932",
     "699f3ab2-07e4-466c-9d76-3d4a3abb4ebc",
     "69e75a95-6476-452d-bb41-86ac7ce52a98",
@@ -857,6 +858,7 @@
     "7aeafe31-c2c6-43e0-bb31-01868dcfad39",
     "7f89eb44-b816-470a-953f-3fc1dc09b280",
     "890fd360-d558-4fa6-921d-32ff9e58e7e2",
+    "8e280db7-f954-4467-b3ea-b9b4386d6632",
     "901d78ff-b9aa-4fc7-baea-604e5d9638d3",
     "904ddf46-55fc-4a8f-8b49-f32cfe88116a",
     "92862cf4-3fe6-4317-b771-8fcdf0a95758",
@@ -873,6 +875,7 @@
     "b25223b5-441a-4c0a-a436-fc66063755c2",
     "b32f71f5-3f98-4ae2-ae96-f1e319c40ccf",
     "b431189a-0fc1-46f0-abaf-4f73bf4e3ed5",
+    "b65243ce-d0bd-4958-a8a4-c42f654d35dd",
     "b7132643-fc29-47d6-971d-040d72bd0b89",
     "bdec1a6d-300b-47fc-a551-3c937d76fee0",
     "bf163fe4-1c81-43ce-b129-518c8fbaf46a",
@@ -5435,6 +5438,7 @@
     "21938685",
     "21938787",
     "22484891",
+    "22656658",
     "23401803",
     "23432055",
     "23432088",
@@ -8227,6 +8231,7 @@
     "41854787",
     "41854801",
     "41854802",
+    "41854807",
     "41854832",
     "41854833",
     "41854940",
@@ -8445,7 +8450,9 @@
     "41967489",
     "41967508",
     "41970263",
+    "41970269",
     "41970470",
+    "41970519",
     "41978275",
     "41980078"
   ],
@@ -10134,6 +10141,7 @@
     "563808970792869",
     "563808970793310",
     "563808970793422",
+    "563808970793476",
     "563808970793478"
   ],
   "Texas Instruments": [
@@ -15730,48 +15738,55 @@
         "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
       },
       "16": {
+        "id": "41970519",
+        "title": "Summer Intern \u2013 ASIC Design Flow Exploration with AI",
+        "company": "Micron",
+        "location": "Taipei City, Taipei City, Taiwan",
+        "url": "https://micron.eightfold.ai/careers/job/41970519?domain=micron.com"
+      },
+      "17": {
         "id": "/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872",
         "title": "Internship: Software Developer - Tools (m/f/d)",
         "company": "NXP Semiconductors",
         "location": "Gratkorn",
         "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872"
       },
-      "17": {
+      "18": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "18": {
+      "19": {
         "id": "95257149664",
         "title": "FC PV Internship \u2013 AI Driven Runtime Validation",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/fc-pv-internship-ai-driven-runtime-validation/44408/95257149664"
       },
-      "19": {
+      "20": {
         "id": "94950528864",
         "title": "Software Engineering Internship \u2013 LLM-driven Engineering Analysis",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/software-engineering-internship-llm-driven-engineering-analysis/44408/94950528864"
       },
-      "20": {
+      "21": {
         "id": "25002653",
         "title": "Field Applications Engineering Intern m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002653"
       },
-      "21": {
+      "22": {
         "id": "25002465",
         "title": "Field Applications Engineering Student Worker m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002465"
       },
-      "22": {
+      "23": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15780,7 +15795,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 03:00 UTC",
+      "checked_at": "2026-05-19 03:15 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
