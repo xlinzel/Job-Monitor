@@ -1517,7 +1517,6 @@
     "/job/12100-Samsung-Blvd-Austin-TX-USA/CMP-Equipment-Technician---Nights_R110018-1",
     "/job/12100-Samsung-Blvd-Austin-TX-USA/CMP-Process-Engineer_R110051-1",
     "/job/12100-Samsung-Blvd-Austin-TX-USA/CMP-Process-Technician---Nights_R110020-1",
-    "/job/12100-Samsung-Blvd-Austin-TX-USA/CRC-Calibration-Technician_R115158-1",
     "/job/12100-Samsung-Blvd-Austin-TX-USA/CRC-Material-Handler_R116797",
     "/job/12100-Samsung-Blvd-Austin-TX-USA/CVD-Process-Engineer---Wafer-Bonding_R108276-1",
     "/job/12100-Samsung-Blvd-Austin-TX-USA/Capacity-Planning-Engineer_R116833",
@@ -1759,6 +1758,7 @@
     "/job/5060-Station-Road-Cambridge-United-Kingdom/Intern---AI-Research_R115071",
     "/job/6-Duntes-Street-Riga-Latvia/Junior-Marketing-Project-Manager---Home-Appliances_R116969-1",
     "/job/6-Duntes-Street-Riga-Latvia/Marketing-Project-Manager--MX-Smartphones-_R116511-1",
+    "/job/6-rue-Fructidor-Saint-Ouen-France/Alternance-Assistante-eCommerce-Manager--H-F-_R117191",
     "/job/6-rue-Fructidor-Saint-Ouen-France/Alternance-Charg-e--de-mission-Learning---Development--H-F-_R114292",
     "/job/6-rue-Fructidor-Saint-Ouen-France/Alternance-Responsable-Partenariats-EPP-Junior---H-F-_R117192",
     "/job/6-rue-Fructidor-Saint-Ouen-France/Alternant-e--Responsable-comptes-techniques-pour-les-Services-et-Solutions-de-la-division-MX-B2B_R113544",
@@ -3859,7 +3859,6 @@
     "78473",
     "78474",
     "78481",
-    "78491",
     "78497",
     "78498",
     "78501",
@@ -4312,6 +4311,7 @@
     "84283",
     "84284",
     "84287",
+    "84299",
     "84310",
     "84316",
     "84324",
@@ -5618,8 +5618,6 @@
     "38520371",
     "38529213",
     "38529408",
-    "38533029",
-    "38533134",
     "38535468",
     "38536115",
     "38538523",
@@ -5644,6 +5642,7 @@
     "38644037",
     "38646656",
     "38648523",
+    "38653074",
     "38653797",
     "38660519",
     "38677550",
@@ -5846,6 +5845,7 @@
     "39527550",
     "39527561",
     "39530890",
+    "39533288",
     "39534117",
     "39534121",
     "39534124",
@@ -6688,7 +6688,6 @@
     "40799424",
     "40799610",
     "40799613",
-    "40799754",
     "40799759",
     "40801087",
     "40801089",
@@ -6988,6 +6987,8 @@
     "41038577",
     "41040587",
     "41041643",
+    "41041890",
+    "41041892",
     "41041893",
     "41041914",
     "41041915",
@@ -7650,6 +7651,7 @@
     "41502258",
     "41502274",
     "41502276",
+    "41502282",
     "41506417",
     "41508545",
     "41509836",
@@ -7665,6 +7667,7 @@
     "41513636",
     "41513906",
     "41514784",
+    "41519060",
     "41519064",
     "41519066",
     "41519371",
@@ -7679,6 +7682,7 @@
     "41523841",
     "41525609",
     "41525690",
+    "41526622",
     "41527020",
     "41527022",
     "41527023",
@@ -8234,6 +8238,7 @@
     "41880550",
     "41880739",
     "41880761",
+    "41880865",
     "41881456",
     "41881458",
     "41881906",
@@ -8458,6 +8463,7 @@
   "GlobalFoundries": [
     "563980768882149",
     "563980768882166",
+    "563980768903280",
     "563980768903288",
     "563980768903289",
     "563980768903291",
@@ -8503,6 +8509,7 @@
     "563980768903533",
     "563980768903536",
     "563980768903569",
+    "563980768903576",
     "563980768903585",
     "563980768903588",
     "563980768903596",
@@ -8576,6 +8583,7 @@
     "563980768904079",
     "563980768904082",
     "563980768904092",
+    "563980768904093",
     "563980768904109",
     "563980768904117",
     "563980768904123",
@@ -8784,6 +8792,7 @@
     "563980768959225",
     "563980768959226",
     "563980768959231",
+    "563980768959264",
     "563980768959265",
     "563980768959268",
     "563980768959277",
@@ -8813,6 +8822,7 @@
     "563980768998690",
     "563980768998713",
     "563980768998804",
+    "563980768999618",
     "563980769049947",
     "563980769051358",
     "563980769051359",
@@ -8832,6 +8842,7 @@
     "563980769069635",
     "563980769070893",
     "563980769079973",
+    "563980769079977",
     "563980769081041",
     "563980769081053",
     "563980769082048",
@@ -8922,6 +8933,7 @@
     "563980769344070",
     "563980769344219",
     "563980769344351",
+    "563980769353378",
     "563980769353825",
     "563980769354736",
     "563980769355020",
@@ -8964,6 +8976,7 @@
     "563980769409946",
     "563980769410047",
     "563980769410082",
+    "563980769416769",
     "563980769419706",
     "563980769419708",
     "563980769420300",
@@ -8983,6 +8996,7 @@
     "563980769456568",
     "563980769460966",
     "563980769466871",
+    "563980769466873",
     "563980769467662",
     "563980769488778"
   ],
@@ -9599,7 +9613,6 @@
     "563808970107021",
     "563808970107085",
     "563808970107757",
-    "563808970109761",
     "563808970110492",
     "563808970111286",
     "563808970111460",
@@ -9631,7 +9644,6 @@
     "563808970163432",
     "563808970164012",
     "563808970164113",
-    "563808970174619",
     "563808970175512",
     "563808970175697",
     "563808970175859",
@@ -10072,9 +10084,7 @@
     "563808970724938",
     "563808970725031",
     "563808970725170",
-    "563808970725337",
     "563808970727004",
-    "563808970728440",
     "563808970728950",
     "563808970728959",
     "563808970729026",
@@ -10747,6 +10757,7 @@
     "1364264700",
     "1364644900",
     "1365032100",
+    "1365043800",
     "1365047000",
     "1365048100",
     "1365345400",
@@ -10761,6 +10772,7 @@
     "1369050400",
     "1370303000",
     "1371253100",
+    "1371809200",
     "1372128400",
     "1372571700",
     "1372575500",
@@ -10787,6 +10799,7 @@
     "1378555200",
     "1379078400",
     "1379369900",
+    "1379504700",
     "1379826700",
     "1379973600",
     "1379978500",
@@ -14015,6 +14028,7 @@
     "66de993cf1a315e9",
     "671cd61c1e763f58",
     "68f6d0bd5f36b0d0",
+    "6917b1d7f2345a08",
     "6a236c1e97d19fd3",
     "6a3fd31ba34cb958",
     "6a43da16f18b3ea5",
@@ -14052,7 +14066,6 @@
     "777236f62a276bc3",
     "77b3919ba7f1790b",
     "7881657700bc5f82",
-    "791415150f087c3b",
     "7b361284d3516e5f",
     "7bdca7d196a0620a",
     "7c5c274450f927ca",
@@ -14144,7 +14157,6 @@
     "a027c7f484d5fca0",
     "a055e2aef80211a1",
     "a089db7b6ec465de",
-    "a0dcfdfc5a2bbd0c",
     "a18c9a8c5c32568a",
     "a20f1f0f947cffa7",
     "a24db423d3bc2792",
@@ -15688,160 +15700,167 @@
         "url": "https://jobs.appliedmaterials.com/job/santa-clara/2026-summer-optical-intern-adv-degree-santa-clara-ca/95/95159311408"
       },
       "11": {
+        "id": "563980769353378",
+        "title": "AMHS Apprentice Maintenance Technician (Days)",
+        "company": "GlobalFoundries",
+        "location": "Malta, New York, United States of America",
+        "url": "https://careers.gf.com/careers/job/563980769353378?domain=globalfoundries.com"
+      },
+      "12": {
         "id": "563808970805105",
         "title": "Intern Talent Attraction",
         "company": "Infineon Technologies",
         "location": "Shanghai, \u4e0a\u6d77 (China)",
         "url": "https://jobs.infineon.com/careers/job/563808970805105?domain=infineon.com"
       },
-      "12": {
+      "13": {
         "id": "563808970661044",
         "title": "Internship - Strategy Projects (f/m/div)",
         "company": "Infineon Technologies",
         "location": "Munich (Germany)",
         "url": "https://jobs.infineon.com/careers/job/563808970661044?domain=infineon.com"
       },
-      "13": {
+      "14": {
         "id": "563808970772208",
         "title": "Working Student - Software Development for Test Engineering Tools Automation (f/m/div)",
         "company": "Infineon Technologies",
         "location": "Munich (Germany)",
         "url": "https://jobs.infineon.com/careers/job/563808970772208?domain=infineon.com"
       },
-      "14": {
+      "15": {
         "id": "563808970736078",
         "title": "Working student - Embedded Software (f/m/div) ",
         "company": "Infineon Technologies",
         "location": "Munich (Germany)",
         "url": "https://jobs.infineon.com/careers/job/563808970736078?domain=infineon.com"
       },
-      "15": {
+      "16": {
         "id": "/job/Pavia-Italy/Analog-Engineer-Intern---Master-s-Degree_2502524",
         "title": "Analog Engineer Intern - Master's Degree",
         "company": "Marvell",
         "location": "Pavia, Italy",
         "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Pavia-Italy/Analog-Engineer-Intern---Master-s-Degree_2502524"
       },
-      "16": {
+      "17": {
         "id": "41967194",
         "title": "Intern - ADTS PIE PI",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41967194?domain=micron.com"
       },
-      "17": {
+      "18": {
         "id": "41943288",
         "title": "Intern - Component Test Engineering",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41943288?domain=micron.com"
       },
-      "18": {
+      "19": {
         "id": "41970263",
         "title": "Intern - Manufacturing Chemical Vapour Deposition (CVD)",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41970263?domain=micron.com"
       },
-      "19": {
+      "20": {
         "id": "41970258",
         "title": "Intern - Operational Development Team (CMP/WET)",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41970258?domain=micron.com"
       },
-      "20": {
+      "21": {
         "id": "41980080",
         "title": "Intern - PIE RDA",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41980080?domain=micron.com"
       },
-      "21": {
+      "22": {
         "id": "41980078",
         "title": "Intern - Test Engineering",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41980078?domain=micron.com"
       },
-      "22": {
+      "23": {
         "id": "41967326",
         "title": "Intern-Assembly Equipment",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
       },
-      "23": {
+      "24": {
         "id": "41970519",
         "title": "Summer Intern \u2013 ASIC Design Flow Exploration with AI",
         "company": "Micron",
         "location": "Taipei City, Taipei City, Taiwan",
         "url": "https://micron.eightfold.ai/careers/job/41970519?domain=micron.com"
       },
-      "24": {
+      "25": {
         "id": "/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872",
         "title": "Internship: Software Developer - Tools (m/f/d)",
         "company": "NXP Semiconductors",
         "location": "Gratkorn",
         "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872"
       },
-      "25": {
+      "26": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "26": {
+      "27": {
         "id": "1392063100",
         "title": "Finance Intern",
         "company": "Seagate Technology",
         "location": "Wuxi, CN",
         "url": "https://seagatecareers.com/job/Wuxi-Finance-Intern/1392063100/"
       },
-      "27": {
+      "28": {
         "id": "1392063700",
         "title": "Finance Intern",
         "company": "Seagate Technology",
         "location": "Wuxi, CN",
         "url": "https://seagatecareers.com/job/Wuxi-Finance-Intern/1392063700/"
       },
-      "28": {
+      "29": {
         "id": "95283438288",
         "title": "AI-Powered Automated Testing Internship",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/ai-powered-automated-testing-internship/44408/95283438288"
       },
-      "29": {
+      "30": {
         "id": "95257149664",
         "title": "FC PV Internship \u2013 AI Driven Runtime Validation",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/fc-pv-internship-ai-driven-runtime-validation/44408/95257149664"
       },
-      "30": {
+      "31": {
         "id": "95283438336",
         "title": "Software Engineering Intern",
         "company": "Synopsys",
         "location": "Hyderabad, India",
         "url": "https://careers.synopsys.com/job/hyderabad/software-engineering-intern/44408/95283438336"
       },
-      "31": {
+      "32": {
         "id": "94950528864",
         "title": "Software Engineering Internship \u2013 LLM-driven Engineering Analysis",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/software-engineering-internship-llm-driven-engineering-analysis/44408/94950528864"
       },
-      "32": {
+      "33": {
         "id": "25002653",
         "title": "Field Applications Engineering Intern m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002653"
       },
-      "33": {
+      "34": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15850,7 +15869,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 13:15 UTC",
+      "checked_at": "2026-05-19 13:30 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
