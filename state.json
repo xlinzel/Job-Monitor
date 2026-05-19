@@ -3664,7 +3664,6 @@
     "75217",
     "75229",
     "75258",
-    "75268",
     "75326",
     "75333",
     "75345",
@@ -4141,7 +4140,6 @@
     "80442",
     "80446",
     "80456",
-    "80473",
     "80483",
     "80497",
     "80507",
@@ -4456,7 +4454,6 @@
     "84880",
     "84881",
     "84882",
-    "84887",
     "84893",
     "84894",
     "84895",
@@ -5969,6 +5966,7 @@
     "39657076",
     "39657077",
     "39657826",
+    "39657860",
     "39657861",
     "39657863",
     "39658092",
@@ -6104,6 +6102,7 @@
     "39902654",
     "39902688",
     "39903780",
+    "39903800",
     "39906024",
     "39914960",
     "39916928",
@@ -6250,6 +6249,7 @@
     "40308159",
     "40308193",
     "40308593",
+    "40308601",
     "40326615",
     "40327133",
     "40327152",
@@ -6831,11 +6831,14 @@
     "40896006",
     "40898930",
     "40899055",
+    "40899228",
+    "40899241",
     "40899560",
     "40899883",
     "40900168",
     "40900169",
     "40900173",
+    "40900174",
     "40900176",
     "40900177",
     "40900178",
@@ -6871,6 +6874,7 @@
     "40918839",
     "40919047",
     "40919073",
+    "40919262",
     "40919307",
     "40920697",
     "40920714",
@@ -6885,17 +6889,13 @@
     "40924211",
     "40924214",
     "40924260",
-    "40924461",
     "40924500",
     "40924502",
     "40924511",
     "40924898",
     "40925407",
     "40931410",
-    "40931421",
     "40932709",
-    "40932869",
-    "40933853",
     "40937292",
     "40940081",
     "40940866",
@@ -6925,6 +6925,7 @@
     "40965672",
     "40965696",
     "40965699",
+    "40965722",
     "40969635",
     "40972393",
     "40972403",
@@ -7086,8 +7087,6 @@
     "41072646",
     "41072647",
     "41072652",
-    "41072655",
-    "41072662",
     "41072663",
     "41072708",
     "41073057",
@@ -7141,6 +7140,7 @@
     "41126157",
     "41126905",
     "41126907",
+    "41128292",
     "41128297",
     "41128587",
     "41128628",
@@ -7154,7 +7154,6 @@
     "41131010",
     "41131012",
     "41131029",
-    "41131079",
     "41131286",
     "41131479",
     "41131640",
@@ -7175,7 +7174,6 @@
     "41138334",
     "41138345",
     "41139529",
-    "41139930",
     "41139933",
     "41139937",
     "41139969",
@@ -7346,6 +7344,7 @@
     "41223619",
     "41224209",
     "41224762",
+    "41224950",
     "41225034",
     "41226196",
     "41226262",
@@ -7544,7 +7543,6 @@
     "41423289",
     "41423291",
     "41423299",
-    "41423301",
     "41423419",
     "41424452",
     "41424521",
@@ -7693,7 +7691,6 @@
     "41523841",
     "41525609",
     "41525690",
-    "41526622",
     "41527020",
     "41527022",
     "41527023",
@@ -7729,7 +7726,6 @@
     "41543562",
     "41543563",
     "41543565",
-    "41543566",
     "41545280",
     "41546728",
     "41546807",
@@ -8079,6 +8075,7 @@
     "41817538",
     "41817647",
     "41822011",
+    "41822156",
     "41822194",
     "41823004",
     "41823305",
@@ -8221,7 +8218,6 @@
     "41854787",
     "41854801",
     "41854802",
-    "41854807",
     "41854832",
     "41854833",
     "41854940",
@@ -8262,7 +8258,6 @@
     "41885348",
     "41885350",
     "41885352",
-    "41885363",
     "41885382",
     "41885722",
     "41885773",
@@ -8278,7 +8273,6 @@
     "41887830",
     "41887835",
     "41887903",
-    "41887966",
     "41888675",
     "41888898",
     "41888911",
@@ -8314,7 +8308,6 @@
     "41896872",
     "41897034",
     "41897045",
-    "41897047",
     "41898019",
     "41899296",
     "41899305",
@@ -8410,7 +8403,6 @@
     "41943288",
     "41943535",
     "41943538",
-    "41943567",
     "41943791",
     "41943915",
     "41943964",
@@ -8450,12 +8442,10 @@
     "41970246",
     "41970258",
     "41970263",
-    "41970269",
     "41970470",
     "41970489",
     "41970504",
     "41970512",
-    "41970519",
     "41973062",
     "41973081",
     "41973145",
@@ -9005,7 +8995,6 @@
   ],
   "Infineon Technologies": [
     "563808955939145",
-    "563808955939218",
     "563808955939351",
     "563808955939352",
     "563808955939353",
@@ -9935,6 +9924,7 @@
     "563808970593314",
     "563808970593681",
     "563808970593942",
+    "563808970593944",
     "563808970593948",
     "563808970594043",
     "563808970594085",
@@ -10151,7 +10141,8 @@
     "563808970793478",
     "563808970805105",
     "563808970805424",
-    "563808970805446"
+    "563808970805446",
+    "563808970806174"
   ],
   "Texas Instruments": [
     "240001HW",
@@ -15780,25 +15771,25 @@
         "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
       },
       "22": {
-        "id": "41970519",
-        "title": "Summer Intern \u2013 ASIC Design Flow Exploration with AI",
-        "company": "Micron",
-        "location": "Taipei City, Taipei City, Taiwan",
-        "url": "https://micron.eightfold.ai/careers/job/41970519?domain=micron.com"
-      },
-      "23": {
         "id": "/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872",
         "title": "Internship: Software Developer - Tools (m/f/d)",
         "company": "NXP Semiconductors",
         "location": "Gratkorn",
         "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872"
       },
-      "24": {
+      "23": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
+      },
+      "24": {
+        "id": "1392063100",
+        "title": "Finance Intern",
+        "company": "Seagate Technology",
+        "location": "Wuxi, CN",
+        "url": "https://seagatecareers.com/job/Wuxi-Finance-Intern/1392063100/"
       },
       "25": {
         "id": "1392063700",
@@ -15808,55 +15799,48 @@
         "url": "https://seagatecareers.com/job/Wuxi-Finance-Intern/1392063700/"
       },
       "26": {
-        "id": "1392063100",
-        "title": "Finance Intern",
-        "company": "Seagate Technology",
-        "location": "Wuxi, CN",
-        "url": "https://seagatecareers.com/job/Wuxi-Finance-Intern/1392063100/"
-      },
-      "27": {
         "id": "95283438288",
         "title": "AI-Powered Automated Testing Internship",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/ai-powered-automated-testing-internship/44408/95283438288"
       },
-      "28": {
+      "27": {
         "id": "95257149664",
         "title": "FC PV Internship \u2013 AI Driven Runtime Validation",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/fc-pv-internship-ai-driven-runtime-validation/44408/95257149664"
       },
-      "29": {
+      "28": {
         "id": "95283438336",
         "title": "Software Engineering Intern",
         "company": "Synopsys",
         "location": "Hyderabad, India",
         "url": "https://careers.synopsys.com/job/hyderabad/software-engineering-intern/44408/95283438336"
       },
-      "30": {
+      "29": {
         "id": "94950528864",
         "title": "Software Engineering Internship \u2013 LLM-driven Engineering Analysis",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/software-engineering-internship-llm-driven-engineering-analysis/44408/94950528864"
       },
-      "31": {
+      "30": {
         "id": "25002653",
         "title": "Field Applications Engineering Intern m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002653"
       },
-      "32": {
+      "31": {
         "id": "25002465",
         "title": "Field Applications Engineering Student Worker m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002465"
       },
-      "33": {
+      "32": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15865,7 +15849,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 10:15 UTC",
+      "checked_at": "2026-05-19 10:30 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
