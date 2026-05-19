@@ -3140,7 +3140,6 @@
     "/job/Hyderabad/Senior-Principal-Analog-design-engineer_R-10062156",
     "/job/Hyderabad/Senior-Validation-Engineer_R-10063455",
     "/job/Hyderabad/Software-Engineer--Modelzoo_R-10061191",
-    "/job/Hyderabad/Software-Engineer-Compilers_R-10061192",
     "/job/Hyderabad/Software-Engineer-Runtime_R-10061196",
     "/job/Hyderabad/Sr-DFT-Engineer_R-10063436",
     "/job/Hyderabad/Sr-DFT-Engineer_R-10063438",
@@ -4880,7 +4879,8 @@
     "86379",
     "86404",
     "86406",
-    "86422"
+    "86422",
+    "86426"
   ],
   "Rivian": [
     "19528",
@@ -5684,7 +5684,6 @@
     "38901202",
     "38901206",
     "38902513",
-    "38902520",
     "38905822",
     "38909574",
     "38920174",
@@ -5711,7 +5710,6 @@
     "39058626",
     "39062549",
     "39064043",
-    "39064044",
     "39064048",
     "39064049",
     "39065417",
@@ -9844,7 +9842,6 @@
     "563808970498435",
     "563808970498503",
     "563808970498770",
-    "563808970498853",
     "563808970498857",
     "563808970499148",
     "563808970499341",
@@ -15876,7 +15873,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 11:15 UTC",
+      "checked_at": "2026-05-19 11:30 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
