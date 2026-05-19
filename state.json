@@ -1519,6 +1519,7 @@
     "/job/12100-Samsung-Blvd-Austin-TX-USA/CMP-Process-Technician---Nights_R110020-1",
     "/job/12100-Samsung-Blvd-Austin-TX-USA/CRC-Material-Handler_R116797",
     "/job/12100-Samsung-Blvd-Austin-TX-USA/CVD-Process-Engineer---Wafer-Bonding_R108276-1",
+    "/job/12100-Samsung-Blvd-Austin-TX-USA/Capacity-Planning-Engineer_R116331",
     "/job/12100-Samsung-Blvd-Austin-TX-USA/Capacity-Planning-Engineer_R116833",
     "/job/12100-Samsung-Blvd-Austin-TX-USA/Cleans-Equipment-Engineer_R110074-1",
     "/job/12100-Samsung-Blvd-Austin-TX-USA/Cleans-Equipment-Technician---Days_R110073-1",
@@ -2849,7 +2850,6 @@
     "/job/Austin-Oakhill-Office/Hardware-Security-Architect_R-10063528",
     "/job/Austin-Oakhill-Office/IT-Leader-for-Go-To-Market--GTM----Sales-Application-Stack_R-10062996-1",
     "/job/Austin-Oakhill-Office/Litigation-Paralegal-and-E-Discovery-Specialist_R-10062399",
-    "/job/Austin-Oakhill-Office/OHT-Facilities-Operations-Tech-Watch_R-10062673",
     "/job/Austin-Oakhill-Office/Outside-Sales-Representative_R-10063008",
     "/job/Austin-Oakhill-Office/Principal-AI-Compiler-Engineer_R-10063529",
     "/job/Austin-Oakhill-Office/Principal-Applications-Engineer_R-10063522",
@@ -4793,7 +4793,6 @@
     "86021",
     "86022",
     "86023",
-    "86024",
     "86034",
     "86035",
     "86037",
@@ -4879,7 +4878,8 @@
     "86370",
     "86379",
     "86404",
-    "86406"
+    "86406",
+    "86424"
   ],
   "Rivian": [
     "19528",
@@ -5618,6 +5618,8 @@
     "38520371",
     "38529213",
     "38529408",
+    "38533029",
+    "38533134",
     "38535468",
     "38536115",
     "38538523",
@@ -5708,7 +5710,6 @@
     "39062549",
     "39064043",
     "39064044",
-    "39064048",
     "39064049",
     "39065417",
     "39078927",
@@ -6462,7 +6463,6 @@
     "40646005",
     "40646008",
     "40646022",
-    "40646259",
     "40646711",
     "40646724",
     "40646743",
@@ -6688,6 +6688,7 @@
     "40799424",
     "40799610",
     "40799613",
+    "40799754",
     "40799759",
     "40801087",
     "40801089",
@@ -8061,7 +8062,6 @@
     "41817487",
     "41817504",
     "41817515",
-    "41817521",
     "41817524",
     "41817531",
     "41817535",
@@ -8090,7 +8090,6 @@
     "41830240",
     "41830242",
     "41830245",
-    "41830246",
     "41830251",
     "41830254",
     "41830255",
@@ -8178,7 +8177,6 @@
     "41847802",
     "41847813",
     "41847823",
-    "41847830",
     "41847845",
     "41847847",
     "41848057",
@@ -8352,7 +8350,6 @@
     "41923925",
     "41924375",
     "41925711",
-    "41925906",
     "41926285",
     "41926344",
     "41926353",
@@ -8456,7 +8453,6 @@
     "41973187",
     "41978275",
     "41980076",
-    "41980078",
     "41980080",
     "41981149"
   ],
@@ -8998,11 +8994,11 @@
     "563980769466871",
     "563980769466873",
     "563980769467662",
+    "563980769468738",
     "563980769488778"
   ],
   "Infineon Technologies": [
     "563808955939145",
-    "563808955939218",
     "563808955939351",
     "563808955939352",
     "563808955939353",
@@ -9041,7 +9037,6 @@
     "563808958727017",
     "563808958757144",
     "563808958804848",
-    "563808958814750",
     "563808958852494",
     "563808958868600",
     "563808958935794",
@@ -9287,7 +9282,6 @@
     "563808968827192",
     "563808968829781",
     "563808968840701",
-    "563808968847808",
     "563808968852190",
     "563808968881037",
     "563808968881328",
@@ -9571,7 +9565,6 @@
     "563808970045074",
     "563808970046926",
     "563808970047318",
-    "563808970053376",
     "563808970053423",
     "563808970053503",
     "563808970053525",
@@ -9644,6 +9637,7 @@
     "563808970163432",
     "563808970164012",
     "563808970164113",
+    "563808970174619",
     "563808970175512",
     "563808970175697",
     "563808970175859",
@@ -9697,7 +9691,6 @@
     "563808970261375",
     "563808970261652",
     "563808970264607",
-    "563808970264620",
     "563808970266216",
     "563808970266735",
     "563808970266736",
@@ -10040,7 +10033,6 @@
     "563808970683004",
     "563808970683215",
     "563808970685109",
-    "563808970685379",
     "563808970685906",
     "563808970686085",
     "563808970691481",
@@ -10084,7 +10076,9 @@
     "563808970724938",
     "563808970725031",
     "563808970725170",
+    "563808970725337",
     "563808970727004",
+    "563808970728440",
     "563808970728950",
     "563808970728959",
     "563808970729026",
@@ -10113,6 +10107,7 @@
     "563808970740174",
     "563808970754955",
     "563808970754980",
+    "563808970762645",
     "563808970764537",
     "563808970765556",
     "563808970765590",
@@ -15777,90 +15772,83 @@
         "url": "https://micron.eightfold.ai/careers/job/41980080?domain=micron.com"
       },
       "22": {
-        "id": "41980078",
-        "title": "Intern - Test Engineering",
-        "company": "Micron",
-        "location": "Singapore, Singapore",
-        "url": "https://micron.eightfold.ai/careers/job/41980078?domain=micron.com"
-      },
-      "23": {
         "id": "41967326",
         "title": "Intern-Assembly Equipment",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
       },
-      "24": {
+      "23": {
         "id": "41970519",
         "title": "Summer Intern \u2013 ASIC Design Flow Exploration with AI",
         "company": "Micron",
         "location": "Taipei City, Taipei City, Taiwan",
         "url": "https://micron.eightfold.ai/careers/job/41970519?domain=micron.com"
       },
-      "25": {
+      "24": {
         "id": "/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872",
         "title": "Internship: Software Developer - Tools (m/f/d)",
         "company": "NXP Semiconductors",
         "location": "Gratkorn",
         "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872"
       },
-      "26": {
+      "25": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "27": {
+      "26": {
         "id": "1392063100",
         "title": "Finance Intern",
         "company": "Seagate Technology",
         "location": "Wuxi, CN",
         "url": "https://seagatecareers.com/job/Wuxi-Finance-Intern/1392063100/"
       },
-      "28": {
+      "27": {
         "id": "1392063700",
         "title": "Finance Intern",
         "company": "Seagate Technology",
         "location": "Wuxi, CN",
         "url": "https://seagatecareers.com/job/Wuxi-Finance-Intern/1392063700/"
       },
-      "29": {
+      "28": {
         "id": "95283438288",
         "title": "AI-Powered Automated Testing Internship",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/ai-powered-automated-testing-internship/44408/95283438288"
       },
-      "30": {
+      "29": {
         "id": "95257149664",
         "title": "FC PV Internship \u2013 AI Driven Runtime Validation",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/fc-pv-internship-ai-driven-runtime-validation/44408/95257149664"
       },
-      "31": {
+      "30": {
         "id": "95283438336",
         "title": "Software Engineering Intern",
         "company": "Synopsys",
         "location": "Hyderabad, India",
         "url": "https://careers.synopsys.com/job/hyderabad/software-engineering-intern/44408/95283438336"
       },
-      "32": {
+      "31": {
         "id": "94950528864",
         "title": "Software Engineering Internship \u2013 LLM-driven Engineering Analysis",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/software-engineering-internship-llm-driven-engineering-analysis/44408/94950528864"
       },
-      "33": {
+      "32": {
         "id": "25002653",
         "title": "Field Applications Engineering Intern m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002653"
       },
-      "34": {
+      "33": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15869,7 +15857,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 13:30 UTC",
+      "checked_at": "2026-05-19 13:45 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
