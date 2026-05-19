@@ -2388,8 +2388,7 @@
     "/job/United-Kingdom--Edinburgh--Exchange-Tower/Analog-Mixed-Signal-Design-Engineer_R025746",
     "/job/United-Kingdom-Cambridge-Milton-Road-Cambridge-Science-Park/AI-Software-Engineer_R025524",
     "/job/United-Kingdom-Remote-Location/Kubernetes-Platform-Architect_R025880",
-    "/job/United-Kingdom-Remote-Location/Senior-Project-Manager_R025706",
-    "R025831"
+    "/job/United-Kingdom-Remote-Location/Senior-Project-Manager_R025706"
   ],
   "Microchip Technology": [
     "/job/AL---Tuscaloosa/Engineer-I---Product_R1955-26",
@@ -4212,7 +4211,6 @@
     "80828",
     "80834",
     "80836",
-    "80838",
     "80846",
     "80861",
     "80869",
@@ -5682,6 +5680,7 @@
     "38874634",
     "38887010",
     "38899446",
+    "38899771",
     "38899774",
     "38899791",
     "38899809",
@@ -5882,6 +5881,7 @@
     "39549210",
     "39549218",
     "39549479",
+    "39552972",
     "39553048",
     "39553065",
     "39553086",
@@ -6152,6 +6152,7 @@
     "40068212",
     "40069132",
     "40069138",
+    "40069157",
     "40070356",
     "40070844",
     "40070918",
@@ -6401,7 +6402,6 @@
     "40502912",
     "40511215",
     "40517256",
-    "40520924",
     "40520958",
     "40520976",
     "40521201",
@@ -6550,6 +6550,7 @@
     "40709801",
     "40709803",
     "40709807",
+    "40709808",
     "40709813",
     "40709869",
     "40709870",
@@ -6566,6 +6567,7 @@
     "40730356",
     "40730357",
     "40730359",
+    "40730360",
     "40730362",
     "40730565",
     "40730566",
@@ -6603,7 +6605,6 @@
     "40736533",
     "40736549",
     "40736558",
-    "40736612",
     "40736639",
     "40737267",
     "40742952",
@@ -6656,6 +6657,7 @@
     "40776650",
     "40777557",
     "40777568",
+    "40777576",
     "40777643",
     "40777662",
     "40777664",
@@ -6664,7 +6666,6 @@
     "40777695",
     "40777702",
     "40777703",
-    "40777705",
     "40777712",
     "40777754",
     "40777793",
@@ -6986,7 +6987,7 @@
     "41037384",
     "41037396",
     "41037407",
-    "41037447",
+    "41037411",
     "41037567",
     "41037569",
     "41037572",
@@ -7053,7 +7054,6 @@
     "41063405",
     "41063407",
     "41063413",
-    "41064191",
     "41064264",
     "41064314",
     "41064318",
@@ -7264,7 +7264,6 @@
     "41161450",
     "41163893",
     "41165175",
-    "41165768",
     "41170107",
     "41172439",
     "41172440",
@@ -7312,7 +7311,6 @@
     "41209999",
     "41210446",
     "41213962",
-    "41213965",
     "41215038",
     "41215040",
     "41215043",
@@ -7946,7 +7944,6 @@
     "41736424",
     "41736425",
     "41736428",
-    "41736447",
     "41736505",
     "41736570",
     "41736618",
@@ -8164,6 +8161,7 @@
     "41833776",
     "41835070",
     "41837191",
+    "41839528",
     "41840697",
     "41840922",
     "41840923",
@@ -8176,6 +8174,7 @@
     "41844255",
     "41844390",
     "41844425",
+    "41846923",
     "41847458",
     "41847492",
     "41847538",
@@ -8377,6 +8376,7 @@
     "41931985",
     "41931997",
     "41932004",
+    "41932029",
     "41932043",
     "41932525",
     "41932676",
@@ -8432,6 +8432,9 @@
     "41967193",
     "41967194",
     "41967319",
+    "41967326",
+    "41967334",
+    "41967488",
     "41967489",
     "41967508",
     "41970263",
@@ -8943,14 +8946,18 @@
     "563980769402661",
     "563980769405896",
     "563980769405897",
+    "563980769405919",
     "563980769406330",
     "563980769406572",
     "563980769406781",
     "563980769409591",
     "563980769409592",
+    "563980769409945",
+    "563980769409946",
     "563980769410047",
     "563980769419706",
     "563980769419708",
+    "563980769420300",
     "563980769420718",
     "563980769420759",
     "563980769420760",
@@ -10596,7 +10603,8 @@
     "25010806",
     "25010807",
     "25010808",
-    "25010812"
+    "25010812",
+    "25010822"
   ],
   "Oxford Instruments": [
     "1327655457",
@@ -10753,7 +10761,6 @@
     "1372571700",
     "1372575500",
     "1373006700",
-    "1373497300",
     "1373500100",
     "1373505700",
     "1374353600",
@@ -10780,8 +10787,6 @@
     "1379826700",
     "1379973600",
     "1379978500",
-    "1380380200",
-    "1380380500",
     "1380380800",
     "1380472700",
     "1380797000",
@@ -10790,7 +10795,6 @@
     "1381429500",
     "1381592500",
     "1382008000",
-    "1382198800",
     "1382460200",
     "1382470600",
     "1382847300",
@@ -15697,55 +15701,62 @@
         "url": "https://micron.eightfold.ai/careers/job/41970263?domain=micron.com"
       },
       "14": {
+        "id": "41967326",
+        "title": "Intern-Assembly Equipment",
+        "company": "Micron",
+        "location": "Singapore, Singapore",
+        "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
+      },
+      "15": {
         "id": "41970519",
         "title": "Summer Intern \u2013 ASIC Design Flow Exploration with AI",
         "company": "Micron",
         "location": "Taipei City, Taipei City, Taiwan",
         "url": "https://micron.eightfold.ai/careers/job/41970519?domain=micron.com"
       },
-      "15": {
+      "16": {
         "id": "/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872",
         "title": "Internship: Software Developer - Tools (m/f/d)",
         "company": "NXP Semiconductors",
         "location": "Gratkorn",
         "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872"
       },
-      "16": {
+      "17": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "17": {
+      "18": {
         "id": "95257149664",
         "title": "FC PV Internship \u2013 AI Driven Runtime Validation",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/fc-pv-internship-ai-driven-runtime-validation/44408/95257149664"
       },
-      "18": {
+      "19": {
         "id": "94950528864",
         "title": "Software Engineering Internship \u2013 LLM-driven Engineering Analysis",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/software-engineering-internship-llm-driven-engineering-analysis/44408/94950528864"
       },
-      "19": {
+      "20": {
         "id": "25002653",
         "title": "Field Applications Engineering Intern m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002653"
       },
-      "20": {
+      "21": {
         "id": "25002465",
         "title": "Field Applications Engineering Student Worker m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002465"
       },
-      "21": {
+      "22": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15754,7 +15765,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 02:00 UTC",
+      "checked_at": "2026-05-19 02:15 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
