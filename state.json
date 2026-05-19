@@ -2427,7 +2427,6 @@
     "/job/AZ---Chandler/Specialist--Organizational-Development_R1549-26-1",
     "/job/AZ---Chandler/Sr-Manager--SOC-Verification_R427-26",
     "/job/AZ---Chandler/Strategic-Global-Account-Manager_R1610-26",
-    "/job/AZ---Chandler/Tech-Staff-Engineer---Design_R2402-25",
     "/job/AZ---Chandler/Technical-Staff-Device-Modeling-and-Measurement-Engineer_R1112-25",
     "/job/AZ---Chandler/Technical-Staff-Engineer---Verification_R2774-25",
     "/job/AZ---Chandler/Technical-Staff-Engineer--Validation_R1612-26",
@@ -2849,6 +2848,7 @@
     "/job/Austin-Oakhill-Office/HW-Validation-Engineer_R-10063521",
     "/job/Austin-Oakhill-Office/Hardware-Security-Architect_R-10063528",
     "/job/Austin-Oakhill-Office/IP-Licensing-Manager--Technical-Program-Management-_R-10063540",
+    "/job/Austin-Oakhill-Office/IP-Licensing-Manager--Technical-Program-Management-_R-10063541",
     "/job/Austin-Oakhill-Office/IT-Leader-for-Go-To-Market--GTM----Sales-Application-Stack_R-10062996-1",
     "/job/Austin-Oakhill-Office/Litigation-Paralegal-and-E-Discovery-Specialist_R-10062399",
     "/job/Austin-Oakhill-Office/Outside-Sales-Representative_R-10063008",
@@ -3012,6 +3012,7 @@
     "/job/Chandler-Manufacturing/Metrology-Equipment-Technician_R-10062562",
     "/job/Chandler-Manufacturing/Semiconductor-Maintenance-Technician---CMP-Rebuild-PM-Machinist_R-10063128",
     "/job/Chandler-Manufacturing/Semiconductor-Maintenance-Technician---CVD_R-10062136",
+    "/job/Chandler-Manufacturing/Semiconductor-Maintenance-Technician---CVD_R-10063494",
     "/job/Chandler-Manufacturing/Semiconductor-Maintenance-Technician---Diffusion-Cleans_R-10062137-1",
     "/job/Chandler-Manufacturing/Semiconductor-Maintenance-Technician---EPI_R-10060359",
     "/job/Chandler-Manufacturing/Semiconductor-Maintenance-Technician---Etch---Metals_R-10062090",
@@ -7607,6 +7608,7 @@
     "41480662",
     "41480679",
     "41480961",
+    "41482333",
     "41482398",
     "41482400",
     "41482616",
@@ -7809,6 +7811,7 @@
     "41671575",
     "41671576",
     "41671652",
+    "41671742",
     "41671752",
     "41671858",
     "41673224",
@@ -10543,7 +10546,6 @@
     "25010259",
     "25010292",
     "25010315",
-    "25010327",
     "25010344",
     "25010346",
     "25010348",
@@ -15900,7 +15902,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 15:15 UTC",
+      "checked_at": "2026-05-19 15:30 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
