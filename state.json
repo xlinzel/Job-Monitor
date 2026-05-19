@@ -3800,7 +3800,6 @@
     "77736",
     "77738",
     "77743",
-    "77749",
     "77811",
     "77824",
     "77833",
@@ -14058,6 +14057,7 @@
     "77b3919ba7f1790b",
     "7881657700bc5f82",
     "791415150f087c3b",
+    "7b1bfddc91c6fa3e",
     "7b361284d3516e5f",
     "7bdca7d196a0620a",
     "7c8001afb065b130",
@@ -14143,7 +14143,6 @@
     "9f4010545772a24d",
     "9f72025b55ea5e0d",
     "9f73021b86dd3bb2",
-    "9ff370db4649d187",
     "a027c7f484d5fca0",
     "a055e2aef80211a1",
     "a089db7b6ec465de",
@@ -15778,7 +15777,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 01:45 UTC",
+      "checked_at": "2026-05-19 01:51 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
