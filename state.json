@@ -704,6 +704,7 @@
     "/job/Singapore/Senior-Staff-Engineer--Test-Engineering_2600336",
     "/job/Singapore/Senior-Staff-Engineering-Program-Manager---Custom-Silicon--APAC-_2600117",
     "/job/Singapore/Senior-Staff-Hardware-Design-Engineer_2601487-1",
+    "/job/Singapore/Senior-Staff-Product-Engineer_2601934",
     "/job/Singapore/Senior-Staff-Test-Engineer_2501190",
     "/job/Singapore/Senior-Staff-Test-Engineer_2601217",
     "/job/Singapore/Senior-Staff-Thermal---Mechanical-Test-Operations-Engineer_2503364",
@@ -822,7 +823,6 @@
     "30b1a3d7-8b36-4971-8652-684066664084",
     "33adf31c-e0ad-4080-bb83-1b3859f95d35",
     "39cb22b6-58e9-4612-994f-eba767aca818",
-    "3b2b0704-c8fd-446e-90c3-af9de880cb28",
     "3c6c400e-5f13-4ade-9924-296d0d07166c",
     "3da8034e-4639-44b0-99a4-aeec6ff9e59c",
     "3eb65028-9648-48f5-bfc9-94b3128863f2",
@@ -5435,7 +5435,6 @@
     "21938685",
     "21938787",
     "22484891",
-    "22656658",
     "23401803",
     "23432055",
     "23432088",
@@ -5614,7 +5613,6 @@
     "38447937",
     "38450852",
     "38450908",
-    "38451200",
     "38451444",
     "38469763",
     "38471424",
@@ -5680,6 +5678,7 @@
     "38874634",
     "38887010",
     "38899446",
+    "38899771",
     "38899774",
     "38899791",
     "38899809",
@@ -5880,6 +5879,7 @@
     "39549210",
     "39549218",
     "39549479",
+    "39552972",
     "39553048",
     "39553065",
     "39553086",
@@ -5971,6 +5971,7 @@
     "39657861",
     "39657863",
     "39658092",
+    "39658101",
     "39658116",
     "39658118",
     "39658122",
@@ -6412,6 +6413,7 @@
     "40535390",
     "40575241",
     "40589717",
+    "40595613",
     "40595720",
     "40595869",
     "40596743",
@@ -6456,6 +6458,7 @@
     "40635517",
     "40635519",
     "40635541",
+    "40635644",
     "40635654",
     "40635660",
     "40639555",
@@ -7141,6 +7144,7 @@
     "41126139",
     "41126156",
     "41126157",
+    "41126905",
     "41126907",
     "41128292",
     "41128297",
@@ -8277,6 +8281,7 @@
     "41887830",
     "41887835",
     "41887903",
+    "41887966",
     "41888675",
     "41888898",
     "41888911",
@@ -8311,6 +8316,7 @@
     "41896872",
     "41897034",
     "41897045",
+    "41897047",
     "41898019",
     "41899296",
     "41899305",
@@ -8366,6 +8372,7 @@
     "41926374",
     "41926375",
     "41926377",
+    "41926383",
     "41926397",
     "41927356",
     "41931692",
@@ -8439,8 +8446,8 @@
     "41967508",
     "41970263",
     "41970470",
-    "41970519",
-    "41978275"
+    "41978275",
+    "41980078"
   ],
   "GlobalFoundries": [
     "563980768882149",
@@ -10864,6 +10871,8 @@
     "1389293400",
     "1389373600",
     "1389431400",
+    "1389660200",
+    "1389660300",
     "1389663500",
     "1389664600",
     "1389665600",
@@ -10899,7 +10908,9 @@
     "1391675600",
     "1391683700",
     "1392041800",
-    "1392041900"
+    "1392041900",
+    "1392044300",
+    "1392044400"
   ],
   "Applied Materials": [
     "46146390576",
@@ -13824,7 +13835,6 @@
     "17cbca94b7491b82",
     "185baa9da6442ffa",
     "197d6ab53bd72cdd",
-    "19c263a478775f59",
     "1a0d1a15d60c0adc",
     "1a5f5851aa1ca9b3",
     "1a6d87e42f162e49",
@@ -15706,18 +15716,18 @@
         "url": "https://micron.eightfold.ai/careers/job/41970263?domain=micron.com"
       },
       "14": {
+        "id": "41980078",
+        "title": "Intern - Test Engineering",
+        "company": "Micron",
+        "location": "Singapore, Singapore",
+        "url": "https://micron.eightfold.ai/careers/job/41980078?domain=micron.com"
+      },
+      "15": {
         "id": "41967326",
         "title": "Intern-Assembly Equipment",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
-      },
-      "15": {
-        "id": "41970519",
-        "title": "Summer Intern \u2013 ASIC Design Flow Exploration with AI",
-        "company": "Micron",
-        "location": "Taipei City, Taipei City, Taiwan",
-        "url": "https://micron.eightfold.ai/careers/job/41970519?domain=micron.com"
       },
       "16": {
         "id": "/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872",
@@ -15770,7 +15780,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 02:45 UTC",
+      "checked_at": "2026-05-19 03:00 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
