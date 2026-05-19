@@ -655,7 +655,6 @@
     "/job/Santa-Clara-CA/Sr-Staff-Verification-Engineer_2600688-1",
     "/job/Santa-Clara-CA/Staff-Analog-Layout-Engineer_2601051",
     "/job/Santa-Clara-CA/Staff-Application-Engineer_2600214",
-    "/job/Santa-Clara-CA/Staff-Application-Engineer_2601202",
     "/job/Santa-Clara-CA/Staff-Applications-Engineering---Network-Validation_2601184",
     "/job/Santa-Clara-CA/Staff-DFT-Engineer_2600363",
     "/job/Santa-Clara-CA/Staff-DFT-Engineer_2600364",
@@ -1404,7 +1403,8 @@
     "4695219005",
     "4695548005",
     "4695626005",
-    "4696478005"
+    "4696478005",
+    "4696806005"
   ],
   "Cerebras": [
     "5788251003",
@@ -3782,7 +3782,6 @@
     "77363",
     "77401",
     "77403",
-    "77407",
     "77422",
     "77429",
     "77434",
@@ -7150,7 +7149,6 @@
     "41126139",
     "41126156",
     "41126157",
-    "41126905",
     "41126907",
     "41128292",
     "41128297",
@@ -15801,7 +15799,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 04:30 UTC",
+      "checked_at": "2026-05-19 04:45 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
