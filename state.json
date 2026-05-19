@@ -2391,7 +2391,8 @@
     "/job/United-Kingdom--Edinburgh--Exchange-Tower/Analog-Mixed-Signal-Design-Engineer_R025746",
     "/job/United-Kingdom-Cambridge-Milton-Road-Cambridge-Science-Park/AI-Software-Engineer_R025524",
     "/job/United-Kingdom-Remote-Location/Kubernetes-Platform-Architect_R025880",
-    "/job/United-Kingdom-Remote-Location/Senior-Project-Manager_R025706"
+    "/job/United-Kingdom-Remote-Location/Senior-Project-Manager_R025706",
+    "R025825"
   ],
   "Microchip Technology": [
     "/job/AL---Tuscaloosa/Engineer-I---Product_R1955-26",
@@ -5683,6 +5684,7 @@
     "38874634",
     "38887010",
     "38899446",
+    "38899771",
     "38899774",
     "38899791",
     "38899809",
@@ -5883,6 +5885,7 @@
     "39549210",
     "39549218",
     "39549479",
+    "39552972",
     "39553048",
     "39553065",
     "39553086",
@@ -6416,6 +6419,7 @@
     "40535390",
     "40575241",
     "40589717",
+    "40595613",
     "40595720",
     "40595869",
     "40596743",
@@ -6494,6 +6498,7 @@
     "40649348",
     "40649624",
     "40650150",
+    "40650774",
     "40651632",
     "40656351",
     "40658888",
@@ -6989,7 +6994,6 @@
     "41037396",
     "41037407",
     "41037411",
-    "41037447",
     "41037567",
     "41037569",
     "41037572",
@@ -7056,7 +7060,6 @@
     "41063405",
     "41063407",
     "41063413",
-    "41064191",
     "41064264",
     "41064314",
     "41064318",
@@ -7145,6 +7148,7 @@
     "41126139",
     "41126156",
     "41126157",
+    "41126905",
     "41126907",
     "41128292",
     "41128297",
@@ -7266,7 +7270,6 @@
     "41161450",
     "41163893",
     "41165175",
-    "41165768",
     "41170107",
     "41172439",
     "41172440",
@@ -7365,7 +7368,6 @@
     "41233524",
     "41233526",
     "41233602",
-    "41233834",
     "41234408",
     "41234410",
     "41234419",
@@ -7509,6 +7511,7 @@
     "41288250",
     "41330290",
     "41345708",
+    "41365370",
     "41379794",
     "41380261",
     "41381268",
@@ -7664,6 +7667,7 @@
     "41501849",
     "41501981",
     "41502246",
+    "41502258",
     "41502274",
     "41502276",
     "41502282",
@@ -7824,7 +7828,6 @@
     "41671858",
     "41673224",
     "41673326",
-    "41673339",
     "41673371",
     "41673379",
     "41673495",
@@ -8272,6 +8275,7 @@
     "41886038",
     "41886567",
     "41886568",
+    "41887724",
     "41887780",
     "41887782",
     "41887799",
@@ -8408,10 +8412,12 @@
     "41943229",
     "41943231",
     "41943252",
+    "41943288",
     "41943535",
     "41943538",
     "41943567",
     "41943791",
+    "41943915",
     "41943964",
     "41943993",
     "41944160",
@@ -8434,6 +8440,7 @@
     "41967168",
     "41967189",
     "41967193",
+    "41967194",
     "41967319",
     "41967326",
     "41967334",
@@ -8442,8 +8449,10 @@
     "41967489",
     "41967508",
     "41970258",
+    "41970263",
     "41970269",
     "41970470",
+    "41970519",
     "41978275",
     "41980078"
   ],
@@ -8686,6 +8695,7 @@
     "563980768904548",
     "563980768904550",
     "563980768904557",
+    "563980768904562",
     "563980768904564",
     "563980768904568",
     "563980768904569",
@@ -8951,6 +8961,7 @@
     "563980769402656",
     "563980769402661",
     "563980769405896",
+    "563980769405897",
     "563980769405919",
     "563980769406330",
     "563980769406572",
@@ -13045,7 +13056,6 @@
     "88140882816",
     "88285435200",
     "88397130176",
-    "88408906752",
     "88575081136",
     "88584170960",
     "88686757808",
@@ -13134,7 +13144,6 @@
     "91873848368",
     "91882458064",
     "91911523904",
-    "91926832256",
     "91932946672",
     "91940192160",
     "91940192176",
@@ -13762,9 +13771,7 @@
     "95132251248",
     "95132251264",
     "95147397936",
-    "95147397968",
     "95152936992",
-    "95152937024",
     "95240636416",
     "95240636432",
     "95240636448",
@@ -13775,7 +13782,9 @@
     "95257149728",
     "95257149744",
     "95257149792",
-    "95271108960"
+    "95271108960",
+    "95276737728",
+    "95276738240"
   ],
   "ASML": [
     "002ea6825c086bc6",
@@ -13980,7 +13989,6 @@
     "581a64fd22958146",
     "5832d67b33a7aa37",
     "5841183c0c7ef6e8",
-    "584ffe2bfb526c7b",
     "58628eef2649b99a",
     "58788007dfdc4ce0",
     "596292af9b7851d5",
@@ -15689,69 +15697,97 @@
         "url": "https://jobs.infineon.com/careers/job/563808970736078?domain=infineon.com"
       },
       "11": {
+        "id": "41967194",
+        "title": "Intern - ADTS PIE PI",
+        "company": "Micron",
+        "location": "Singapore, Singapore",
+        "url": "https://micron.eightfold.ai/careers/job/41967194?domain=micron.com"
+      },
+      "12": {
+        "id": "41943288",
+        "title": "Intern - Component Test Engineering",
+        "company": "Micron",
+        "location": "Singapore, Singapore",
+        "url": "https://micron.eightfold.ai/careers/job/41943288?domain=micron.com"
+      },
+      "13": {
+        "id": "41970263",
+        "title": "Intern - Manufacturing Chemical Vapour Deposition (CVD)",
+        "company": "Micron",
+        "location": "Singapore, Singapore",
+        "url": "https://micron.eightfold.ai/careers/job/41970263?domain=micron.com"
+      },
+      "14": {
         "id": "41970258",
         "title": "Intern - Operational Development Team (CMP/WET)",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41970258?domain=micron.com"
       },
-      "12": {
+      "15": {
         "id": "41980078",
         "title": "Intern - Test Engineering",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41980078?domain=micron.com"
       },
-      "13": {
+      "16": {
         "id": "41967326",
         "title": "Intern-Assembly Equipment",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
       },
-      "14": {
+      "17": {
+        "id": "41970519",
+        "title": "Summer Intern \u2013 ASIC Design Flow Exploration with AI",
+        "company": "Micron",
+        "location": "Taipei City, Taipei City, Taiwan",
+        "url": "https://micron.eightfold.ai/careers/job/41970519?domain=micron.com"
+      },
+      "18": {
         "id": "/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872",
         "title": "Internship: Software Developer - Tools (m/f/d)",
         "company": "NXP Semiconductors",
         "location": "Gratkorn",
         "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872"
       },
-      "15": {
+      "19": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "16": {
+      "20": {
         "id": "95257149664",
         "title": "FC PV Internship \u2013 AI Driven Runtime Validation",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/fc-pv-internship-ai-driven-runtime-validation/44408/95257149664"
       },
-      "17": {
+      "21": {
         "id": "94950528864",
         "title": "Software Engineering Internship \u2013 LLM-driven Engineering Analysis",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/software-engineering-internship-llm-driven-engineering-analysis/44408/94950528864"
       },
-      "18": {
+      "22": {
         "id": "25002653",
         "title": "Field Applications Engineering Intern m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002653"
       },
-      "19": {
+      "23": {
         "id": "25002465",
         "title": "Field Applications Engineering Student Worker m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002465"
       },
-      "20": {
+      "24": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15760,7 +15796,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 04:00 UTC",
+      "checked_at": "2026-05-19 04:15 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
