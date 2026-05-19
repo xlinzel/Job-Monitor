@@ -1718,6 +1718,7 @@
     "/job/2050-Derry-Rd-W-Mississauga-Canada/Senior-Manager--E-commerce-Platforms_R116941",
     "/job/2050-Derry-Rd-W-Mississauga-Canada/Senior-Manager--Influencer---Creator-Marketing_R116826",
     "/job/2050-Derry-Rd-W-Mississauga-Canada/Senior-Manager--Social-Media_R116811",
+    "/job/2050-Derry-Rd-W-Mississauga-Canada/Senior-Specialist-II--SCM-Planning_R116757",
     "/job/22-Aharon-Bert-st-Petah-Tikva-Israel/Budget-Controller---Maternity-Leave-Replacment_R116371",
     "/job/240-Dividend-Dr-Coppell-TX-USA/Senior-Director--Packaging_R117163",
     "/job/250-Americana-Way-Glendale-CA-USA/Senior-Manager--Operations---LA28-Olympic---Paralympic-Games_R116918",
@@ -5522,7 +5523,6 @@
     "30844597",
     "30868277",
     "30868411",
-    "30868580",
     "30871703",
     "30886046",
     "30888914",
@@ -6065,7 +6065,6 @@
     "39762450",
     "39762456",
     "39762519",
-    "39772353",
     "39772463",
     "39772549",
     "39773450",
@@ -6716,7 +6715,6 @@
     "40809964",
     "40809965",
     "40809977",
-    "40810066",
     "40810070",
     "40811896",
     "40814706",
@@ -6830,7 +6828,6 @@
     "40899883",
     "40900168",
     "40900169",
-    "40900173",
     "40900174",
     "40900176",
     "40900177",
@@ -6868,7 +6865,6 @@
     "40919047",
     "40919073",
     "40919262",
-    "40919307",
     "40920697",
     "40920714",
     "40922748",
@@ -7460,7 +7456,6 @@
     "41286318",
     "41286338",
     "41286459",
-    "41286780",
     "41286960",
     "41286988",
     "41287062",
@@ -7540,7 +7535,6 @@
     "41423289",
     "41423291",
     "41423299",
-    "41423301",
     "41424452",
     "41424521",
     "41424523",
@@ -7722,7 +7716,6 @@
     "41543390",
     "41543393",
     "41543561",
-    "41543562",
     "41543563",
     "41543565",
     "41543566",
@@ -8462,10 +8455,8 @@
     "41973187",
     "41978275",
     "41979548",
-    "41980076",
     "41980078",
-    "41980080",
-    "41981149"
+    "41980080"
   ],
   "GlobalFoundries": [
     "563980768882149",
@@ -13814,6 +13805,7 @@
     "00889e3f7f44deb7",
     "01333b87c75ead64",
     "01a02ae699e5d579",
+    "020ff8b7f90b7e06",
     "024e204c5b7bbc90",
     "02e43df68ce7f94b",
     "033da80461658ca7",
@@ -14166,6 +14158,7 @@
     "9c9ce6e74465733b",
     "9cf9c2c52c282af8",
     "9d013ee266cfe029",
+    "9d801025ce8251b3",
     "9e0d623e6a76ab01",
     "9eea415f6e205410",
     "9f28c453fe988070",
@@ -14293,7 +14286,6 @@
     "cfb164142400727f",
     "d0e159266706d271",
     "d12b7676439976b0",
-    "d1c280029e2c41db",
     "d1d4134a0e266e6c",
     "d2053c7b31b03356",
     "d25d13fd45ef7ce3",
@@ -14376,6 +14368,7 @@
     "f7355d731d96115e",
     "f7f4f5641636eaf2",
     "f94e49a900702232",
+    "fa322ca370941327",
     "fa8d8f048ef168bb",
     "fa9346e038e6ca9f",
     "fb80f7cc46bb884f",
@@ -14459,7 +14452,6 @@
     "3477152764eebc96",
     "37f477b5c04eca01",
     "381e619f2bbcd3db",
-    "3a9f5443b6c967a6",
     "3b2ca8c291a715c2",
     "3ba9f04eed0f2bb9",
     "3c58f56c2eae021b",
@@ -14536,6 +14528,7 @@
     "75cc0b837e3bf69a",
     "75f97d74249d31af",
     "78fcec65ca619d14",
+    "796e3c79834aa10c",
     "79b8f716b5a3af0c",
     "79cec8612d05f46a",
     "79ff59d705c469b5",
@@ -14698,7 +14691,6 @@
     "f5ba51208b2d50a4",
     "f5d7dc5dc551d25a",
     "f6d0fbe2976a618a",
-    "f7e8cb28d63172bc",
     "f8fbdac889550667",
     "f966625a7b89209f",
     "fb1fd5bb33836649",
@@ -15677,223 +15669,237 @@
         "url": "https://www.asml.com/en/careers/find-your-job/data-science--machine-learning-internship-dose-control-algorithms-j00339525"
       },
       "5": {
+        "id": "020ff8b7f90b7e06",
+        "title": "Event Planning  Communications Internship Community Building",
+        "company": "ASML",
+        "location": "",
+        "url": "https://www.asml.com/en/careers/find-your-job/event-planning--communications-internship-community-building-j00337573"
+      },
+      "6": {
         "id": "98ee6d3f4ac70c41",
         "title": "Finance Internship Tax Technology",
         "company": "ASML",
         "location": "",
         "url": "https://www.asml.com/en/careers/find-your-job/finance-internship-tax-technology-j00340561"
       },
-      "6": {
+      "7": {
         "id": "02e43df68ce7f94b",
         "title": "Internship Cscm Regional Planning Team Hsinchu",
         "company": "ASML",
         "location": "",
         "url": "https://www.asml.com/en/careers/find-your-job/internship-cscm-regional-planning-team-hsinchu-j00338875"
       },
-      "7": {
+      "8": {
+        "id": "fa322ca370941327",
+        "title": "Law  Finance Internship Treasury And Compliance",
+        "company": "ASML",
+        "location": "",
+        "url": "https://www.asml.com/en/careers/find-your-job/law--finance-internship-treasury-and-compliance-j00336885"
+      },
+      "9": {
         "id": "9a366aa9575c9539",
         "title": "Mechatronics  Mechanical Engineering Internship Modal Analysis Tooling",
         "company": "ASML",
         "location": "",
         "url": "https://www.asml.com/en/careers/find-your-job/mechatronics--mechanical-engineering-internship-modal-analysis-tooling-j00341027"
       },
-      "8": {
+      "10": {
         "id": "b7cc75b7a47db09e",
         "title": "Ta Intern",
         "company": "ASML",
         "location": "",
         "url": "https://www.asml.com/en/careers/find-your-job/ta-intern-j00341384"
       },
-      "9": {
+      "11": {
         "id": "91188539424",
         "title": "2026 Summer Intern Program :Algorithm Developer (\u6f14\u7b97\u6cd5\u7814\u767c\u5de5\u7a0b\u5e2b)",
         "company": "Applied Materials",
         "location": "",
         "url": "https://jobs.appliedmaterials.com/job/hsinchu/2026-summer-intern-program-algorithm-developer-%e6%bc%94%e7%ae%97%e6%b3%95%e7%a0%94%e7%99%bc%e5%b7%a5%e7%a8%8b%e5%b8%ab/95/91188539424"
       },
-      "10": {
+      "12": {
         "id": "95159311408",
         "title": "2026 Summer Optical Intern (Adv Degree) - Santa Clara, CA",
         "company": "Applied Materials",
         "location": "",
         "url": "https://jobs.appliedmaterials.com/job/santa-clara/2026-summer-optical-intern-adv-degree-santa-clara-ca/95/95159311408"
       },
-      "11": {
+      "13": {
         "id": "563980769353378",
         "title": "AMHS Apprentice Maintenance Technician (Days)",
         "company": "GlobalFoundries",
         "location": "Malta, New York, United States of America",
         "url": "https://careers.gf.com/careers/job/563980769353378?domain=globalfoundries.com"
       },
-      "12": {
+      "14": {
         "id": "563980769409951",
         "title": "Etch Maintenance Technician Apprentice (Days)",
         "company": "GlobalFoundries",
         "location": "Malta, New York, United States of America",
         "url": "https://careers.gf.com/careers/job/563980769409951?domain=globalfoundries.com"
       },
-      "13": {
+      "15": {
         "id": "563808970805105",
         "title": "Intern Talent Attraction",
         "company": "Infineon Technologies",
         "location": "Shanghai, \u4e0a\u6d77 (China)",
         "url": "https://jobs.infineon.com/careers/job/563808970805105?domain=infineon.com"
       },
-      "14": {
+      "16": {
         "id": "563808970661044",
         "title": "Internship - Strategy Projects (f/m/div)",
         "company": "Infineon Technologies",
         "location": "Munich (Germany)",
         "url": "https://jobs.infineon.com/careers/job/563808970661044?domain=infineon.com"
       },
-      "15": {
+      "17": {
         "id": "563808970594042",
         "title": "Working Student - Finance Controlling Digitalization (f/m/div) ",
         "company": "Infineon Technologies",
         "location": "Munich (Germany)",
         "url": "https://jobs.infineon.com/careers/job/563808970594042?domain=infineon.com"
       },
-      "16": {
+      "18": {
         "id": "563808970772208",
         "title": "Working Student - Software Development for Test Engineering Tools Automation (f/m/div)",
         "company": "Infineon Technologies",
         "location": "Munich (Germany)",
         "url": "https://jobs.infineon.com/careers/job/563808970772208?domain=infineon.com"
       },
-      "17": {
+      "19": {
         "id": "563808970736078",
         "title": "Working student - Embedded Software (f/m/div) ",
         "company": "Infineon Technologies",
         "location": "Munich (Germany)",
         "url": "https://jobs.infineon.com/careers/job/563808970736078?domain=infineon.com"
       },
-      "18": {
+      "20": {
         "id": "/job/Pavia-Italy/Analog-Engineer-Intern---Master-s-Degree_2502524",
         "title": "Analog Engineer Intern - Master's Degree",
         "company": "Marvell",
         "location": "Pavia, Italy",
         "url": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Pavia-Italy/Analog-Engineer-Intern---Master-s-Degree_2502524"
       },
-      "19": {
+      "21": {
         "id": "41967194",
         "title": "Intern - ADTS PIE PI",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41967194?domain=micron.com"
       },
-      "20": {
+      "22": {
         "id": "41943288",
         "title": "Intern - Component Test Engineering",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41943288?domain=micron.com"
       },
-      "21": {
+      "23": {
         "id": "41970263",
         "title": "Intern - Manufacturing Chemical Vapour Deposition (CVD)",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41970263?domain=micron.com"
       },
-      "22": {
+      "24": {
         "id": "41970258",
         "title": "Intern - Operational Development Team (CMP/WET)",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41970258?domain=micron.com"
       },
-      "23": {
+      "25": {
         "id": "41980080",
         "title": "Intern - PIE RDA",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41980080?domain=micron.com"
       },
-      "24": {
+      "26": {
         "id": "41980078",
         "title": "Intern - Test Engineering",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41980078?domain=micron.com"
       },
-      "25": {
+      "27": {
         "id": "41967326",
         "title": "Intern-Assembly Equipment",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
       },
-      "26": {
+      "28": {
         "id": "41970519",
         "title": "Summer Intern \u2013 ASIC Design Flow Exploration with AI",
         "company": "Micron",
         "location": "Taipei City, Taipei City, Taiwan",
         "url": "https://micron.eightfold.ai/careers/job/41970519?domain=micron.com"
       },
-      "27": {
+      "29": {
         "id": "/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872",
         "title": "Internship: Software Developer - Tools (m/f/d)",
         "company": "NXP Semiconductors",
         "location": "Gratkorn",
         "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872"
       },
-      "28": {
+      "30": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "29": {
+      "31": {
         "id": "1392063100",
         "title": "Finance Intern",
         "company": "Seagate Technology",
         "location": "Wuxi, CN",
         "url": "https://seagatecareers.com/job/Wuxi-Finance-Intern/1392063100/"
       },
-      "30": {
+      "32": {
         "id": "1392063700",
         "title": "Finance Intern",
         "company": "Seagate Technology",
         "location": "Wuxi, CN",
         "url": "https://seagatecareers.com/job/Wuxi-Finance-Intern/1392063700/"
       },
-      "31": {
+      "33": {
         "id": "95283438288",
         "title": "AI-Powered Automated Testing Internship",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/ai-powered-automated-testing-internship/44408/95283438288"
       },
-      "32": {
+      "34": {
         "id": "95257149664",
         "title": "FC PV Internship \u2013 AI Driven Runtime Validation",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/fc-pv-internship-ai-driven-runtime-validation/44408/95257149664"
       },
-      "33": {
+      "35": {
         "id": "95283438336",
         "title": "Software Engineering Intern",
         "company": "Synopsys",
         "location": "Hyderabad, India",
         "url": "https://careers.synopsys.com/job/hyderabad/software-engineering-intern/44408/95283438336"
       },
-      "34": {
+      "36": {
         "id": "94950528864",
         "title": "Software Engineering Internship \u2013 LLM-driven Engineering Analysis",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/software-engineering-internship-llm-driven-engineering-analysis/44408/94950528864"
       },
-      "35": {
+      "37": {
         "id": "25002653",
         "title": "Field Applications Engineering Intern m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002653"
       },
-      "36": {
+      "38": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15902,7 +15908,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 15:30 UTC",
+      "checked_at": "2026-05-19 15:45 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
