@@ -1981,7 +1981,6 @@
     "/job/Samsung-Networks-Reading-United-Kingdom/IMS-Core-Engineer-2_R113467-2",
     "/job/Samsung-Space-Eschborn-Germany/Business-Analyst-m-w-d_R116934",
     "/job/Samsung-Space-Eschborn-Germany/Head-of-D2C-Marketing---Analytics--m-f-d-_R115545",
-    "/job/Samsung-Space-Eschborn-Germany/Intern---Channel-Marketing-CE_R114983",
     "/job/Samsung-Space-Eschborn-Germany/Junior-Buyer--m-w-d-_R112977",
     "/job/Samsung-Space-Eschborn-Germany/Praktikant--m-w-d--Channel-Marketing_R115981",
     "/job/Samsung-Space-Eschborn-Germany/Product-Manager--m-w-d--TV---Audio_R110946",
@@ -10155,6 +10154,7 @@
     "563808970805105",
     "563808970805424",
     "563808970805446",
+    "563808970805612",
     "563808970806056",
     "563808970806057",
     "563808970806058",
@@ -10636,7 +10636,9 @@
     "25010808",
     "25010812",
     "25010822",
-    "25010830"
+    "25010830",
+    "25010833",
+    "25010836"
   ],
   "Oxford Instruments": [
     "1327655457",
@@ -13810,7 +13812,6 @@
     "02e43df68ce7f94b",
     "033da80461658ca7",
     "03551ba83eabcd74",
-    "0388872dbb15e441",
     "03ad09ddb9899c9c",
     "0422543f3b100376",
     "05945bc11a24c145",
@@ -14148,6 +14149,7 @@
     "98ee6d3f4ac70c41",
     "99ee8849e1cf187f",
     "9a166cc5695bf379",
+    "9a366aa9575c9539",
     "9b1cedbe4a69181d",
     "9b8edb59d7b0fca4",
     "9b9db445ce878e91",
@@ -15684,188 +15686,195 @@
         "url": "https://www.asml.com/en/careers/find-your-job/internship-cscm-regional-planning-team-hsinchu-j00338875"
       },
       "7": {
+        "id": "9a366aa9575c9539",
+        "title": "Mechatronics  Mechanical Engineering Internship Modal Analysis Tooling",
+        "company": "ASML",
+        "location": "",
+        "url": "https://www.asml.com/en/careers/find-your-job/mechatronics--mechanical-engineering-internship-modal-analysis-tooling-j00341027"
+      },
+      "8": {
         "id": "b7cc75b7a47db09e",
         "title": "Ta Intern",
         "company": "ASML",
         "location": "",
         "url": "https://www.asml.com/en/careers/find-your-job/ta-intern-j00341384"
       },
-      "8": {
+      "9": {
         "id": "91188539424",
         "title": "2026 Summer Intern Program :Algorithm Developer (\u6f14\u7b97\u6cd5\u7814\u767c\u5de5\u7a0b\u5e2b)",
         "company": "Applied Materials",
         "location": "",
         "url": "https://jobs.appliedmaterials.com/job/hsinchu/2026-summer-intern-program-algorithm-developer-%e6%bc%94%e7%ae%97%e6%b3%95%e7%a0%94%e7%99%bc%e5%b7%a5%e7%a8%8b%e5%b8%ab/95/91188539424"
       },
-      "9": {
+      "10": {
         "id": "95159311408",
         "title": "2026 Summer Optical Intern (Adv Degree) - Santa Clara, CA",
         "company": "Applied Materials",
         "location": "",
         "url": "https://jobs.appliedmaterials.com/job/santa-clara/2026-summer-optical-intern-adv-degree-santa-clara-ca/95/95159311408"
       },
-      "10": {
+      "11": {
         "id": "563980769353378",
         "title": "AMHS Apprentice Maintenance Technician (Days)",
         "company": "GlobalFoundries",
         "location": "Malta, New York, United States of America",
         "url": "https://careers.gf.com/careers/job/563980769353378?domain=globalfoundries.com"
       },
-      "11": {
+      "12": {
         "id": "563808970805105",
         "title": "Intern Talent Attraction",
         "company": "Infineon Technologies",
         "location": "Shanghai, \u4e0a\u6d77 (China)",
         "url": "https://jobs.infineon.com/careers/job/563808970805105?domain=infineon.com"
       },
-      "12": {
+      "13": {
         "id": "563808970661044",
         "title": "Internship - Strategy Projects (f/m/div)",
         "company": "Infineon Technologies",
         "location": "Munich (Germany)",
         "url": "https://jobs.infineon.com/careers/job/563808970661044?domain=infineon.com"
       },
-      "13": {
+      "14": {
         "id": "563808970772208",
         "title": "Working Student - Software Development for Test Engineering Tools Automation (f/m/div)",
         "company": "Infineon Technologies",
         "location": "Munich (Germany)",
         "url": "https://jobs.infineon.com/careers/job/563808970772208?domain=infineon.com"
       },
-      "14": {
+      "15": {
         "id": "563808970736078",
         "title": "Working student - Embedded Software (f/m/div) ",
         "company": "Infineon Technologies",
         "location": "Munich (Germany)",
         "url": "https://jobs.infineon.com/careers/job/563808970736078?domain=infineon.com"
       },
-      "15": {
+      "16": {
         "id": "41967194",
         "title": "Intern - ADTS PIE PI",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41967194?domain=micron.com"
       },
-      "16": {
+      "17": {
         "id": "41943288",
         "title": "Intern - Component Test Engineering",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41943288?domain=micron.com"
       },
-      "17": {
+      "18": {
         "id": "41970263",
         "title": "Intern - Manufacturing Chemical Vapour Deposition (CVD)",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41970263?domain=micron.com"
       },
-      "18": {
+      "19": {
         "id": "41970258",
         "title": "Intern - Operational Development Team (CMP/WET)",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41970258?domain=micron.com"
       },
-      "19": {
+      "20": {
         "id": "41980080",
         "title": "Intern - PIE RDA",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41980080?domain=micron.com"
       },
-      "20": {
+      "21": {
         "id": "41980078",
         "title": "Intern - Test Engineering",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41980078?domain=micron.com"
       },
-      "21": {
+      "22": {
         "id": "41967326",
         "title": "Intern-Assembly Equipment",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
       },
-      "22": {
+      "23": {
         "id": "41970519",
         "title": "Summer Intern \u2013 ASIC Design Flow Exploration with AI",
         "company": "Micron",
         "location": "Taipei City, Taipei City, Taiwan",
         "url": "https://micron.eightfold.ai/careers/job/41970519?domain=micron.com"
       },
-      "23": {
+      "24": {
         "id": "/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872",
         "title": "Internship: Software Developer - Tools (m/f/d)",
         "company": "NXP Semiconductors",
         "location": "Gratkorn",
         "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872"
       },
-      "24": {
+      "25": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "25": {
+      "26": {
         "id": "1392063100",
         "title": "Finance Intern",
         "company": "Seagate Technology",
         "location": "Wuxi, CN",
         "url": "https://seagatecareers.com/job/Wuxi-Finance-Intern/1392063100/"
       },
-      "26": {
+      "27": {
         "id": "1392063700",
         "title": "Finance Intern",
         "company": "Seagate Technology",
         "location": "Wuxi, CN",
         "url": "https://seagatecareers.com/job/Wuxi-Finance-Intern/1392063700/"
       },
-      "27": {
+      "28": {
         "id": "95283438288",
         "title": "AI-Powered Automated Testing Internship",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/ai-powered-automated-testing-internship/44408/95283438288"
       },
-      "28": {
+      "29": {
         "id": "95257149664",
         "title": "FC PV Internship \u2013 AI Driven Runtime Validation",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/fc-pv-internship-ai-driven-runtime-validation/44408/95257149664"
       },
-      "29": {
+      "30": {
         "id": "95283438336",
         "title": "Software Engineering Intern",
         "company": "Synopsys",
         "location": "Hyderabad, India",
         "url": "https://careers.synopsys.com/job/hyderabad/software-engineering-intern/44408/95283438336"
       },
-      "30": {
+      "31": {
         "id": "94950528864",
         "title": "Software Engineering Internship \u2013 LLM-driven Engineering Analysis",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/software-engineering-internship-llm-driven-engineering-analysis/44408/94950528864"
       },
-      "31": {
+      "32": {
         "id": "25002653",
         "title": "Field Applications Engineering Intern m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002653"
       },
-      "32": {
+      "33": {
         "id": "25002465",
         "title": "Field Applications Engineering Student Worker m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002465"
       },
-      "33": {
+      "34": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15874,7 +15883,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 11:45 UTC",
+      "checked_at": "2026-05-19 12:00 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
