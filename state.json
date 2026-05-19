@@ -2060,8 +2060,6 @@
     "/job/Malaysia-Jitra-Remote-Location/MFG-OPS-SUPPORT-1_R025929",
     "/job/Malaysia-Jitra-Remote-Location/MFG-OPS-SUPPORT-1_R025971",
     "/job/Malaysia-Jitra-Remote-Location/MFG-OPS-SUPPORT-1_R025972",
-    "/job/Malaysia-Jitra-Remote-Location/MFG-OPS-SUPPORT-1_R025976",
-    "/job/Malaysia-Jitra-Remote-Location/MFG-OPS-SUPPORT-1_R025977",
     "/job/Malaysia-Jitra-Remote-Location/MFG-OPS-SUPPORT-1_R025979",
     "/job/Malaysia-Jitra-Remote-Location/MFG-OPS-SUPPORT-1_R025981",
     "/job/Malaysia-Jitra-Remote-Location/MFG-OPS-SUPPORT-1_R025982",
@@ -2773,7 +2771,6 @@
     "/job/Philippines---Mphil-1/Technician-I_R1216-26",
     "/job/Philippines---Mphil-3/Analyst---Finance_R925-26",
     "/job/Philippines---Mphil-3/Operator-I_R1687-26",
-    "/job/Philippines---Mphil-3/Operator-I_R1688-26",
     "/job/Philippines---Mphil-3/Operator-I_R1697-26",
     "/job/Philippines---Mphil-3/Principal-Engineer---Manufacturing_R1394-26",
     "/job/Philippines---Mphil-3/Principal-Engineer--Manufacturing_R1392-26",
@@ -4329,7 +4326,6 @@
     "84281",
     "84283",
     "84284",
-    "84285",
     "84287",
     "84310",
     "84316",
@@ -4480,6 +4476,7 @@
     "84912",
     "84913",
     "84914",
+    "84915",
     "84916",
     "84918",
     "84922",
@@ -7451,7 +7448,6 @@
     "41281311",
     "41281353",
     "41281389",
-    "41281499",
     "41281500",
     "41281505",
     "41281786",
@@ -8462,6 +8458,7 @@
     "41973184",
     "41973187",
     "41978275",
+    "41980076",
     "41980078"
   ],
   "GlobalFoundries": [
@@ -8833,7 +8830,6 @@
     "563980769051358",
     "563980769051359",
     "563980769051360",
-    "563980769051363",
     "563980769051365",
     "563980769051366",
     "563980769051368",
@@ -15812,7 +15808,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 06:00 UTC",
+      "checked_at": "2026-05-19 06:15 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
