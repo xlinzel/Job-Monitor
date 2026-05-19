@@ -2777,7 +2777,6 @@
     "/job/Philippines---Mphil-3/Operator-I_R1697-26",
     "/job/Philippines---Mphil-3/Principal-Engineer---Manufacturing_R1394-26",
     "/job/Philippines---Mphil-3/Principal-Engineer--Manufacturing_R1392-26",
-    "/job/Philippines---Mphil-3/Production-Operator_R1641-26",
     "/job/Philippines---Mphil-3/Production-Operator_R1642-26",
     "/job/Philippines---Mphil-3/Production-Operator_R1662-26",
     "/job/Philippines---Mphil-3/Production-Operator_R1663-26",
@@ -9133,6 +9132,7 @@
     "563808961601121",
     "563808961616821",
     "563808961636285",
+    "563808961649460",
     "563808962109142",
     "563808962112726",
     "563808962153671",
@@ -15812,7 +15812,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 05:58 UTC",
+      "checked_at": "2026-05-19 06:00 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
