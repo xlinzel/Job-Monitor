@@ -3262,6 +3262,7 @@
     "/job/Noida/Senior-IT-Systems-Engineer---DevOps-LDAP-Services_R-10062429",
     "/job/Noida/Senior-Lead-SoC--Emulation-Engineer_R-10062762",
     "/job/Noida/Senior-Principal-Engineer--Analog-Validation-Characterization_R-10062839",
+    "/job/Noida/Senior-Sales-Manager_R-10063336",
     "/job/Noida/Senior-Validation-Engineer_R-10062540",
     "/job/Noida/SoC-Front-End-Design-Engr_R-10060587",
     "/job/Noida/Splunk---Service-and-Architecture-Lead_R-10061571",
@@ -4879,8 +4880,7 @@
     "86379",
     "86404",
     "86406",
-    "86422",
-    "86426"
+    "86422"
   ],
   "Rivian": [
     "19528",
@@ -5684,6 +5684,7 @@
     "38901202",
     "38901206",
     "38902513",
+    "38902520",
     "38905822",
     "38909574",
     "38920174",
@@ -5710,6 +5711,7 @@
     "39058626",
     "39062549",
     "39064043",
+    "39064044",
     "39064048",
     "39064049",
     "39065417",
@@ -5836,7 +5838,6 @@
     "39505540",
     "39505591",
     "39506092",
-    "39520199",
     "39527027",
     "39527137",
     "39527309",
@@ -7368,7 +7369,6 @@
     "41234517",
     "41234524",
     "41234527",
-    "41234533",
     "41234609",
     "41234610",
     "41234616",
@@ -10647,6 +10647,7 @@
     "1349517457",
     "1349611757",
     "1351325257",
+    "1351525057",
     "1351893257",
     "1352031257",
     "1352031357",
@@ -15873,7 +15874,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 11:30 UTC",
+      "checked_at": "2026-05-19 11:45 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
