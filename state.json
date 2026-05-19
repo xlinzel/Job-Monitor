@@ -800,9 +800,7 @@
     "/job/Yokneam/Senior-Staff-Engineer--Physical-Design_2503611",
     "/job/Yokneam/Staff-Electrical-Validation-Engineer_2601925",
     "/job/Yokneam/Technical-Director--Physical-Design_2503619",
-    "/job/Yokneam/senior-staff-signal-power-integrity-engineer_2503373",
-    "2600735",
-    "2601311"
+    "/job/Yokneam/senior-staff-signal-power-integrity-engineer_2503373"
   ],
   "Etched": [
     "06398761-0950-4e5c-8590-26f485ba5509",
@@ -4127,7 +4125,6 @@
     "80314",
     "80317",
     "80318",
-    "80330",
     "80333",
     "80338",
     "80340",
@@ -4139,6 +4136,7 @@
     "80404",
     "80409",
     "80417",
+    "80419",
     "80421",
     "80422",
     "80433",
@@ -4260,7 +4258,6 @@
     "81112",
     "81114",
     "81115",
-    "81116",
     "81118",
     "81129",
     "81136",
@@ -4869,7 +4866,9 @@
     "86240",
     "86241",
     "86242",
+    "86248",
     "86250",
+    "86251",
     "86274",
     "86275",
     "86276",
@@ -6249,6 +6248,7 @@
     "40308159",
     "40308193",
     "40308593",
+    "40308601",
     "40326615",
     "40327133",
     "40327152",
@@ -6819,7 +6819,6 @@
     "40882373",
     "40882379",
     "40888055",
-    "40889677",
     "40889790",
     "40890171",
     "40890237",
@@ -7106,7 +7105,6 @@
     "41084562",
     "41084859",
     "41084877",
-    "41084878",
     "41084880",
     "41084883",
     "41084885",
@@ -9035,7 +9033,6 @@
     "563808958560352",
     "563808958589136",
     "563808958600187",
-    "563808958601270",
     "563808958606123",
     "563808958727011",
     "563808958727017",
@@ -10565,7 +10562,6 @@
     "25010491",
     "25010493",
     "25010497",
-    "25010499",
     "25010501",
     "25010503",
     "25010504",
@@ -10880,7 +10876,6 @@
     "1389293400",
     "1389373600",
     "1389431400",
-    "1389660200",
     "1389660300",
     "1389663500",
     "1389664600",
@@ -10919,7 +10914,8 @@
     "1392041800",
     "1392041900",
     "1392044300",
-    "1392044400"
+    "1392044400",
+    "1392056000"
   ],
   "Applied Materials": [
     "46146390576",
@@ -13797,6 +13793,7 @@
     "01333b87c75ead64",
     "01a02ae699e5d579",
     "024e204c5b7bbc90",
+    "02e43df68ce7f94b",
     "033da80461658ca7",
     "03551ba83eabcd74",
     "0388872dbb15e441",
@@ -14085,6 +14082,7 @@
     "817019a6ce6a222a",
     "825b21f459d9eed8",
     "82957fd33d409d20",
+    "829db975fe494f12",
     "839e97eb7f0cf6ee",
     "83bb4fea83260472",
     "8478dca3f507120d",
@@ -14189,7 +14187,6 @@
     "ad3fb1188b8a1c8e",
     "aeaf10fc5d4a43db",
     "af07b6f7dbb8da3c",
-    "af3989d2b520c496",
     "af48f35ee30ed497",
     "afa81470df4e42b3",
     "b004e9433e977100",
@@ -15667,139 +15664,146 @@
         "url": "https://www.asml.com/en/careers/find-your-job/finance-internship-tax-technology-j00340561"
       },
       "6": {
+        "id": "02e43df68ce7f94b",
+        "title": "Internship Cscm Regional Planning Team Hsinchu",
+        "company": "ASML",
+        "location": "",
+        "url": "https://www.asml.com/en/careers/find-your-job/internship-cscm-regional-planning-team-hsinchu-j00338875"
+      },
+      "7": {
         "id": "b7cc75b7a47db09e",
         "title": "Ta Intern",
         "company": "ASML",
         "location": "",
         "url": "https://www.asml.com/en/careers/find-your-job/ta-intern-j00341384"
       },
-      "7": {
+      "8": {
         "id": "95159311408",
         "title": "2026 Summer Optical Intern (Adv Degree) - Santa Clara, CA",
         "company": "Applied Materials",
         "location": "",
         "url": "https://jobs.appliedmaterials.com/job/santa-clara/2026-summer-optical-intern-adv-degree-santa-clara-ca/95/95159311408"
       },
-      "8": {
+      "9": {
         "id": "563980769353378",
         "title": "AMHS Apprentice Maintenance Technician (Days)",
         "company": "GlobalFoundries",
         "location": "Malta, New York, United States of America",
         "url": "https://careers.gf.com/careers/job/563980769353378?domain=globalfoundries.com"
       },
-      "9": {
+      "10": {
         "id": "563808970661044",
         "title": "Internship - Strategy Projects (f/m/div)",
         "company": "Infineon Technologies",
         "location": "Munich (Germany)",
         "url": "https://jobs.infineon.com/careers/job/563808970661044?domain=infineon.com"
       },
-      "10": {
+      "11": {
         "id": "563808970772208",
         "title": "Working Student - Software Development for Test Engineering Tools Automation (f/m/div)",
         "company": "Infineon Technologies",
         "location": "Munich (Germany)",
         "url": "https://jobs.infineon.com/careers/job/563808970772208?domain=infineon.com"
       },
-      "11": {
+      "12": {
         "id": "563808970736078",
         "title": "Working student - Embedded Software (f/m/div) ",
         "company": "Infineon Technologies",
         "location": "Munich (Germany)",
         "url": "https://jobs.infineon.com/careers/job/563808970736078?domain=infineon.com"
       },
-      "12": {
+      "13": {
         "id": "41967194",
         "title": "Intern - ADTS PIE PI",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41967194?domain=micron.com"
       },
-      "13": {
+      "14": {
         "id": "41943288",
         "title": "Intern - Component Test Engineering",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41943288?domain=micron.com"
       },
-      "14": {
+      "15": {
         "id": "41970263",
         "title": "Intern - Manufacturing Chemical Vapour Deposition (CVD)",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41970263?domain=micron.com"
       },
-      "15": {
+      "16": {
         "id": "41970258",
         "title": "Intern - Operational Development Team (CMP/WET)",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41970258?domain=micron.com"
       },
-      "16": {
+      "17": {
         "id": "41980078",
         "title": "Intern - Test Engineering",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41980078?domain=micron.com"
       },
-      "17": {
+      "18": {
         "id": "41967326",
         "title": "Intern-Assembly Equipment",
         "company": "Micron",
         "location": "Singapore, Singapore",
         "url": "https://micron.eightfold.ai/careers/job/41967326?domain=micron.com"
       },
-      "18": {
+      "19": {
         "id": "41970519",
         "title": "Summer Intern \u2013 ASIC Design Flow Exploration with AI",
         "company": "Micron",
         "location": "Taipei City, Taipei City, Taiwan",
         "url": "https://micron.eightfold.ai/careers/job/41970519?domain=micron.com"
       },
-      "19": {
+      "20": {
         "id": "/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872",
         "title": "Internship: Software Developer - Tools (m/f/d)",
         "company": "NXP Semiconductors",
         "location": "Gratkorn",
         "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship--Software-Developer---Tools--m-f-d-_R-10060872"
       },
-      "20": {
+      "21": {
         "id": "29848",
         "title": "UIUC Research Park Intern - Machine Learning",
         "company": "Rivian",
         "location": "Champaign, Illinois",
         "url": "https://careers.rivian.com/jobs/29848?lang=en-us"
       },
-      "21": {
+      "22": {
         "id": "95257149664",
         "title": "FC PV Internship \u2013 AI Driven Runtime Validation",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/fc-pv-internship-ai-driven-runtime-validation/44408/95257149664"
       },
-      "22": {
+      "23": {
         "id": "94950528864",
         "title": "Software Engineering Internship \u2013 LLM-driven Engineering Analysis",
         "company": "Synopsys",
         "location": "Hsinchu, Taiwan",
         "url": "https://careers.synopsys.com/job/hsinchu/software-engineering-internship-llm-driven-engineering-analysis/44408/94950528864"
       },
-      "23": {
+      "24": {
         "id": "25002653",
         "title": "Field Applications Engineering Intern m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002653"
       },
-      "24": {
+      "25": {
         "id": "25002465",
         "title": "Field Applications Engineering Student Worker m/f/d",
         "company": "Texas Instruments",
         "location": "Germany",
         "url": "https://careers.ti.com/en/sites/CX/job/25002465"
       },
-      "25": {
+      "26": {
         "id": "25006048",
         "title": "[2026\uc778\ud134\ucc44\uc6a9] Sales Engineering Intern",
         "company": "Texas Instruments",
@@ -15808,7 +15812,7 @@
       }
     },
     "last_discord_command_status": {
-      "checked_at": "2026-05-19 06:15 UTC",
+      "checked_at": "2026-05-19 06:30 UTC",
       "status": "fetch_failed",
       "error": "403 Client Error: Forbidden for url: https://discord.com/api/v10/channels/1500975386274693143/messages?limit=100&after=1504910273809744085"
     }
