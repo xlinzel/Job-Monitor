@@ -2209,7 +2209,6 @@
     "/job/USA-CA-San-Jose-Innovation-Drive/DFT-Engineer_R025915",
     "/job/USA-CA-San-Jose-Innovation-Drive/Design-Engineer_R025500",
     "/job/USA-CA-San-Jose-Innovation-Drive/Design-Implementation-Engineer_R024573",
-    "/job/USA-CA-San-Jose-Innovation-Drive/Design-Verification-Engineer_R025763-1",
     "/job/USA-CA-San-Jose-Innovation-Drive/Design-Verification-Engineer_R025791",
     "/job/USA-CA-San-Jose-Innovation-Drive/Design-Verification-Engineer_R025908",
     "/job/USA-CA-San-Jose-Innovation-Drive/Emulation-Engineer_R024146",
@@ -2263,7 +2262,6 @@
     "/job/USA-California-San-Jose-1320-Ridder-Park-Drive/Principal-AI-Development-Engineer_R025622",
     "/job/USA-California-San-Jose-1320-Ridder-Park-Drive/Principal-AI-Development-Engineer_R025623",
     "/job/USA-California-San-Jose-1320-Ridder-Park-Drive/Quality-Ops-Engineer-4_R026056",
-    "/job/USA-California-San-Jose-1320-Ridder-Park-Drive/Signal-Power-Integrity-Engineer_R025220",
     "/job/USA-California-San-Jose-1320-Ridder-Park-Drive/Silicon-Design-and-Validation-Engineer_R025787-1",
     "/job/USA-California-San-Jose-1320-Ridder-Park-Drive/Silicon-Photonics-PIC-Design-Engineer_R025279",
     "/job/USA-California-San-Jose-1320-Ridder-Park-Drive/Staff-AI-Development-Engineer_R025608",
@@ -5397,6 +5395,7 @@
     "31012",
     "31013",
     "31014",
+    "31017",
     "31018",
     "31019",
     "31020",
@@ -5435,7 +5434,8 @@
     "31102",
     "31157",
     "31167",
-    "31168"
+    "31168",
+    "31181"
   ],
   "Micron": [
     "20185947",
