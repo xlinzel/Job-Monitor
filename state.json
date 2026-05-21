@@ -2433,6 +2433,7 @@
     "/job/USA-TX-Austin---River-Place-B7/DFT-Engineer_R024805",
     "/job/USA-TX-Austin---River-Place-B7/High-Speed-Serdes-System-Design-Engineer_R024804",
     "/job/USA-TX-Austin---River-Place-B7/R-D-Engineer-IC-Design-4_R024801",
+    "/job/USA-TX-Austin---River-Place-B7/R-D-Engineer-Software-3_R025465",
     "/job/USA-TX-Austin---River-Place-B7/R-D-Engineer-Software-3_R025468-1",
     "/job/USA-TX-Austin---River-Place-B7/Senior-Serdes-System-Design-Engineer-Architect_R025517",
     "/job/USA-TX-Plano-Legacy-Drive-Suite-700/Account-Director--Broadcom-Software_R025906",
@@ -2445,7 +2446,6 @@
     "/job/USA-TX-Plano-Legacy-Drive-Suite-700/Mainframe-Software-Technical-Support-Engineer_R025392",
     "/job/USA-TX-Plano-Legacy-Drive-Suite-700/Mainframe-z-VM-System-programmer_R025554",
     "/job/USA-TX-Plano-Legacy-Drive-Suite-700/Product-Manager_R024637-1",
-    "/job/USA-TX-Plano-Legacy-Drive-Suite-700/R-D-Engineer-Software-3_R025465",
     "/job/USA-TX-Plano-Legacy-Drive-Suite-700/R-D-Staff-Software-Engineer_R025229",
     "/job/USA-TX-Plano-Legacy-Drive-Suite-700/Senior-Consultant---Datacom_R025844",
     "/job/USA-TX-Plano-Legacy-Drive-Suite-700/Senior-Mainframe-Software-Engineer_R025469",
@@ -5484,6 +5484,7 @@
     "31206",
     "31207",
     "31208",
+    "31217",
     "31225",
     "31236",
     "31243"
@@ -5554,6 +5555,7 @@
     "29615474",
     "29616117",
     "29669304",
+    "29776666",
     "29776673",
     "30041387",
     "30063386",
@@ -8530,7 +8532,8 @@
     "42022674",
     "42023772",
     "42023790",
-    "42026494"
+    "42026494",
+    "42027598"
   ],
   "GlobalFoundries": [
     "563980768882149",
@@ -9072,6 +9075,7 @@
     "563980769431475",
     "563980769446740",
     "563980769446751",
+    "563980769447824",
     "563980769454364",
     "563980769456568",
     "563980769457483",
@@ -9109,6 +9113,8 @@
     "563980769501543",
     "563980769501544",
     "563980769501545",
+    "563980769501663",
+    "563980769501664",
     "563980769516149",
     "563980769518042",
     "563980769518167",
@@ -9117,7 +9123,8 @@
     "563980769518179",
     "563980769518200",
     "563980769518201",
-    "563980769518206"
+    "563980769518206",
+    "563980769519307"
   ],
   "Infineon Technologies": [
     "563808955939145",
@@ -9450,6 +9457,7 @@
     "563808969067810",
     "563808969077627",
     "563808969085656",
+    "563808969085677",
     "563808969097357",
     "563808969098338",
     "563808969098857",
