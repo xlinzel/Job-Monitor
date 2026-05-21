@@ -39,6 +39,7 @@ jobs:
       - name: Run monitor
         env:
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+          STARTUP_WEBHOOK_URL: ${{ secrets.STARTUP_WEBHOOK_URL }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TEST_ALERT: ${{ github.event.inputs.test_alert || 'false' }}

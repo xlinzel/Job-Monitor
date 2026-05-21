@@ -38,6 +38,8 @@ Alerts include one section:
 
 New non-internship postings are still saved to `state.json` so they will not alert repeatedly, but they are not sent to Discord.
 
+To duplicate selected startup alerts into a second Discord channel, create a second webhook for that channel and add it as the `STARTUP_WEBHOOK_URL` repository secret. Companies marked with `startup_channel: true` in `config.yaml` are sent to that channel in addition to the main channel.
+
 ## GitHub Setup
 
 From this folder:
@@ -48,9 +50,10 @@ git add -A
 git commit -m "Initial job monitor"
 gh repo create job-monitor --private --source=. --push
 gh secret set WEBHOOK_URL
+gh secret set STARTUP_WEBHOOK_URL
 ```
 
-Paste your Discord webhook URL when `gh secret set WEBHOOK_URL` prompts for it.
+Paste your main Discord webhook URL when `gh secret set WEBHOOK_URL` prompts for it. Paste the startup-channel webhook URL for `STARTUP_WEBHOOK_URL`, or skip that secret if you do not want the duplicate startup channel.
 
 Then open the repo on GitHub, go to `Actions`, enable workflows if prompted, and run `Job Monitor` manually once. The workflow also supports GitHub's built-in schedule and external cron triggers.
 
@@ -108,7 +111,7 @@ Normal runs only send Discord messages when a new job is found. To test the webh
 4. Set `test_alert` to `true`.
 5. Click `Run workflow`.
 
-If the `WEBHOOK_URL` secret is set correctly, Discord should receive a test message with the same two alert sections. If the secret is missing or invalid, the workflow fails and the logs show the webhook error.
+If the webhook secrets are set correctly, Discord should receive a test message in the configured channel or channels. If a secret is missing or invalid, the workflow logs show the webhook error.
 
 ## Adding Companies
 

@@ -1424,7 +1424,7 @@ def is_truthy_env(value: str) -> bool:
     return value.strip().lower() in {"1", "true", "yes", "y", "on"}
 
 
-def send_test_alert(webhook_url: str, telegram_token: str, telegram_chat: str, now: str) -> bool:
+def send_test_alert(webhook_url: str, startup_webhook_url: str, telegram_token: str, telegram_chat: str, now: str) -> bool:
     """Send a harmless alert to verify notification wiring."""
     test_new_jobs = [
         Job(
@@ -1463,6 +1463,8 @@ def send_test_alert(webhook_url: str, telegram_token: str, telegram_chat: str, n
     delivered = True
     if webhook_url:
         delivered = send_webhook(webhook_url, test_new_jobs, test_internship_jobs, test_other_new_jobs) and delivered
+    if startup_webhook_url:
+        delivered = send_webhook(startup_webhook_url, test_new_jobs, [], []) and delivered
     if telegram_token and telegram_chat:
         delivered = send_telegram(
             telegram_token,
@@ -1471,7 +1473,7 @@ def send_test_alert(webhook_url: str, telegram_token: str, telegram_chat: str, n
             test_internship_jobs,
             test_other_new_jobs,
         ) and delivered
-    if not webhook_url and not telegram_token:
+    if not webhook_url and not startup_webhook_url and not telegram_token:
         delivered = False
         log.warning("No notification channel configured - printing test alert to stdout")
         for message in chunk_sectioned_alerts([
@@ -1518,14 +1520,16 @@ def run():
     notifications = config.get("notifications", {})
 
     webhook_url = os.environ.get("WEBHOOK_URL", notifications.get("webhook_url", ""))
+    startup_webhook_url = os.environ.get("STARTUP_WEBHOOK_URL", notifications.get("startup_webhook_url", ""))
     telegram_token = os.environ.get("TELEGRAM_BOT_TOKEN", notifications.get("telegram_bot_token", ""))
     telegram_chat = os.environ.get("TELEGRAM_CHAT_ID", notifications.get("telegram_chat_id", ""))
     test_alert = is_truthy_env(os.environ.get("TEST_ALERT", "false"))
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    startup_company_names = {company["name"] for company in companies if company.get("startup_channel")}
 
     if test_alert:
         log.info("TEST_ALERT=true - sending test alert and skipping job fetch/state update.")
-        delivered = send_test_alert(webhook_url, telegram_token, telegram_chat, now)
+        delivered = send_test_alert(webhook_url, startup_webhook_url, telegram_token, telegram_chat, now)
         summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
         if summary_path:
             with open(summary_path, "a") as f:
@@ -1608,11 +1612,19 @@ def run():
         log.info("  -> %d new internship/early-career posting(s)", len(new_internship_jobs))
         log.info("  -> %d non-internship posting(s) suppressed from alerts", len(other_new_jobs))
         if new_internship_jobs:
+            startup_new_internship_jobs = [
+                job
+                for job in new_internship_jobs
+                if job.company in startup_company_names
+            ]
             if webhook_url:
                 send_webhook(webhook_url, new_internship_jobs, [], [])
+            if startup_webhook_url:
+                log.info("  -> %d startup-channel internship/early-career posting(s)", len(startup_new_internship_jobs))
+                send_webhook(startup_webhook_url, startup_new_internship_jobs, [], [])
             if telegram_token and telegram_chat:
                 send_telegram(telegram_token, telegram_chat, new_internship_jobs, [], [])
-            if not webhook_url and not telegram_token:
+            if not webhook_url and not startup_webhook_url and not telegram_token:
                 log.warning("No notification channel configured - printing to stdout")
                 for message in chunk_sectioned_alerts([
                     (SECTION_NEW_INTERNSHIP_JOBS, new_internship_jobs),

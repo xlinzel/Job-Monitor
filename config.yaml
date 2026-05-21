@@ -21,24 +21,29 @@ companies:
   - name: Fuse
     ats: ashby
     slug: Fuse
+    startup_channel: true
 
   - name: Inertia
     ats: ashby
     slug: inertia
+    startup_channel: true
 
   - name: Atomic Semi
     ats: ashby
     slug: AtomicSemi
+    startup_channel: true
 
   - name: Etched
     ats: ashby
     slug: etched
+    startup_channel: true
 
   # --- Lever companies ---
 
   - name: Diamond Foundry
     ats: lever
     slug: diamondfoundry
+    startup_channel: true
 
   - name: Zoox
     ats: lever
@@ -47,16 +52,19 @@ companies:
   - name: Lumafield
     ats: lever
     slug: lumafield
+    startup_channel: true
 
   # --- Greenhouse companies ---
 
   - name: Lightmatter
     ats: greenhouse
     slug: lightmatter
+    startup_channel: true
 
   - name: Figure
     ats: greenhouse
     slug: figureai
+    startup_channel: true
 
   - name: Astera Labs
     ats: greenhouse
@@ -65,10 +73,12 @@ companies:
   - name: Cerebras
     ats: greenhouse
     slug: cerebrassystems
+    startup_channel: true
 
   - name: Factorial Energy
     ats: greenhouse
     slug: factorialenergy
+    startup_channel: true
 
   # --- Workday companies ---
 
@@ -101,12 +111,14 @@ companies:
   - name: Neurable
     ats: smartrecruiters
     slug: NeurableINC
+    startup_channel: true
 
   # --- JazzHR / ApplyToJob companies ---
 
   - name: Xanadu
     ats: jazzhr
     slug: https://xanadu.applytojob.com/apply
+    startup_channel: true
 
   - name: TechInsights
     ats: jazzhr
@@ -117,10 +129,12 @@ companies:
   - name: Anyon
     ats: bamboohr
     slug: https://anyon.bamboohr.com/careers
+    startup_channel: true
 
   - name: VueReal
     ats: bamboohr
     slug: https://vuereal.bamboohr.com/careers
+    startup_channel: true
 
   # --- Jibe / iCIMS frontend companies ---
 
@@ -204,8 +218,17 @@ filters:
     # - "backend"
     # - "senior engineer"
   exclude_keywords:
-    # - "intern"
-    # - "director"
+    - business
+    - finance
+    - accounting
+    - sales
+    - marketing
+    - legal
+    - recruiter
+    - recruiting
+    - talent acquisition
+    - human resources
+    - people operations
 
 # =============================================================================
 # Internship / early-career keyword matching
@@ -235,5 +258,6 @@ reminders:
 # =============================================================================
 notifications:
   webhook_url: ""
+  startup_webhook_url: ""
   telegram_bot_token: ""
   telegram_chat_id: ""
