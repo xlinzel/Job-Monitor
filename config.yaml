@@ -80,6 +80,10 @@ companies:
     slug: factorialenergy
     startup_channel: true
 
+  - name: Formlabs
+    ats: greenhouse
+    slug: formlabs
+
   # --- Workday companies ---
 
   - name: Marvell
