@@ -1965,11 +1965,9 @@
     "/job/Duesseldorf-Germany-Home-Office/Lead-Solution-Manager-ORAN-m-w-d_R117065",
     "/job/Empire-Tower-Bangkok-Thailand/Assistant-Manager---AV-Product-Management_R115940",
     "/job/Empire-Tower-Bangkok-Thailand/Assistant-Manager--B2B-Sales---Display--Government-_R114212",
-    "/job/Empire-Tower-Bangkok-Thailand/Assistant-Manager--Logistics-Cost-Management_R116307",
     "/job/Empire-Tower-Bangkok-Thailand/Assistant-Manager--SAC-Product-Management_R116729",
     "/job/Empire-Tower-Bangkok-Thailand/XMLNAME-2026-TSE-FLIP--12-Months-Graduated-Internship-Program-_R117189",
     "/job/Eschborn-Germany-Home-Office/Director-Sales--m-w-d--Visual---Sound-eXperience_R110047",
-    "/job/Junction-City-Tower-Yangon-Myanmar/Assistant-Manager--Marketing--Myanmar-Branch-_R116960",
     "/job/Kolao-Tower-Vientiane-Laos/Assistant-Manager--Laos-Marketing-Communication_R113787",
     "/job/Kolao-Tower-Vientiane-Laos/Assistant-Manager--MX-Retail-Marketing_R113786",
     "/job/Kolao-Tower-Vientiane-Laos/Senior-Officer--CE-Product-Management_R117278",
@@ -2081,7 +2079,8 @@
     "/job/Via-Mike-Bongiorno-Milano-Italy/E-Commerce-Analyst-and-Control-Tower-Support--INTERNSHIP-_R117010",
     "/job/Via-Mike-Bongiorno-Milano-Italy/Health-Medical-Equipment---Key-Account-Manager--Northern-Italy-_R115634",
     "/job/Via-Mike-Bongiorno-Milano-Italy/Samsung-s-Internship_R114528-1",
-    "/job/Wisma-GKBI-Jakarta-Indonesia/Service-Support-Engineer_R110724"
+    "/job/Wisma-GKBI-Jakarta-Indonesia/Service-Support-Engineer_R110724",
+    "R116307"
   ],
   "Broadcom": [
     "/job/ARE-Dubai-Business-Central-Tower/Kubernetes-Platform-Architect--UAE--Remote-_R025877",
@@ -4712,7 +4711,6 @@
     "85800",
     "85802",
     "85803",
-    "85804",
     "85806",
     "85811",
     "85813",
@@ -9139,7 +9137,8 @@
     "563980769518200",
     "563980769518201",
     "563980769518206",
-    "563980769519307"
+    "563980769519307",
+    "563980769535280"
   ],
   "Infineon Technologies": [
     "563808955939145",
