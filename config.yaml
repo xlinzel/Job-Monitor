@@ -83,6 +83,7 @@ companies:
   - name: Formlabs
     ats: greenhouse
     slug: formlabs
+    startup_channel: true
 
   # --- Workday companies ---
 
