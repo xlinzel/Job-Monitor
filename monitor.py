@@ -139,6 +139,17 @@ def clean_text(value: str) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
 
 
+def job_state_key(job: Job) -> str:
+    """Fingerprint a posting so reused ATS IDs can still produce new alerts."""
+    return "v2:" + stable_id(
+        job.company,
+        job.id,
+        clean_text(job.title).lower(),
+        clean_text(job.location).lower(),
+        clean_text(job.url).lower(),
+    )
+
+
 def fetch_greenhouse(company_slug: str, company_name: str) -> list[Job]:
     """Fetch jobs from Greenhouse JSON API."""
     url = f"https://boards-api.greenhouse.io/v1/boards/{company_slug}/jobs"
@@ -1574,13 +1585,16 @@ def run():
         if error:
             continue
 
-        # Diff against known IDs
-        known_ids = set(state.get(name, []))
-        current_ids = {j.id for j in current_jobs}
+        # Diff against known postings. Legacy state entries are raw job IDs;
+        # after this run, state is rewritten with title/location/url fingerprints.
+        known_entries = set(state.get(name, []))
+        current_keys = {job_state_key(j) for j in current_jobs}
 
         new_jobs = []
         for job in current_jobs:
-            if job.id not in known_ids and job.matches_filters(include, exclude):
+            known_by_fingerprint = job_state_key(job) in known_entries
+            known_by_legacy_id = job.id in known_entries
+            if not known_by_fingerprint and not known_by_legacy_id and job.matches_filters(include, exclude):
                 job.discovered_at = now
                 new_jobs.append(job)
 
@@ -1590,8 +1604,8 @@ def run():
         else:
             log.info("  -> No new postings for %s", name)
 
-        # Update state with current IDs
-        state[name] = sorted(current_ids)
+        # Update state with current posting fingerprints.
+        state[name] = sorted(current_keys)
 
     # Persist state
     save_state(STATE_PATH, state)

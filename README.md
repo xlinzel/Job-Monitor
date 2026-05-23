@@ -134,7 +134,7 @@ For Workday, use `tenant/site`, for example:
 
 ## Notes
 
-- `state.json` is intentionally committed so GitHub Actions remembers which jobs it has already seen.
+- `state.json` is intentionally committed so GitHub Actions remembers which jobs it has already seen. Postings are stored as fingerprints, not only ATS IDs, so reused IDs can still produce alerts.
 - The workflow commits updated `state.json` after each run.
 - GitHub scheduled jobs can have a few minutes of delay, even with a 15-minute cron.
 - For more reliable timing, use cron-job.org with the `repository_dispatch` trigger.
