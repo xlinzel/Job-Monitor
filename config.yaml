@@ -4,7 +4,7 @@
 # Supported ATS types:
 #   greenhouse, lever, ashby, workday, smartrecruiters, jazzhr, bamboohr,
 #   jibe, eightfold, oracle_hcm, successfactors, radancy, asml_sitemap,
-#   samsungsemi, html
+#   samsungsemi, google_careers, html
 #
 # To find a company's ATS, check their careers page URL:
 #   - Greenhouse: boards.greenhouse.io/SLUG
@@ -209,6 +209,10 @@ companies:
   - name: Samsung Semiconductor
     ats: samsungsemi
     slug: https://semiconductor.samsung.com/us/about-us/careers/jobs/
+
+  - name: Google Research
+    ats: google_careers
+    slug: https://www.google.com/about/careers/applications/jobs/results/?company=Google&company=YouTube&q=google%20research&target_level=INTERN_AND_APPRENTICE
 
   # --- Not enabled yet ---
   # C2MI: removed - no good extractable page.

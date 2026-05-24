@@ -122,6 +122,16 @@ Edit `config.yaml`. Supported ATS values are:
 - `ashby`
 - `workday`
 - `smartrecruiters`
+- `jazzhr`
+- `bamboohr`
+- `jibe`
+- `eightfold`
+- `oracle_hcm`
+- `successfactors`
+- `radancy`
+- `asml_sitemap`
+- `samsungsemi`
+- `google_careers`
 - `html`
 
 For Workday, use `tenant/site`, for example:

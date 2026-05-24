@@ -879,6 +879,60 @@ def fetch_samsungsemi(company_slug: str, company_name: str) -> list[Job]:
     return jobs
 
 
+def fetch_google_careers(search_url: str, company_name: str) -> list[Job]:
+    """Fetch jobs from a Google Careers search-results URL."""
+    from bs4 import BeautifulSoup
+
+    resp = SESSION.get(search_url, timeout=REQUEST_TIMEOUT)
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
+
+    jobs = []
+    seen_ids = set()
+    app_base_url = "https://www.google.com/about/careers/applications/"
+
+    for a_tag in soup.find_all("a", href=True):
+        href = a_tag["href"]
+        match = re.search(r"jobs/results/(\d+)-", href)
+        if not match:
+            continue
+
+        job_id = match.group(1)
+        if job_id in seen_ids:
+            continue
+
+        aria_label = a_tag.get("aria-label", "")
+        title = re.sub(r"^Learn more about\s+", "", aria_label).strip()
+        card = a_tag.find_parent("div", class_="sMn82b")
+        lines = [clean_text(line) for line in card.get_text("\n", strip=True).splitlines()] if card else []
+        lines = [line for line in lines if line]
+        if not title and lines:
+            title = lines[0]
+
+        location = ""
+        team = ""
+        if "place" in lines:
+            index = lines.index("place")
+            if index + 1 < len(lines):
+                location = lines[index + 1]
+        if "bar_chart" in lines:
+            index = lines.index("bar_chart")
+            if index + 1 < len(lines):
+                team = lines[index + 1]
+
+        seen_ids.add(job_id)
+        jobs.append(Job(
+            id=job_id,
+            title=title,
+            url=urljoin(app_base_url, href),
+            location=location,
+            team=team,
+            company=company_name,
+        ))
+
+    return jobs
+
+
 def fetch_generic_html(career_url: str, company_name: str) -> list[Job]:
     """
     Fallback: fetch an HTML page and extract links that look like job postings.
@@ -934,6 +988,7 @@ FETCHERS = {
     "radancy": fetch_radancy,
     "asml_sitemap": fetch_asml_sitemap,
     "samsungsemi": fetch_samsungsemi,
+    "google_careers": fetch_google_careers,
     "html": fetch_generic_html,
 }
 
