@@ -85,6 +85,11 @@ companies:
     slug: formlabs
     startup_channel: true
 
+  - name: Marvel Fusion
+    ats: greenhouse
+    slug: marvelfusion
+    startup_channel: true
+
   # --- Workday companies ---
 
   - name: Marvell
